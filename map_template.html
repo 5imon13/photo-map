@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Photo Map Taiwan</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, "Microsoft JhengHei", sans-serif; display: flex; height: 100vh; background: #f6f5f2; color: #222; }
+  #side { width: 360px; overflow-y: auto; padding: 16px; border-right: 1px solid #ddd; }
+  #map { flex: 1; }
+  h1 { font-size: 18px; margin: 0 0 4px; }
+  .updated { font-size: 12px; color: #777; margin-bottom: 12px; }
+  .row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; align-items: center; }
+  .chip { font-size: 12px; padding: 3px 9px; border-radius: 12px; background: #fff; border: 1px solid #ccc; cursor: pointer; user-select: none; }
+  .chip.off { opacity: .35; }
+  .chip.on { background: #222; color: #fff; border-color: #222; }
+  .toggle { font-size: 12px; color: #444; display: flex; align-items: center; gap: 4px; cursor: pointer; }
+  #count { font-size: 12px; color: #777; margin: 4px 0 8px; }
+  .spot { background: #fff; border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; cursor: pointer; border-left: 5px solid #999; }
+  .spot:hover { background: #fafafa; }
+  .spot.old { opacity: .6; }
+  .spot .t { font-weight: 600; }
+  .spot .m { font-size: 12px; color: #666; margin: 2px 0 4px; }
+  .spot .s { font-size: 13px; }
+  .tag { font-size: 11px; padding: 0 5px; border-radius: 4px; background: #eee; margin-left: 4px; }
+  .tag.exp { background: #f3d6d6; color: #a33; }
+  .tag.maybe { background: #f7ecc6; color: #8a6400; }
+  .popup .why.est { background: #fbf4dc; color: #6b5200; }
+  .popup .why { font-size: 12px; color: #555; margin: 4px 0; padding: 4px 6px; background: #f4f4f4; border-radius: 4px; }
+  .popup a { display: block; font-size: 12px; margin-top: 3px; }
+  @media (max-width: 700px) { body { flex-direction: column-reverse; } #side { width: 100%; height: 50vh; border: 0; } }
+</style>
+</head>
+<body>
+<div id="side">
+  <h1>📷 Photo Map Taiwan</h1>
+  <div class="updated">Updated __UPDATED__ · from news of the past 14 days</div>
+  <div class="row" id="regions"></div>
+  <div class="row" id="filters"></div>
+  <div class="row">
+    <label class="toggle"><input type="checkbox" id="hideExpired" checked> 隱藏已結束</label>
+    <span class="chip" id="nearBtn">📍 依距離排序</span>
+  </div>
+  <div id="count"></div>
+  <div id="list"></div>
+</div>
+<div id="map"></div>
+<script>
+const SPOTS = __SPOTS__;
+const COLORS = { flower: "#e0569b", foliage: "#d9541e", grass: "#b59a45", bird: "#2a8fbd",
+                 event: "#7b4fd6", landscape: "#2f9e6e", other: "#888" };
+const LABELS = { flower: "花", foliage: "楓紅", grass: "芒草", bird: "鳥", event: "活動", landscape: "風景", other: "其他" };
+const STATUS = { upcoming: "即將登場", starting: "初期", peak: "盛期", fading: "尾聲", ongoing: "進行中", ended: "已結束", unknown: "狀況未知" };
+const REGIONS = ["全部", "北部", "中部", "南部", "東部", "離島"];
+const REGION_VIEW = { "全部": [[23.7, 120.95], 8], "北部": [[24.95, 121.45], 10], "中部": [[24.0, 120.85], 9],
+                      "南部": [[22.95, 120.45], 9], "東部": [[23.7, 121.45], 9], "離島": [[24.3, 119.5], 8] };
+
+const today = new Date().toLocaleDateString("sv");  // YYYY-MM-DD in local time
+const daysAgo = d => Math.round((new Date(today) - new Date(d)) / 864e5);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const dates = s => s.date_start ? `${s.date_start}${s.date_end && s.date_end !== s.date_start ? " ~ " + s.date_end : ""}` : "";
+SPOTS.forEach(s => {
+  const end = s.date_end || (s.category === "event" ? s.date_start : "");
+  s.expired = s.status === "ended" || (!!end && end < today);
+  s.maybeOver = !s.expired && !!s.est_end && s.est_end < today;
+  s.age = daysAgo(s.last_seen);
+});
+
+const store = {
+  get(k, d) { try { return localStorage.getItem(k) ?? d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+};
+let region = store.get("region", "全部");
+let me = null;
+const enabled = new Set(Object.keys(COLORS));
+const hideExpired = document.getElementById("hideExpired");
+
+const map = L.map("map").setView(...REGION_VIEW[region]);
+const NLSC = "https://wmts.nlsc.gov.tw/wmts/{layer}/default/GoogleMapsCompatible/{z}/{y}/{x}";
+const NLSC_ATTR = "&copy; 內政部國土測繪中心";
+const baseLayers = {
+  "臺灣通用電子地圖": L.tileLayer(NLSC, { layer: "EMAP", maxZoom: 19, attribution: NLSC_ATTR }),
+  "正射影像 (aerial)": L.tileLayer(NLSC, { layer: "PHOTO2", maxZoom: 19, attribution: NLSC_ATTR }),
+  "CARTO (English)": L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
+    maxZoom: 19, attribution: "&copy; OpenStreetMap contributors &copy; CARTO" }),
+};
+baseLayers["臺灣通用電子地圖"].addTo(map);
+L.control.layers(baseLayers).addTo(map);
+let meMarker = null;
+
+function km(s) {
+  const R = 6371, rad = x => x * Math.PI / 180;
+  const a = Math.sin(rad(s.lat - me.lat) / 2) ** 2 +
+            Math.cos(rad(me.lat)) * Math.cos(rad(s.lat)) * Math.sin(rad(s.lng - me.lng) / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(a));
+}
+
+function meta(s) {
+  const tags = (s.expired ? `<span class="tag exp">已結束</span>` : "") +
+               (s.maybeOver ? `<span class="tag maybe">可能已過</span>` : "") +
+               (s.est_end && !s.expired ? `<span class="tag">預估至 ${esc(s.est_end.slice(5).replace("-", "/"))} (AI)</span>` : "") +
+               (s.age > 0 ? `<span class="tag">${s.age} 天前</span>` : `<span class="tag">今日</span>`) +
+               (me ? `<span class="tag">${km(s).toFixed(0)} km</span>` : "");
+  return `${esc(s.county)} · ${"★".repeat(s.score)} ${s.score_value} · ${STATUS[s.status]} ${esc(dates(s))}${tags}`;
+}
+
+SPOTS.forEach(s => {
+  s.marker = L.circleMarker([s.lat, s.lng], {
+    radius: 5 + s.score * 2, color: "#fff", weight: 2, fillColor: COLORS[s.category],
+    fillOpacity: s.expired || s.maybeOver ? .3 : Math.max(.35, .9 - s.age * .04) });
+  const p = s.score_parts;
+  s.marker.bindPopup(() => `<div class="popup"><b>${esc(s.subject)} · ${esc(s.location_name)}</b><br>
+    ${meta(s)}<br>${esc(s.summary)}
+    <div class="why">分數 ${s.score_value} =景色 ${p.appeal}×0.5 + 時機 ${p.timing}×0.4 + 熱度 ${p.buzz}×0.1<br>
+    景色：${esc(s.appeal_reason)}<br>熱度：${s.articles.length} 篇報導</div>
+    ${s.est_end ? `<div class="why est">⚠ 預估結束 ${esc(s.est_end)} 為 AI 推估，非官方資訊，出發前請確認最新花況。<br>依據：${esc(s.est_basis)}</div>` : ""}
+    ${s.articles.map(a => `<a href="${esc(a.link)}" target="_blank">${esc(a.title)}</a>`).join("")}</div>`);
+});
+
+function visible(s) {
+  return enabled.has(s.category) && (region === "全部" || s.region === region) && !(hideExpired.checked && s.expired);
+}
+
+function render() {
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+  const shown = SPOTS.filter(visible);
+  if (me) shown.sort((a, b) => km(a) - km(b));
+  SPOTS.forEach(s => visible(s) ? s.marker.addTo(map) : s.marker.remove());
+  shown.forEach(s => {
+    const el = document.createElement("div");
+    el.className = "spot" + (s.expired || s.maybeOver || s.age > 7 ? " old" : "");
+    el.style.borderLeftColor = COLORS[s.category];
+    el.innerHTML = `<div class="t">${esc(s.subject)} · ${esc(s.location_name)}</div>
+      <div class="m">${meta(s)}</div><div class="s">${esc(s.summary)}</div>`;
+    el.onclick = () => { map.setView([s.lat, s.lng], 12); s.marker.openPopup(); };
+    list.appendChild(el);
+  });
+  document.getElementById("count").textContent = `${shown.length} / ${SPOTS.length} 個地點`;
+}
+
+const regionsEl = document.getElementById("regions");
+REGIONS.forEach(r => {
+  const chip = document.createElement("span");
+  chip.className = "chip" + (r === region ? " on" : "");
+  chip.textContent = r;
+  chip.onclick = () => {
+    region = r; store.set("region", r);
+    regionsEl.querySelectorAll(".chip").forEach(c => c.classList.toggle("on", c === chip));
+    map.setView(...REGION_VIEW[r]);
+    render();
+  };
+  regionsEl.appendChild(chip);
+});
+
+const filters = document.getElementById("filters");
+Object.keys(COLORS).filter(c => SPOTS.some(s => s.category === c)).forEach(c => {
+  const chip = document.createElement("span");
+  chip.className = "chip";
+  chip.textContent = `${LABELS[c]} (${SPOTS.filter(s => s.category === c).length})`;
+  chip.style.borderColor = COLORS[c];
+  chip.onclick = () => { enabled.has(c) ? enabled.delete(c) : enabled.add(c); chip.classList.toggle("off"); render(); };
+  filters.appendChild(chip);
+});
+
+hideExpired.onchange = render;
+
+const nearBtn = document.getElementById("nearBtn");
+nearBtn.onclick = () => {
+  if (me) { me = null; nearBtn.classList.remove("on"); meMarker?.remove(); render(); return; }
+  nearBtn.textContent = "📍 定位中…";
+  navigator.geolocation.getCurrentPosition(pos => {
+    me = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+    nearBtn.textContent = "📍 依距離排序"; nearBtn.classList.add("on");
+    meMarker = L.circleMarker([me.lat, me.lng], { radius: 7, color: "#fff", weight: 3, fillColor: "#1a73e8", fillOpacity: 1 })
+      .bindTooltip("你的位置").addTo(map);
+    render();
+  }, err => { nearBtn.textContent = "📍 無法定位"; alert("無法取得位置：" + err.message); });
+};
+
+render();
+</script>
+</body>
+</html>
