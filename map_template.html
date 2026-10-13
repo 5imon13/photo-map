@@ -290,6 +290,9 @@ function setSheet(state, animate = true) {
   };
   sheetHead.addEventListener("pointerup", end);
   sheetHead.addEventListener("pointercancel", end);
+  // Without this, the browser treats a sheet drag as a scroll fling, and the next tap only "stops the fling"
+  // instead of clicking (e.g. tapping a spot right after dragging the sheet did nothing)
+  sheetHead.addEventListener("touchmove", e => { if (dragging) e.preventDefault(); }, { passive: false });
 })();
 
 addEventListener("resize", () => setSheet(sheetState, false));
