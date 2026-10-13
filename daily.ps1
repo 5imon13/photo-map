@@ -12,7 +12,7 @@ New-Item -ItemType Directory -Force logs | Out-Null
 Start-Transcript -Path "logs\$today.log" -Append | Out-Null
 
 try {
-    git pull --rebase --quiet
+    git pull --rebase --autostash --quiet
     if ($LASTEXITCODE) { throw "git pull failed" }
 
     & .\.venv\Scripts\python.exe update.py
