@@ -16,6 +16,8 @@
   .updated details { display: inline; cursor: pointer; }
   .updated details[open] { display: block; margin-top: 4px; }
   .updated .failed { color: #a33; }
+  .alert { font-size: 12px; background: #fdf1cf; border: 1px solid #e8c766; color: #6b5200; border-radius: 6px; padding: 6px 8px; margin-bottom: 8px; }
+  .alert small { display: block; color: #8a7340; margin-top: 2px; word-break: break-all; }
   .row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; align-items: center; }
   .chip { font-size: 12px; padding: 3px 9px; border-radius: 12px; background: #fff; border: 1px solid #ccc; cursor: pointer; user-select: none; }
   .chip.off { opacity: .35; }
@@ -40,6 +42,7 @@
 <body>
 <div id="side">
   <h1>📷 Photo Map Taiwan</h1>
+  <div id="alerts"></div>
   <div class="updated">Updated __UPDATED__ · <details id="sources"><summary>資料來源</summary></details></div>
   <div class="row" id="regions"></div>
   <div class="row" id="filters"></div>
@@ -54,6 +57,7 @@
 <script>
 const SPOTS = __SPOTS__;
 const SOURCE_STATUS = __STATUS__;
+const ALERTS = __ALERTS__;
 const COLORS = { flower: "#e0569b", foliage: "#d9541e", grass: "#b59a45", bird: "#2a8fbd",
                  event: "#7b4fd6", landscape: "#2f9e6e", other: "#888" };
 const LABELS = { flower: "花", foliage: "楓紅", grass: "芒草", bird: "鳥", event: "活動", landscape: "風景", other: "其他" };
@@ -173,6 +177,10 @@ Object.keys(COLORS).filter(c => SPOTS.some(s => s.category === c)).forEach(c => 
 });
 
 hideExpired.onchange = render;
+
+document.getElementById("alerts").innerHTML = ALERTS.map(a =>
+  `<div class="alert">⚠ 資料來源「${esc(a.source)}」已連續 ${a.bad_runs} 次無法取得（自 ${esc(a.bad_since)}），爬蟲程式可能需要更新。
+   <small>上次正常：${esc(a.last_ok || "無紀錄")} · ${esc(a.last_problem)}</small></div>`).join("");
 
 document.getElementById("sources").insertAdjacentHTML("beforeend", Object.entries(SOURCE_STATUS).map(([name, st]) =>
   `<div class="${st.startsWith("FAILED") ? "failed" : ""}">${esc(name)}：${st.startsWith("FAILED") ? "暫時無法取得" : esc(st.replace(" items", " 則"))}</div>`).join(""));
