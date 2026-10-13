@@ -19,7 +19,7 @@ try {
     & .\.venv\Scripts\python.exe update.py
     if ($LASTEXITCODE) { throw "update.py failed" }
 
-    git add data/spots.json data/source_health.json docs/index.html
+    git add data/spots.json data/seasonal.json data/source_health.json docs/index.html
     git diff --cached --quiet
     if ($LASTEXITCODE) {
         git commit --quiet -m "Update $stamp"

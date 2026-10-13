@@ -75,6 +75,11 @@
   .sources a { display: block; font-size: 12px; margin-top: 4px; color: #1a5fb4; }
   .sources a:not([href]) { color: #555; }
   details.score summary { cursor: pointer; font-size: 12px; color: #666; margin-top: 6px; }
+  #seasonal { margin-top: 14px; border-top: 1px dashed #ccc; padding-top: 10px; }
+  #seasonal summary { cursor: pointer; font-size: 14px; font-weight: 600; color: #444; padding: 4px 0; }
+  #seasonal .intro { margin: 2px 0 8px; }
+  .spot.seasonal { background: transparent; border: 1px dashed #bbb; border-left-width: 5px; border-left-style: dashed; }
+  .tag.season { background: #e8eef7; color: #36507a; }
 
   /* Phones: full-screen map with a draggable bottom sheet */
   @media (max-width: 700px) {
@@ -124,6 +129,11 @@
         <div class="row"><label class="toggle"><input type="checkbox" id="hideExpired" checked> 隱藏已結束</label></div>
       </div>
       <div id="list"></div>
+      <details id="seasonal" hidden>
+        <summary></summary>
+        <div class="muted intro">依往年經驗通常這時候值得拍，但本週沒有報導確認。由 AI 列出，出發前請先查最新狀況。</div>
+        <div id="seasonalList"></div>
+      </details>
     </div>
     <div id="detail"></div>
   </div>
@@ -131,6 +141,7 @@
 <div id="map"></div>
 <script>
 const SPOTS = __SPOTS__;
+const SEASONAL = __SEASONAL__;  // "usually in season now" (AI, unconfirmed); shown only when that section is open
 const SOURCE_STATUS = __STATUS__;
 const ALERTS = __ALERTS__;
 const COLORS = { flower: "#e0569b", foliage: "#d9541e", grass: "#b59a45", bird: "#2a8fbd",
@@ -202,6 +213,17 @@ SPOTS.forEach(s => {
   s.marker.on("click", () => showDetail(s));
 });
 
+const seasonalBox = document.getElementById("seasonal");
+SEASONAL.forEach(s => {
+  s.seasonal = true;
+  s.marker = L.circleMarker([s.lat, s.lng], {
+    radius: 9, color: COLORS[s.category], weight: 2, dashArray: "4 3", fillColor: "#fff", fillOpacity: .6 });
+  if (!mobile.matches) s.marker.bindTooltip(`往年此時：${s.subject} · ${s.location_name}`);
+  s.marker.on("click", () => showDetail(s));
+});
+seasonalBox.addEventListener("toggle", render);
+const findSpot = id => SPOTS.find(x => x.id === id) || SEASONAL.find(x => x.id === id);
+
 function visible(s) {
   return enabled.has(s.category) && (region === "全部" || s.region === region) && !(hideExpired.checked && s.expired);
 }
@@ -222,6 +244,23 @@ function render() {
     list.appendChild(el);
   });
   document.getElementById("count").textContent = `${shown.length} / ${SPOTS.length} 個地點`;
+
+  const seasonalShown = SEASONAL.filter(s => enabled.has(s.category) && (region === "全部" || s.region === region));
+  seasonalBox.hidden = !seasonalShown.length;
+  seasonalBox.querySelector("summary").textContent = `往年此時也值得拍（${seasonalShown.length}）`;
+  SEASONAL.forEach(s => seasonalBox.open && seasonalShown.includes(s) ? s.marker.addTo(map) : s.marker.remove());
+  const slist = document.getElementById("seasonalList");
+  slist.innerHTML = "";
+  seasonalShown.forEach(s => {
+    const el = document.createElement("div");
+    el.className = "spot seasonal";
+    el.style.borderLeftColor = COLORS[s.category];
+    el.innerHTML = `<div class="t">${esc(s.subject)} · ${esc(s.location_name)}</div>
+      <div class="m">${esc(s.county)}<span class="tag season">${esc(s.typical_window)}</span>${me ? `<span class="tag">${km(s).toFixed(0)} km</span>` : ""}</div>
+      <div class="s">${esc(s.summary)}</div>`;
+    el.onclick = () => showDetail(s);
+    slist.appendChild(el);
+  });
   const active = (region !== "全部") + (enabled.size < Object.keys(COLORS).length) + !hideExpired.checked;
   document.getElementById("filterBtn").innerHTML = `篩選${active ? ` <span class="n">${active}</span>` : ""} ▾`;
 }
@@ -452,22 +491,28 @@ function showDetail(s, fromHistory = false) {
   const el = document.getElementById("detail");
   el.style.display = "block";
   const p = s.score_parts;
+  const intro = s.seasonal
+    ? `<div class="d-meta">${esc(s.county)}<span class="tag season">${esc(s.typical_window)}</span></div>
+       <div class="card">${esc(s.summary)}
+         <div class="note">往年此時：依往年經驗列出，本週沒有報導確認目前狀況。由 AI 提供，出發前請先查最新消息。</div></div>`
+    : "";
   el.innerHTML = `<button class="back" id="back">← 返回列表</button>
     <div class="d-title" style="border-left-color:${COLORS[s.category]}">${esc(s.subject)} · ${esc(s.location_name)}</div>
-    <div class="d-meta">${meta(s)}</div>
+    ${intro || `<div class="d-meta">${meta(s)}</div>
     <div class="card">${esc(s.summary)}
       ${s.est_end ? `<div class="note">⚠ 預估結束 ${esc(s.est_end)} 為 AI 推估，非官方資訊，出發前請確認最新狀況。<br>依據：${esc(s.est_basis)}</div>` : ""}
       <details class="score"><summary>分數 ${s.score_value} 怎麼算</summary>
         <div class="muted">= 景色 ${p.appeal}×0.5 + 時機 ${p.timing}×0.4 + 熱度 ${p.buzz}×0.1<br>
-        景色：${esc(s.appeal_reason)}<br>熱度：${s.articles.length} 篇資料</div></details></div>
+        景色：${esc(s.appeal_reason)}<br>熱度：${s.articles.length} 篇資料</div></details></div>`}
     <div id="weather"><div class="card muted">載入天氣中…</div></div>
     <div id="sky"></div>
     ${s.lens || s.tips ? `<div class="card"><h3>📷 拍攝建議 <small>AI 建議，僅供參考</small></h3><div class="kv">
       ${s.lens ? `<b>鏡頭</b><span>${esc(s.lens)}</span>` : ""}
       ${s.tips ? `<b>技巧</b><span>${esc(s.tips)}</span>` : ""}</div></div>` : ""}
-    <div class="card sources"><h3>資料來源</h3>${s.articles.map(a => a.link
+    ${s.seasonal ? "" : `<div class="card sources"><h3>資料來源</h3>${s.articles.map(a => a.link
       ? `<a href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.title)} · ${esc(a.source)}</a>`
-      : `<a>${esc(a.title)} · ${esc(a.source)}</a>`).join("")}</div>`;
+      : `<a>${esc(a.title)} · ${esc(a.source)}</a>`).join("")}</div>`}`;
+  if (s.seasonal && !seasonalBox.open) { seasonalBox.open = true; render(); }  // show its marker on the map
   document.getElementById("back").onclick = () => history.state?.spot ? history.back() : closeDetail();
   renderDay(s);
   fetchWeather(s).then(w => { if (current === s) renderWeather(s, w); })
@@ -498,7 +543,7 @@ function closeDetail() {
 }
 
 addEventListener("popstate", () => {
-  const s = SPOTS.find(x => x.id === location.hash.slice(1));
+  const s = findSpot(location.hash.slice(1));
   s ? showDetail(s, true) : closeDetail();
 });
 
@@ -563,7 +608,7 @@ nearBtn.onclick = () => {
 render();
 setSheet("half", false);
 // A link with #<spot id> opens that spot directly, so a spot can be shared
-const linked = SPOTS.find(s => s.id === location.hash.slice(1));
+const linked = findSpot(location.hash.slice(1));
 if (linked) {
   history.replaceState(null, "", location.pathname);  // back from a shared link returns to the list
   showDetail(linked);

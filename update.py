@@ -21,6 +21,7 @@ from sources import Article, fetch_articles
 ROOT = Path(__file__).parent
 SPOTS_FILE = ROOT / "data" / "spots.json"
 HEALTH_FILE = ROOT / "data" / "source_health.json"
+SEASONAL_FILE = ROOT / "data" / "seasonal.json"
 WORK_DIR = ROOT / "data" / "work"
 SITE_FILE = ROOT / "docs" / "index.html"
 TAIWAN = timezone(timedelta(hours=8))  # cloud machines run in UTC
@@ -30,11 +31,12 @@ def now() -> datetime:
     return datetime.now(TAIWAN)
 
 
-def build_site(spots: list[dict], status: dict[str, str], alerts: list[dict]) -> None:
+def build_site(spots: list[dict], seasonal: list[dict], status: dict[str, str], alerts: list[dict]) -> None:
     # "Updated" = when the spot data was last refreshed, even when only the page is rebuilt
     data_time = datetime.fromtimestamp(SPOTS_FILE.stat().st_mtime, TAIWAN)
     template = (ROOT / "map_template.html").read_text(encoding="utf-8")
     page = (template.replace("__SPOTS__", json.dumps(spots, ensure_ascii=False))
+                    .replace("__SEASONAL__", json.dumps(seasonal, ensure_ascii=False))
                     .replace("__STATUS__", json.dumps(status, ensure_ascii=False))
                     .replace("__ALERTS__", json.dumps(alerts, ensure_ascii=False))
                     .replace("__UPDATED__", data_time.strftime("%Y-%m-%d %H:%M")))
@@ -42,18 +44,21 @@ def build_site(spots: list[dict], status: dict[str, str], alerts: list[dict]) ->
     SITE_FILE.write_text(page, encoding="utf-8")
 
 
-def save(known: list[dict], extracted: list[dict], status: dict[str, str]) -> None:
+def save(known: list[dict], extracted: list[dict], seasonal: list[dict], status: dict[str, str]) -> None:
     spots = store.merge(known, extracted, now().date())
+    seasonal = store.prepare_seasonal(seasonal)
+    print(f"Seasonal (usually in season now): {len(seasonal)}")
     print(f"Extracted {len(extracted)} spots this run, {len(spots)} on the map\n")
     for s in spots:
         p = s["score_parts"]
         print(f"  {s['score_value']:.1f} {s['subject']} @ {s['location_name']} ({s['region']}) "
               f"- {s['status']}  [appeal {p['appeal']} / timing {p['timing']} / buzz {p['buzz']}]")
     SPOTS_FILE.write_text(json.dumps(spots, ensure_ascii=False, indent=2), encoding="utf-8")
+    SEASONAL_FILE.write_text(json.dumps(seasonal, ensure_ascii=False, indent=2), encoding="utf-8")
     alerts = health.update(HEALTH_FILE, status, now())
     for a in alerts:
         print(f"WARNING: source {a['source']} bad for {a['bad_runs']} runs since {a['bad_since']}: {a['last_problem']}")
-    build_site(spots, status, alerts)
+    build_site(spots, seasonal, status, alerts)
     print(f"\nWrote {SPOTS_FILE.relative_to(ROOT)} and {SITE_FILE.relative_to(ROOT)}")
 
 
@@ -74,12 +79,12 @@ def apply() -> None:
     articles = [Article(**a) for a in json.loads((WORK_DIR / "headlines.json").read_text(encoding="utf-8"))]
     raw = json.loads((WORK_DIR / "extracted.json").read_text(encoding="utf-8"))
     status = json.loads((WORK_DIR / "status.json").read_text(encoding="utf-8"))
-    save(store.load(SPOTS_FILE), attach_articles(validate(raw), articles), status)
+    save(store.load(SPOTS_FILE), attach_articles(validate(raw), articles), validate(raw, "seasonal"), status)
 
 
 def rebuild() -> None:
     status, alerts = health.last_status(HEALTH_FILE)
-    build_site(store.load(SPOTS_FILE), status, alerts)
+    build_site(store.load(SPOTS_FILE), store.load(SEASONAL_FILE), status, alerts)
     print(f"Rebuilt {SITE_FILE.relative_to(ROOT)}")
 
 
@@ -88,7 +93,8 @@ def run_local() -> None:
     known = store.load(SPOTS_FILE)
     articles, status = fetch_articles()
     print(f"Fetched {len(articles)} items, {len(known)} known spots")
-    save(known, extract_spots(articles, known, now().date()), status)
+    spots, seasonal = extract_spots(articles, known, now().date())
+    save(known, spots, seasonal, status)
 
 
 if __name__ == "__main__":

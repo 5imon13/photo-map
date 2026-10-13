@@ -2,37 +2,43 @@
   "Google News": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-10-13 16:16",
-    "last_problem": ""
+    "last_ok": "2026-10-13 16:54",
+    "last_problem": "",
+    "last_status": "161 items"
   },
   "觀光署活動": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-10-13 16:16",
-    "last_problem": ""
+    "last_ok": "2026-10-13 16:54",
+    "last_problem": "",
+    "last_status": "86 items"
   },
   "花IN台北": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-10-13 16:16",
-    "last_problem": ""
+    "last_ok": "2026-10-13 16:54",
+    "last_problem": "",
+    "last_status": "8 items"
   },
   "國家公園": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-10-13 16:16",
-    "last_problem": ""
+    "last_ok": "2026-10-13 16:54",
+    "last_problem": "",
+    "last_status": "35 items"
   },
   "森林遊樂區": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-10-13 16:16",
-    "last_problem": ""
+    "last_ok": "2026-10-13 16:54",
+    "last_problem": "",
+    "last_status": "8 items"
   },
   "PTT": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-10-13 16:16",
-    "last_problem": ""
+    "last_ok": "2026-10-13 16:54",
+    "last_problem": "",
+    "last_status": "7 items"
   }
 }

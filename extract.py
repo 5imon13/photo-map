@@ -46,9 +46,31 @@ SPOT_SCHEMA = {
                              "date_start", "date_end", "est_end", "est_basis", "summary", "lens", "tips", "appeal", "appeal_reason", "article_ids"],
                 "additionalProperties": False,
             },
-        }
+        },
+        "seasonal": {
+            "type": "array",
+            "description": "Classic spots usually in season now (from past years), not among this run's spots",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "subject": {"type": "string"},
+                    "category": {"type": "string", "enum": CATEGORIES},
+                    "location_name": {"type": "string"},
+                    "county": {"type": "string"},
+                    "lat": {"type": "number"},
+                    "lng": {"type": "number"},
+                    "typical_window": {"type": "string", "description": "Usual season, e.g. 往年10月中–11月"},
+                    "summary": {"type": "string", "description": "One general sentence, Traditional Chinese; no claims about current conditions"},
+                    "lens": {"type": "string"},
+                    "tips": {"type": "string"},
+                },
+                "required": ["subject", "category", "location_name", "county", "lat", "lng",
+                             "typical_window", "summary", "lens", "tips"],
+                "additionalProperties": False,
+            },
+        },
     },
-    "required": ["spots"],
+    "required": ["spots", "seasonal"],
     "additionalProperties": False,
 }
 
@@ -88,7 +110,14 @@ Rules:
   trail names or facilities that are not in the items; keep place-specific claims to what the items say.
 - appeal: rate only the scene itself, not timing or popularity.
   5 = rare or spectacular (large fireworks, rare bird, famous peak bloom), 4 = very photogenic seasonal scene,
-  3 = nice but common, 2 = minor (small local show, commercial event), 1 = barely photogenic."""
+  3 = nice but common, 2 = minor (small local show, commercial event), 1 = barely photogenic.
+
+Also fill "seasonal": up to 8 well-known Taiwan photo spots that in typical past years are in season now or within
+the next 3 weeks (silver grass, autumn leaves, bald cypress, migratory birds, sea of clouds, seasonal flowers...),
+based on your general knowledge, and NOT already among the spots you extracted above (different place or subject).
+Prefer reliably seasonal, widely known scenes spread across regions. typical_window gives the usual season
+(e.g. "往年10月中–11月"). summary describes the scene in general terms and must not claim current conditions.
+lens and tips follow the same rules as above. Leave "seasonal" empty rather than guessing obscure places."""
 
 
 def build_prompt(articles: list[Article], known: list[dict], today: date) -> str:
@@ -100,12 +129,12 @@ def build_prompt(articles: list[Article], known: list[dict], today: date) -> str
             "\n\nItems:\n" + "\n".join(lines))
 
 
-def validate(raw: dict) -> list[dict]:
-    """Check extraction output against SPOT_SCHEMA; drop malformed spots instead of failing the run."""
-    item = SPOT_SCHEMA["properties"]["spots"]["items"]
+def validate(raw: dict, key: str = "spots") -> list[dict]:
+    """Check one list of the extraction output against SPOT_SCHEMA; drop malformed entries instead of failing the run."""
+    item = SPOT_SCHEMA["properties"][key]["items"]
     types = {"string": str, "number": (int, float), "integer": int, "array": list}
     valid = []
-    for spot in raw.get("spots", []):
+    for spot in raw.get(key, []):
         problems = [k for k, rule in item["properties"].items()
                     if not isinstance(spot.get(k), types[rule["type"]])
                     or ("enum" in rule and spot[k] not in rule["enum"])]
@@ -125,7 +154,7 @@ def attach_articles(spots: list[dict], articles: list[Article]) -> list[dict]:
     return spots
 
 
-def extract_spots(articles: list[Article], known: list[dict], today: date) -> list[dict]:
+def extract_spots(articles: list[Article], known: list[dict], today: date) -> tuple[list[dict], list[dict]]:
     """Local mode: run the extraction through `claude -p`."""
     claude = shutil.which("claude")
     if not claude:
@@ -144,4 +173,5 @@ def extract_spots(articles: list[Article], known: list[dict], today: date) -> li
         raise RuntimeError(f"claude -p returned no structured output: {output.get('result')}")
 
     print(f"Done in {output.get('duration_ms', 0) / 1000:.0f}s")
-    return attach_articles(validate(output["structured_output"]), articles)
+    raw = output["structured_output"]
+    return attach_articles(validate(raw), articles), validate(raw, "seasonal")

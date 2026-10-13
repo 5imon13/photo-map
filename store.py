@@ -1,4 +1,5 @@
 """Spot history: merge each run's extraction into data/spots.json, score, and expire old spots."""
+import hashlib
 import json
 import uuid
 from datetime import date
@@ -111,3 +112,11 @@ def merge(existing: list[dict], extracted: list[dict], today: date) -> list[dict
         score(s, today)
     spots.sort(key=lambda s: (s["score_value"], s["last_seen"]), reverse=True)
     return spots
+
+
+def prepare_seasonal(items: list[dict]) -> list[dict]:
+    """"Usually in season now" spots: replaced every run, never merged into the history or scored."""
+    for it in items:
+        key = f"{it['subject']}|{it['location_name']}".encode("utf-8")
+        it.update(id="s" + hashlib.sha1(key).hexdigest()[:7], region=region_of(it["county"]))
+    return items
