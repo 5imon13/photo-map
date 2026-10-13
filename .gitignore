@@ -4,3 +4,4 @@ data/work/
 data/*_backup.json
 map.html
 .env
+logs/
