@@ -2,79 +2,131 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Photo Map Taiwan</title>
+<meta name="description" content="台灣值得拍攝的花況、楓紅、鳥況與活動地圖">
+<meta name="theme-color" content="#265440">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Photo Map">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.9.0/suncalc.min.js"></script>
 <style>
   * { box-sizing: border-box; }
-  body { margin: 0; font-family: system-ui, "Microsoft JhengHei", sans-serif; display: flex; height: 100vh; background: #f6f5f2; color: #222; }
-  #side { width: 380px; overflow-y: auto; padding: 16px; border-right: 1px solid #ddd; }
+  html, body { height: 100%; }
+  body { margin: 0; font-family: system-ui, "Microsoft JhengHei", sans-serif; display: flex; height: 100vh; height: 100dvh;
+         background: #f6f5f2; color: #222; -webkit-text-size-adjust: 100%; }
+  #side { width: 380px; display: flex; flex-direction: column; border-right: 1px solid #ddd; background: #f6f5f2; }
+  #sheet-head { padding: 14px 16px 6px; }
+  #sheet-body { flex: 1; overflow-y: auto; padding: 0 16px 16px; overscroll-behavior: contain; }
   #map { flex: 1; }
+  .handle { display: none; }
   h1 { font-size: 18px; margin: 0 0 4px; }
-  .updated { font-size: 12px; color: #777; margin-bottom: 12px; }
+  .head-row { display: flex; align-items: center; gap: 6px; margin: 6px 0 2px; }
+  .head-row #count { flex: 1; font-size: 12px; color: #777; }
+  .updated { font-size: 12px; color: #777; margin-bottom: 8px; }
   .updated details { display: inline; cursor: pointer; }
   .updated details[open] { display: block; margin-top: 4px; }
   .updated .failed { color: #a33; }
   .alert { font-size: 12px; background: #fdf1cf; border: 1px solid #e8c766; color: #6b5200; border-radius: 6px; padding: 6px 8px; margin-bottom: 8px; }
   .alert small { display: block; color: #8a7340; margin-top: 2px; word-break: break-all; }
   .row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; align-items: center; }
-  .chip { font-size: 12px; padding: 3px 9px; border-radius: 12px; background: #fff; border: 1px solid #ccc; cursor: pointer; user-select: none; }
+  .chip { font: inherit; font-size: 12px; padding: 3px 9px; border-radius: 14px; background: #fff; border: 1px solid #ccc;
+          cursor: pointer; user-select: none; color: inherit; -webkit-tap-highlight-color: transparent; }
   .chip.off { opacity: .35; }
   .chip.on { background: #222; color: #fff; border-color: #222; }
   .toggle { font-size: 12px; color: #444; display: flex; align-items: center; gap: 4px; cursor: pointer; }
-  #count { font-size: 12px; color: #777; margin: 4px 0 8px; }
+  #filterBtn { display: none; }
+  #filterBtn .n { display: inline-block; min-width: 16px; padding: 0 4px; border-radius: 8px; background: #265440; color: #fff; font-size: 11px; margin-left: 2px; }
   .spot { background: #fff; border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; cursor: pointer; border-left: 5px solid #999; }
   .spot:hover { background: #fafafa; }
   .spot.old { opacity: .6; }
   .spot .t { font-weight: 600; }
   .spot .m { font-size: 12px; color: #666; margin: 2px 0 4px; }
   .spot .s { font-size: 13px; }
-  .tag { font-size: 11px; padding: 0 5px; border-radius: 4px; background: #eee; margin-left: 4px; }
+  .tag { font-size: 11px; padding: 0 5px; border-radius: 4px; background: #eee; margin-left: 4px; white-space: nowrap; }
   .tag.exp { background: #f3d6d6; color: #a33; }
   .tag.maybe { background: #f7ecc6; color: #8a6400; }
 
   /* Detail panel */
   #detail { display: none; }
-  .back { font-size: 13px; color: #555; cursor: pointer; margin-bottom: 10px; display: inline-block; }
+  .back { font: inherit; font-size: 13px; color: #555; cursor: pointer; margin-bottom: 8px; padding: 4px 0; background: none; border: 0; }
   .d-title { font-size: 17px; font-weight: 700; margin: 0 0 2px; padding-left: 8px; border-left: 5px solid #999; }
   .d-meta { font-size: 12px; color: #666; margin: 4px 0 8px; }
   .card { background: #fff; border-radius: 8px; padding: 10px 12px; margin-bottom: 10px; font-size: 13px; }
-  .card h3 { font-size: 13px; margin: 0 0 6px; color: #444; display: flex; justify-content: space-between; align-items: baseline; }
+  .card h3 { font-size: 13px; margin: 0 0 6px; color: #444; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
   .card h3 small { font-weight: normal; color: #999; font-size: 11px; }
   .note { font-size: 12px; color: #6b5200; background: #fbf4dc; border-radius: 4px; padding: 4px 6px; margin-top: 6px; }
   .muted { color: #888; font-size: 12px; }
-  .kv { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; }
+  .kv { display: grid; grid-template-columns: auto 1fr; gap: 3px 10px; }
   .kv b { font-weight: 600; color: #555; white-space: nowrap; }
-  .days { display: flex; gap: 4px; overflow-x: auto; margin-bottom: 8px; }
-  .day { flex: 0 0 auto; text-align: center; padding: 4px 6px; border-radius: 6px; border: 1px solid #e3e3e3; cursor: pointer; font-size: 11px; min-width: 44px; }
+  .days { display: flex; gap: 4px; overflow-x: auto; margin-bottom: 8px; scrollbar-width: none; }
+  .day { flex: 0 0 auto; text-align: center; padding: 4px 6px; border-radius: 6px; border: 1px solid #e3e3e3; cursor: pointer;
+         font-size: 11px; min-width: 46px; -webkit-tap-highlight-color: transparent; }
   .day.on { border-color: #222; background: #222; color: #fff; }
   .day .ic { font-size: 18px; line-height: 1.3; }
   .hint { display: inline-block; font-size: 12px; padding: 1px 6px; border-radius: 4px; background: #eef5ee; color: #2d6a3a; margin: 2px 4px 2px 0; }
   .hint.bad { background: #f3eeee; color: #8a4b4b; }
-  .sources a { display: block; font-size: 12px; margin-top: 3px; color: #1a5fb4; }
+  .sources a { display: block; font-size: 12px; margin-top: 4px; color: #1a5fb4; }
   .sources a:not([href]) { color: #555; }
-  details.score summary { cursor: pointer; font-size: 12px; color: #666; }
-  @media (max-width: 700px) { body { flex-direction: column-reverse; } #side { width: 100%; height: 55vh; border: 0; } }
+  details.score summary { cursor: pointer; font-size: 12px; color: #666; margin-top: 6px; }
+
+  /* Phones: full-screen map with a draggable bottom sheet */
+  @media (max-width: 700px) {
+    body { display: block; }
+    #map { position: fixed; inset: 0; }
+    #side { position: fixed; left: 0; right: 0; bottom: 0; z-index: 1000; width: auto; height: 92vh; height: 92dvh;
+            border: 0; border-radius: 16px 16px 0 0; box-shadow: 0 -2px 16px rgba(0,0,0,.18); will-change: transform; }
+    #sheet-head { padding: 0 16px 6px; touch-action: none; cursor: grab; }
+    .handle { display: block; width: 100%; padding: 8px 0 6px; border: 0; background: none; cursor: grab; }
+    .handle::before { content: ""; display: block; width: 40px; height: 5px; border-radius: 3px; background: #c8c8c8; margin: 0 auto; }
+    h1 { font-size: 16px; }
+    #sheet-body { padding-bottom: calc(16px + env(safe-area-inset-bottom)); }
+    #filterBtn { display: inline-block; }
+    #filters-panel { display: none; }
+    #filters-panel.open { display: block; }
+    .chip { font-size: 14px; padding: 8px 14px; min-height: 38px; border-radius: 19px; }
+    .toggle { font-size: 14px; min-height: 38px; }
+    .toggle input { width: 20px; height: 20px; }
+    .spot { padding: 12px 14px; }
+    .spot .s { font-size: 14px; }
+    .card { font-size: 14px; }
+    .day { min-width: 52px; padding: 6px 8px; font-size: 12px; }
+    .back { font-size: 15px; padding: 8px 0; }
+    .sources a { padding: 4px 0; font-size: 13px; }
+    .leaflet-control-layers { margin-top: calc(10px + env(safe-area-inset-top)) !important; }
+  }
 </style>
 </head>
 <body>
 <div id="side">
-  <div id="listview">
+  <div id="sheet-head">
+    <button class="handle" id="handle" aria-label="展開或收合清單"></button>
     <h1>📷 Photo Map Taiwan</h1>
-    <div id="alerts"></div>
-    <div class="updated">Updated __UPDATED__ · <details id="sources"><summary>資料來源</summary></details></div>
-    <div class="row" id="regions"></div>
-    <div class="row" id="filters"></div>
-    <div class="row">
-      <label class="toggle"><input type="checkbox" id="hideExpired" checked> 隱藏已結束</label>
-      <span class="chip" id="nearBtn">📍 依距離排序</span>
+    <div class="head-row">
+      <span id="count"></span>
+      <button class="chip" id="nearBtn">📍 依距離排序</button>
+      <button class="chip" id="filterBtn" aria-expanded="false">篩選 ▾</button>
     </div>
-    <div id="count"></div>
-    <div id="list"></div>
   </div>
-  <div id="detail"></div>
+  <div id="sheet-body">
+    <div id="listview">
+      <div id="alerts"></div>
+      <div class="updated">最後更新 __UPDATED__ · <details id="sources"><summary>資料來源</summary></details></div>
+      <div id="filters-panel">
+        <div class="row" id="regions"></div>
+        <div class="row" id="filters"></div>
+        <div class="row"><label class="toggle"><input type="checkbox" id="hideExpired" checked> 隱藏已結束</label></div>
+      </div>
+      <div id="list"></div>
+    </div>
+    <div id="detail"></div>
+  </div>
 </div>
 <div id="map"></div>
 <script>
@@ -89,6 +141,7 @@ const REGIONS = ["全部", "北部", "中部", "南部", "東部", "離島"];
 const REGION_VIEW = { "全部": [[23.7, 120.95], 8], "北部": [[24.95, 121.45], 10], "中部": [[24.0, 120.85], 9],
                       "南部": [[22.95, 120.45], 9], "東部": [[23.7, 121.45], 9], "離島": [[24.3, 119.5], 8] };
 const TZ = "Asia/Taipei";
+const mobile = matchMedia("(max-width: 700px)");
 
 const ymd = d => d.toLocaleDateString("sv", { timeZone: TZ });  // YYYY-MM-DD in Taiwan time
 const today = ymd(new Date());
@@ -111,7 +164,8 @@ let me = null;
 const enabled = new Set(Object.keys(COLORS));
 const hideExpired = document.getElementById("hideExpired");
 
-const map = L.map("map").setView(...REGION_VIEW[region]);
+// Phones use pinch-zoom, so the +/- buttons are hidden there
+const map = L.map("map", { zoomControl: !mobile.matches }).setView(...REGION_VIEW[region]);
 const NLSC = "https://wmts.nlsc.gov.tw/wmts/{layer}/default/GoogleMapsCompatible/{z}/{y}/{x}";
 const NLSC_ATTR = "&copy; 內政部國土測繪中心";
 const baseLayers = {
@@ -144,7 +198,7 @@ SPOTS.forEach(s => {
   s.marker = L.circleMarker([s.lat, s.lng], {
     radius: 5 + s.score * 2, color: "#fff", weight: 2, fillColor: COLORS[s.category],
     fillOpacity: s.expired || s.maybeOver ? .3 : Math.max(.35, .9 - s.age * .04) });
-  s.marker.bindTooltip(`${s.subject} · ${s.location_name}`);
+  if (!mobile.matches) s.marker.bindTooltip(`${s.subject} · ${s.location_name}`);  // no hover on touch screens
   s.marker.on("click", () => showDetail(s));
 });
 
@@ -168,6 +222,83 @@ function render() {
     list.appendChild(el);
   });
   document.getElementById("count").textContent = `${shown.length} / ${SPOTS.length} 個地點`;
+  const active = (region !== "全部") + (enabled.size < Object.keys(COLORS).length) + !hideExpired.checked;
+  document.getElementById("filterBtn").innerHTML = `篩選${active ? ` <span class="n">${active}</span>` : ""} ▾`;
+}
+
+/* ---------- Bottom sheet (phones) ---------- */
+
+const side = document.getElementById("side");
+const sheetHead = document.getElementById("sheet-head");
+const sheetBody = document.getElementById("sheet-body");
+let sheetState = "half";
+
+function safeBottom() {
+  const probe = document.createElement("div");
+  probe.style.cssText = "position:fixed;bottom:0;height:env(safe-area-inset-bottom);visibility:hidden";
+  document.body.appendChild(probe);
+  const h = probe.offsetHeight;
+  probe.remove();
+  return h;
+}
+
+function snapHeights() {  // visible height of the sheet in each state
+  return { collapsed: sheetHead.offsetHeight + safeBottom(), half: Math.round(innerHeight * 0.5), full: side.offsetHeight };
+}
+
+function setSheet(state, animate = true) {
+  if (!mobile.matches) { side.style.transform = ""; return; }
+  sheetState = state;
+  side.style.transition = animate ? "transform .28s cubic-bezier(.2,.8,.2,1)" : "none";
+  side.style.transform = `translateY(${side.offsetHeight - snapHeights()[state]}px)`;
+  sheetBody.style.overflowY = state === "collapsed" ? "hidden" : "auto";
+}
+
+// Drag the sheet by its header; snap to the nearest state, or follow a fast flick
+(() => {
+  let startY = 0, startT = 0, lastY = 0, lastTime = 0, velocity = 0, dragging = false, moved = false;
+  const currentT = () => new DOMMatrixReadOnly(getComputedStyle(side).transform).m42;
+  sheetHead.addEventListener("pointerdown", e => {
+    if (!mobile.matches || (e.target.closest("button") && e.target.id !== "handle")) return;
+    dragging = true; moved = false;
+    startY = lastY = e.clientY; startT = currentT(); lastTime = e.timeStamp; velocity = 0;
+    side.style.transition = "none";
+    sheetHead.setPointerCapture(e.pointerId);
+  });
+  sheetHead.addEventListener("pointermove", e => {
+    if (!dragging) return;
+    const dy = e.clientY - startY;
+    if (Math.abs(dy) > 4) moved = true;
+    const h = snapHeights(), maxT = side.offsetHeight - h.collapsed;
+    side.style.transform = `translateY(${Math.min(maxT, Math.max(0, startT + dy))}px)`;
+    if (e.timeStamp > lastTime) velocity = (e.clientY - lastY) / (e.timeStamp - lastTime);
+    lastY = e.clientY; lastTime = e.timeStamp;
+  });
+  const end = () => {
+    if (!dragging) return;
+    dragging = false;
+    if (!moved) { setSheet(sheetState === "collapsed" ? "half" : sheetState === "half" ? "full" : "half"); return; }
+    const h = snapHeights(), shown = side.offsetHeight - currentT();
+    const order = ["collapsed", "half", "full"];
+    const nearest = order.reduce((a, b) => Math.abs(h[b] - shown) < Math.abs(h[a] - shown) ? b : a);
+    let target = nearest;
+    if (Math.abs(velocity) > 0.5) {  // flick: one step in the flick direction from where the sheet was
+      const i = order.indexOf(sheetState);
+      target = order[Math.max(0, Math.min(2, i + (velocity < 0 ? 1 : -1)))];
+    }
+    setSheet(target);
+  };
+  sheetHead.addEventListener("pointerup", end);
+  sheetHead.addEventListener("pointercancel", end);
+})();
+
+addEventListener("resize", () => setSheet(sheetState, false));
+mobile.addEventListener("change", () => location.reload());
+
+// Center the map on a spot within the part of the map that the sheet doesn't cover
+function focusMap(s) {
+  map.setView([s.lat, s.lng], Math.max(map.getZoom(), 11), { animate: false });
+  if (mobile.matches) map.panBy([0, snapHeights()[sheetState] / 2], { animate: false });
 }
 
 /* ---------- Light, night sky and weather ---------- */
@@ -255,7 +386,9 @@ function fetchWeather(s) {
       hourly: "cloud_cover_low,cloud_cover_mid,cloud_cover_high,precipitation_probability,visibility",
       daily: "weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max",
     });
-    weatherCache.set(s.id, fetch(url).then(r => r.ok ? r.json() : Promise.reject(r.status)));
+    const req = fetch(url).then(r => r.ok ? r.json() : Promise.reject(r.status));
+    req.catch(() => weatherCache.delete(s.id));  // retry next time instead of caching the failure
+    weatherCache.set(s.id, req);
   }
   return weatherCache.get(s.id);
 }
@@ -286,7 +419,7 @@ function cloudLine(x) {
 
 function weatherCard(s, w, day) {
   const d = w.daily, names = ["日", "一", "二", "三", "四", "五", "六"];
-  const strip = d.time.map((t, i) => `<div class="day ${t === day ? "on" : ""}" data-day="${t}">
+  const strip = d.time.map((t, i) => `<div class="day ${t === day ? "on" : ""}" data-day="${t}" role="button">
       ${i === 0 ? "今天" : "週" + names[noonOf(t).getDay()]}<div class="ic">${wmoIcon(d.weather_code[i])}</div>
       ${Math.round(d.temperature_2m_max[i])}°/${Math.round(d.temperature_2m_min[i])}°<br>☔${d.precipitation_probability_max[i] ?? "—"}%</div>`).join("");
   const st = SunCalc.getTimes(noonOf(day), s.lat, s.lng);
@@ -304,15 +437,19 @@ function weatherCard(s, w, day) {
 
 let current = null, currentDay = today;
 
-function showDetail(s, keepDay = false) {
+// Opening a spot adds a history entry, so the phone's back button / back gesture closes it
+function showDetail(s, fromHistory = false) {
+  if (!fromHistory) {
+    if (current) history.replaceState({ spot: s.id }, "", "#" + s.id);
+    else history.pushState({ spot: s.id }, "", "#" + s.id);
+  }
   current = s;
-  if (!keepDay) currentDay = today;
-  history.replaceState(null, "", "#" + s.id);
+  currentDay = today;
   document.getElementById("listview").style.display = "none";
   const el = document.getElementById("detail");
   el.style.display = "block";
   const p = s.score_parts;
-  el.innerHTML = `<span class="back" id="back">← 返回列表</span>
+  el.innerHTML = `<button class="back" id="back">← 返回列表</button>
     <div class="d-title" style="border-left-color:${COLORS[s.category]}">${esc(s.subject)} · ${esc(s.location_name)}</div>
     <div class="d-meta">${meta(s)}</div>
     <div class="card">${esc(s.summary)}
@@ -328,12 +465,13 @@ function showDetail(s, keepDay = false) {
     <div class="card sources"><h3>資料來源</h3>${s.articles.map(a => a.link
       ? `<a href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.title)} · ${esc(a.source)}</a>`
       : `<a>${esc(a.title)} · ${esc(a.source)}</a>`).join("")}</div>`;
-  document.getElementById("back").onclick = closeDetail;
+  document.getElementById("back").onclick = () => history.state?.spot ? history.back() : closeDetail();
   renderDay(s);
   fetchWeather(s).then(w => { if (current === s) renderWeather(s, w); })
     .catch(() => { if (current === s) document.getElementById("weather").innerHTML = `<div class="card muted">天氣資料暫時無法取得</div>`; });
-  document.getElementById("side").scrollTop = 0;
-  map.setView([s.lat, s.lng], Math.max(map.getZoom(), 11));
+  sheetBody.scrollTop = 0;
+  if (sheetState === "collapsed") setSheet("half");
+  focusMap(s);
 }
 
 function renderDay(s) {
@@ -352,16 +490,20 @@ function renderWeather(s, w) {
 
 function closeDetail() {
   current = null;
-  history.replaceState(null, "", location.pathname);
   document.getElementById("detail").style.display = "none";
   document.getElementById("listview").style.display = "block";
 }
+
+addEventListener("popstate", () => {
+  const s = SPOTS.find(x => x.id === location.hash.slice(1));
+  s ? showDetail(s, true) : closeDetail();
+});
 
 /* ---------- Filters and controls ---------- */
 
 const regionsEl = document.getElementById("regions");
 REGIONS.forEach(r => {
-  const chip = document.createElement("span");
+  const chip = document.createElement("button");
   chip.className = "chip" + (r === region ? " on" : "");
   chip.textContent = r;
   chip.onclick = () => {
@@ -375,7 +517,7 @@ REGIONS.forEach(r => {
 
 const filters = document.getElementById("filters");
 Object.keys(COLORS).filter(c => SPOTS.some(s => s.category === c)).forEach(c => {
-  const chip = document.createElement("span");
+  const chip = document.createElement("button");
   chip.className = "chip";
   chip.textContent = `${LABELS[c]} (${SPOTS.filter(s => s.category === c).length})`;
   chip.style.borderColor = COLORS[c];
@@ -384,6 +526,15 @@ Object.keys(COLORS).filter(c => SPOTS.some(s => s.category === c)).forEach(c => 
 });
 
 hideExpired.onchange = render;
+
+const filterBtn = document.getElementById("filterBtn");
+filterBtn.onclick = () => {
+  const panel = document.getElementById("filters-panel");
+  const open = panel.classList.toggle("open");
+  filterBtn.setAttribute("aria-expanded", open);
+  if (current) history.back();  // filters belong to the list view
+  if (open && sheetState === "collapsed") setSheet("half");
+};
 
 document.getElementById("alerts").innerHTML = ALERTS.map(a =>
   `<div class="alert">⚠ 資料來源「${esc(a.source)}」已連續 ${a.bad_runs} 次無法取得（自 ${esc(a.bad_since)}），爬蟲程式可能需要更新。
@@ -401,14 +552,19 @@ nearBtn.onclick = () => {
     nearBtn.textContent = "📍 依距離排序"; nearBtn.classList.add("on");
     meMarker = L.circleMarker([me.lat, me.lng], { radius: 7, color: "#fff", weight: 3, fillColor: "#1a73e8", fillOpacity: 1 })
       .bindTooltip("你的位置").addTo(map);
+    if (current) history.back();
     render();
   }, err => { nearBtn.textContent = "📍 無法定位"; alert("無法取得位置：" + err.message); });
 };
 
 render();
+setSheet("half", false);
 // A link with #<spot id> opens that spot directly, so a spot can be shared
 const linked = SPOTS.find(s => s.id === location.hash.slice(1));
-if (linked) showDetail(linked);
+if (linked) {
+  history.replaceState(null, "", location.pathname);  // back from a shared link returns to the list
+  showDetail(linked);
+}
 </script>
 </body>
 </html>
