@@ -4,16 +4,16 @@
     "category": "bird",
     "location_name": "恆春半島（墾丁社頂）",
     "county": "屏東縣",
-    "lat": 21.958,
-    "lng": 120.823,
+    "lat": 21.96,
+    "lng": 120.82,
     "status": "peak",
-    "date_start": "2026-10-09",
+    "date_start": "",
     "date_end": "",
     "est_end": "2026-10-25",
-    "est_basis": "灰面鵟鷹過境恆春通常在國慶前後達高峰，10月下旬結束",
-    "summary": "恆春半島正值灰面鵟鷹過境高峰，可拍清晨起鷹與傍晚落鷹。",
+    "est_basis": "灰面鵟鷹過境恆春的高峰在10月上中旬，月底前大多離開",
+    "summary": "恆春半島正值灰面鵟鷹過境季，清晨可以在社頂拍到起鷹，傍晚可以拍落鷹。",
     "appeal": 5,
-    "appeal_reason": "大量猛禽集結成鷹河，非常壯觀",
+    "appeal_reason": "大群猛禽起鷹、落鷹，壯觀又罕見",
     "articles": [
       {
         "title": "賞鳥如看戲恆春猛禽達人蔡乙榮追鷹40年不缺席| 地方",
@@ -34,74 +34,20 @@
     "score": 5
   },
   {
-    "subject": "波波草（紅地毯）",
-    "category": "grass",
-    "location_name": "杉林溪森林生態渡假園區",
-    "county": "南投縣",
-    "lat": 23.636,
-    "lng": 120.787,
-    "status": "peak",
-    "date_start": "2026-10-07",
-    "date_end": "",
-    "est_end": "2026-11-01",
-    "est_basis": "10/11報導全翻紅，波波草轉紅後約2-3週轉褐",
-    "summary": "杉林溪波波草已全數翻紅，像紅地毯一樣鋪滿園區，正是盛期。",
-    "appeal": 4,
-    "appeal_reason": "整片火紅圓球狀草叢，色彩飽和、畫面討喜",
-    "articles": [
-      {
-        "title": "國慶連假必去！杉林溪楓紅、銀杏變色3成 波波草鋪成紅地毯",
-        "source": "Yahoo新聞",
-        "link": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxQN0dwOUhITFRqS3F0QWlQWE5HWVhtZ1V4M2dSb0FTRDQ4NDd5Y2FvbHFtWGlycGJGc0RqTVVzcE5iM203a2JNczg2N2cwRTNvb0ZERzVlZGM4Q1BXV09hSWZURmZCTVpQd25YbHNnLW9nSi02blBQSUhVQ1VVUzhhYWZtWkdOUVFiNlFBR3czYndxUnJyNENudzRvZ1pxQThEVnlCa3lfX29pM1hDdVpfUVI2LUJaUHoyZEdWVl9Hc1ZKMzV3RUFrelFJdG5SVk5VQ0E5bGtIU2E2bkdNT01vUDRhZ2J1OTQ0R1R0bS1YT2gyZHRkMThBbURNOUpKWDdVcERDTmkzYURnQ1UzNDZHbEN6MWlQdER0eXRzaC1jcU8xYTJqbkVCOWV3UTVjcmJsdlJ0VGN5dnRtODBEbG90bHAtMnJoM1FndnNVaTVUWjZUWjFKcWU1RlJPdUV6V1pwNUxHd1NGdlBFM0dGSWdiUXlpd01NWlhP?oc=5"
-      },
-      {
-        "title": "秋意濃！杉林溪楓紅、銀杏轉色 波波草豔如紅毯",
-        "source": "自由時報",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9fWWQ4RWd2N0Mtdk5MT3h4UXU3WDNwenhjT2doR0JTYy00eHk4ak95a3pPTnFVdEpxWHNqVFVNX2NFSXdJUGhuQV9OOGtpSEVDeUZheml1MmZ1UGNOVmkwVUZBRlfSAWpBVV95cUxOaVo1OWRESTJrSWhXY0thdS1DX1hwa2ZjcFFJNF9Cc0lLdHM3N2EtZW5nNklJRHNodU1lek9fOHpybWJrbFhiZF94Z3I2NmQxbVpQdkxlTGUtRkVzQTFudDlvekoyOEpaVGV3?oc=5"
-      },
-      {
-        "title": "杉林溪楓葉已3成轉紅波波草豔如「紅毯」美極了- 綜合",
-        "source": "華視新聞網",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4tTmt2T2xnMUdMUzdxX2FWUG9JTlRWMEVSVEZKbzU0TzZ4RmVfMnZfMEJQTFZ1VTVEVWhhbExubXlLWmN0OHBmTlZrbUpmejh5c2s3NEFjYms2X2cwT3VMam0wbnNkZmNlbGctbnZYUms?oc=5"
-      },
-      {
-        "title": "波斯菊花海\"浪漫盛開\"一片粉 杉林溪波波草\"全翻紅\"│中視新聞 20261011",
-        "source": "中視全球資訊網",
-        "link": "https://news.google.com/rss/articles/CBMihANBVV95cUxQMnUwMlJnM2RkRWxmeHQybHNiSktFZjBlX3J5dDI4RVl1ZUtmblJCSGtSUGp3cUx3V2hQU2NNVWVOR3VGSHlWR2ZYbHlPclpySmkxYV9HOVhhUmQwdlVSTkhoR3lEYTFJZ0JjaThwb01Db3d4RFV4Q1cwWEZEaHdzaXlBdjF5cXBDM3BFeEVBZ3pWYm5TWFZYWl9MOUFvSU5haGNOTnhNUGRzdXg1S01GVTNndmtJSjZPcjlGS1ZpTGVyd2xyNy1xU2o2WE15THhNOGhpR2swWVZqZXE2N0VIbE1yb1AtRFRUY2lXMlAwUmpJUjhZR3pyZWJVRW8ybGlsaUhJZFQ4eVEwc3NNQWxldWlfNHBZNHVDZDFibDRTN082VmZoaXdDeWRKRWJPU0t1anM0Sm1GRmNQVWFoeWpmTDVfRDVqTk12bERhakhuOHRzRHN2bk5xcXNtbzBTYTExcks3T2FURy1kRTBQeDRHaVE1QllmU0owbDFVcGJ0MkJQWWZY?oc=5"
-      },
-      {
-        "title": "《生活一把罩》波斯菊花海「浪漫盛開」一片粉 杉林溪波波草「全翻紅」",
-        "source": "中視全球資訊網",
-        "link": "https://news.google.com/rss/articles/CBMihwNBVV95cUxNNUtyMUctb2VydmlPSGdPOExIRUdjNGo1bmRJU3hmNjB0RTVCNkF4eUdrWXIwbUJKSXJFdGZGX1FKcFpiTWJONFhINnVvcTdMNkRpVER3dFVLSGFON2kydUk0WEJ3SW9sQkJETndBNE5KeVlPdk9KbktxS0ZHT3dRcGN5U1NwVzBROU1yajRBVVNfdzJPbUxIVDhFUUxsQUh6RGdBR2hVVmZyaUNLck9wVUdjNzc5RmZvV3BvcDlnSDBxUkU4b1luemRlY1p3SmtnMUxUVkZlTXpOaVpCZnRFLTJGY1JJMVNHUVQtQWE1Vm1mVGQ4WFk3d29tMG5vYzQ0UEpnMVJnQjZ6QVZxN3g2c2p6OGJFRmpXalZVOV9CbDdkS3ozdzVIaGZ4NHdvVzVlbnVLZUFqdUpTZ0lVYy1MdU9ZcEV1Mkk0UTN5QjdUcjE2MmdBN0RwRlR1Y2NfeHd2VThZczlfalNubFRSbUFwUmlyanN2bGtFQW85RFFSdWxDay01S3FR?oc=5"
-      }
-    ],
-    "id": "19efcffe",
-    "first_seen": "2026-10-13",
-    "last_seen": "2026-10-13",
-    "region": "中部",
-    "score_parts": {
-      "appeal": 4,
-      "timing": 5,
-      "buzz": 4
-    },
-    "score_value": 4.4,
-    "score": 4
-  },
-  {
     "subject": "灰面鵟鷹過境",
     "category": "bird",
     "location_name": "田寮洋",
     "county": "新北市",
-    "lat": 25.016,
-    "lng": 121.932,
+    "lat": 25.02,
+    "lng": 121.93,
     "status": "peak",
-    "date_start": "2026-10-10",
+    "date_start": "",
     "date_end": "",
-    "est_end": "2026-10-25",
-    "est_basis": "10/10-11已現蹤，北部過境期通常持續約2週",
-    "summary": "「國慶鳥」灰面鵟鷹已現身貢寮田寮洋，正值過境期。",
+    "est_end": "2026-10-20",
+    "est_basis": "國慶前後是北部過境高峰，通常約10月中下旬結束",
+    "summary": "被稱為「國慶鳥」的灰面鵟鷹已經在田寮洋現蹤，可以拍過境的鷹群。",
     "appeal": 4,
-    "appeal_reason": "可拍猛禽過境，但數量不如恆春",
+    "appeal_reason": "猛禽過境，北部可拍的機會少",
     "articles": [
       {
         "title": "每年10月約定暱稱國慶鳥灰面鵟鷹現蹤新北田寮洋- 政治新聞",
@@ -122,6 +68,11 @@
         "title": "國慶鳥來了 灰面鵟鷹現蹤貢寮田寮洋",
         "source": "翻爆",
         "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVUFLYmdlOGo2Z3l5NTJtczU1dTYtSWowUGVndXNGaTk0Ukp1WC1vcWdsR25ybmQ0eGJwMFBjNUhzMnZ0VnVjTGx5dlNfejc4SU9RTFVVVHRTdFEzd1FRaDB3TTQ5blZLMVRhVGoyajEyWjNyNzctWmFYWWxYSDRiclBqV2ZHdlds?oc=5"
+      },
+      {
+        "title": "十月國慶約定 田寮洋迎灰面鵟鷹過境",
+        "source": "Life 生活網",
+        "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQOUEtc1JMNEE4X3NUMGlFWkdsZXluMTg4MmdBVF91SjZlQ1IxVnBTcVNwdllWaHZLWkdvNlc4UGRyYkNfb0ZteXdCa1JkZVd4QXBTNkNad2lRaVpOOFFxNVNHOW45WXZCZXEwMVVDMVNDMW9RaFlabm5LbXEzSzZiVng3VUtlcmVYZGN2UVJlVjhOVUh1akFNWmx4bVgweDJ0U2g3VUxZY0l2c1o4dXc5cTVFRzN1a3Y4ZWIwVzQzVTlpQmUtRV9fa3VkUXFhUll3SWdpMzdOSVVJdTZOX19kWjI1WnFEMVIxQ3FVdmRqNlVnN3RJT1JnX3l1b1NsdXVGdlNwZFhZajQ?oc=5"
       }
     ],
     "id": "2a4925c8",
@@ -131,9 +82,9 @@
     "score_parts": {
       "appeal": 4,
       "timing": 5,
-      "buzz": 3
+      "buzz": 4
     },
-    "score_value": 4.3,
+    "score_value": 4.4,
     "score": 4
   },
   {
@@ -141,16 +92,16 @@
     "category": "bird",
     "location_name": "七股黑面琵鷺保護區",
     "county": "臺南市",
-    "lat": 23.047,
-    "lng": 120.073,
+    "lat": 23.048,
+    "lng": 120.07,
     "status": "starting",
     "date_start": "2026-10-12",
     "date_end": "",
-    "est_end": "2027-04-30",
-    "est_basis": "10月黑琵陸續抵達，通常度冬到隔年4月北返",
-    "summary": "黑面琵鷺陸續抵達七股，首次普查台南有480隻，近期報導已接近千隻。",
+    "est_end": "2027-04-15",
+    "est_basis": "黑琵10月抵台度冬，通常到隔年3-4月北返",
+    "summary": "黑面琵鷺陸續抵達七股，10月首次普查台南有480隻，最新報導說已近千隻，可以拍群聚覓食。",
     "appeal": 5,
-    "appeal_reason": "瀕危珍稀候鳥，群聚畫面難得",
+    "appeal_reason": "瀕危珍稀鳥種，群聚畫面難得",
     "articles": [
       {
         "title": "黑琵10月首次普查 台南480隻",
@@ -173,40 +124,6 @@
       "buzz": 2
     },
     "score_value": 4.3,
-    "score": 4
-  },
-  {
-    "subject": "日出雲海",
-    "category": "landscape",
-    "location_name": "合歡山",
-    "county": "南投縣",
-    "lat": 24.137,
-    "lng": 121.274,
-    "status": "ongoing",
-    "date_start": "2026-10-10",
-    "date_end": "",
-    "est_end": "",
-    "est_basis": "",
-    "summary": "合歡山雙十出現日出雲海，旭日照亮整片雲海，有國旗迎風飄揚。",
-    "appeal": 5,
-    "appeal_reason": "高山日出雲海，氣勢磅礡",
-    "articles": [
-      {
-        "title": "太美了！合歡山日出照亮整片雲海 國旗迎風飄揚慶雙十",
-        "source": "記者爆料網",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4yVVN2TmM3cFgzSHd0UU5HNVI3U3M2OVQtT2JpVGJibXlaWXNhMVlEZ29ERjJMNEFaYkJaRW4xMVRMekoxT3FQR3Jsc1IxZw?oc=5"
-      }
-    ],
-    "id": "d8715ed3",
-    "first_seen": "2026-10-13",
-    "last_seen": "2026-10-13",
-    "region": "中部",
-    "score_parts": {
-      "appeal": 5,
-      "timing": 4,
-      "buzz": 1
-    },
-    "score_value": 4.2,
     "score": 4
   },
   {
@@ -248,16 +165,16 @@
     "category": "grass",
     "location_name": "化仁海堤",
     "county": "花蓮縣",
-    "lat": 23.88,
-    "lng": 121.6,
+    "lat": 23.955,
+    "lng": 121.62,
     "status": "peak",
-    "date_start": "2026-10-11",
+    "date_start": "",
     "date_end": "",
     "est_end": "2026-11-15",
-    "est_basis": "10/11報導雪白芒花海，海岸芒花盛期約4-5週",
-    "summary": "花蓮化仁海堤雪白芒花沿著海岸綿延，可搭配太平洋藍海拍攝。",
+    "est_basis": "10/11報導雪白芒花海，海岸芒花盛況通常約4-5週",
+    "summary": "化仁海堤沿岸的雪白芒花海正美，可以拍芒花、太平洋與海堤同框的構圖。",
     "appeal": 4,
-    "appeal_reason": "芒花與湛藍海岸同框，對比強烈",
+    "appeal_reason": "芒花襯藍海，海岸芒景少見",
     "articles": [
       {
         "title": "走進花東5大秋日秘境 化仁海堤雪白芒花海、玉里天堂路金黃稻浪！搭船賞落羽松林超療癒",
@@ -279,19 +196,19 @@
   },
   {
     "subject": "金黃稻浪",
-    "category": "landscape",
+    "category": "grass",
     "location_name": "玉里天堂路",
     "county": "花蓮縣",
-    "lat": 23.36,
-    "lng": 121.34,
+    "lat": 23.306,
+    "lng": 121.343,
     "status": "peak",
-    "date_start": "2026-10-11",
+    "date_start": "",
     "date_end": "",
-    "est_end": "",
-    "est_basis": "",
-    "summary": "玉里天堂路稻田正轉金黃，筆直道路穿過稻浪與縱谷山景，應趕在收割前拍攝。",
+    "est_end": "2026-10-25",
+    "est_basis": "10/11報導稻穗金黃，二期稻通常1-2週內收割",
+    "summary": "玉里天堂路兩旁稻浪已經金黃，筆直小路穿過稻田直通山腳，收割前要盡快去拍。",
     "appeal": 4,
-    "appeal_reason": "縱谷稻浪加上筆直道路，構圖經典",
+    "appeal_reason": "筆直田間路配金黃稻浪與海岸山脈，構圖經典",
     "articles": [
       {
         "title": "走進花東5大秋日秘境 化仁海堤雪白芒花海、玉里天堂路金黃稻浪！搭船賞落羽松林超療癒",
@@ -312,201 +229,20 @@
     "score": 4
   },
   {
-    "subject": "雲海、光環",
-    "category": "landscape",
-    "location_name": "金龍山",
-    "county": "南投縣",
-    "lat": 23.877,
-    "lng": 120.95,
-    "status": "ongoing",
-    "date_start": "2026-10-08",
-    "date_end": "",
-    "est_end": "",
-    "est_basis": "",
-    "summary": "南投金龍山雲海層層堆疊，還出現光環彩虹，秋季雲海進入好拍的季節。",
-    "appeal": 4,
-    "appeal_reason": "雲海層疊又有光環，現象難得",
-    "articles": [
-      {
-        "title": "絕美!浩瀚雲海\"山巒翻湧\" 如\"人間仙境\"上山搶拍│中視新聞 20261008",
-        "source": "中視全球資訊網",
-        "link": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxOY1RaeG5sY0k2UmhDUFpEYXhwYjFkN2UtZkdDaS1YcjhhOUFsRUN0M29yREZVSEREVzFsbDRSUnZocmQwUE03dW9RNm1PbXh1ZkJQenFldHAxUklxbXQ1eXVwWThyampUdmxnTUVqbEFaOGNMVGhCZFJFc2hSTkMyekRJOWpMN01tRGhZLS11akEySFR3TVNpcEx5XzhYTlB0RTZKd3ZrenRRMHBPUWxTNzlLMF84MWR4LTUyVW9QckcxS3hvOE1Ybnc5bko5Y0taNlpYZkxKa2l3U0NlS3pRZnJWSFgyQkNMTXg2MnBkczRLblptTVgwODdoTU5reUNrTHdwNnBhM2lsS3lrMTJvS1RoVkNhQkkyb1hNMHRnMDRQcjNRZ3g4UmpKMUlUSm5TNE9lQk9IcjlKRi1OUjlFekQzUGxXTzlVUnktX0VaNnBoVXBKYy1SYzhJMF9zbHN2WExTZk40Zk9CekI3Y2c?oc=5"
-      },
-      {
-        "title": "南投金龍山雲海美景再現！　雲霧堆疊光圈彩虹",
-        "source": "鏡新聞",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8xeWRObFJGLU9hZGVkX1dFNXZkanFqcXFuMEYyTXhaN3lJeGs0SnFUek9taDl1ZVpoUVhRWTVMRWNrX3c2dVpsQTFJakEybXk1dWxLSGowSVDSAV5BVV95cUxPQ1BWV01oalVTUTFFWDdGMmJCcUJPbGpvN3VGTzc0N3RwVVFibENXbnRhVUZ3aGFtM3Uxc2pJdTdVejRFcmIzeEctZmZOaWVEbk5FcnRCNDZEWjYtSEh3?oc=5"
-      },
-      {
-        "title": "金龍山雲海層層堆疊超吸睛 國慶連假氣溫再回暖!│中視新聞 20261008",
-        "source": "中視全球資訊網",
-        "link": "https://news.google.com/rss/articles/CBMigANBVV95cUxNZHRERm15b2NZQV9ZSXBFbG5VcnhlVjl0dmo5UlBwSU1tc2ZlTHZQZ0lnSmZmY2tyRzRxa3ZDZ1lud1FBQjRMRVd1UGNZUWFNQm5WUnpHNFo1RTN0T1FheHJLc0N4aXR1UENnU242Zktocy1HUmNFNzlMNGRFYUV2ZVBBWU5PM0tZWE5HeWcxQl9fY1plTm5Semc5UUtDdHpIS2RXaGZaMFFmUi03S0JnOHAxZUE0d2ZiWllEakZ1LWhFdnpibmJRdTZ2OGswWlV5Q0xuNTd4YlNWSFNuWExpZk5JZTVoUkNVN1Y4NUE4UXdxc3RMeS00NmFxcWxvM3BOODVmazZZMUtSUTRveFFIbF9vRlVCZUZ1RVU0REJmcXNvUGFaV1FYMXZtejhoZm1PMmd1R2s0bW1IMUJETGxXU0dVYS1RNUhaSGEyazRXRldSd0I2Zm9ZUzZrQjBqNnQ4SkM3LXpTN2FCdlFTcWdEYVdXYlJyWEdLNnhZNDQwem4?oc=5"
-      },
-      {
-        "title": "討論牆 | 南投金龍山雲海美景再現！ 雲霧堆疊光圈彩虹",
-        "source": "LINE TODAY",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9MTURuNC01dXVScEowVl9JMnNQUkxzbXZyMEZIdFQ5REk5Vl9OWXcwMzJmWGpNN1RIM3ktWVAtZEV3bDBmUVhRNG5CejJLcjRGQXNfNk5FT1dZbDhjTW5RcGZEak8?oc=5"
-      }
-    ],
-    "id": "2c350773",
-    "first_seen": "2026-10-13",
-    "last_seen": "2026-10-13",
-    "region": "中部",
-    "score_parts": {
-      "appeal": 4,
-      "timing": 4,
-      "buzz": 3
-    },
-    "score_value": 3.9,
-    "score": 4
-  },
-  {
-    "subject": "楓紅、銀杏",
-    "category": "foliage",
-    "location_name": "杉林溪森林生態渡假園區",
-    "county": "南投縣",
-    "lat": 23.636,
-    "lng": 120.787,
-    "status": "starting",
-    "date_start": "2026-10-07",
-    "date_end": "",
-    "est_end": "2026-11-30",
-    "est_basis": "10/7約三成轉色，中海拔楓紅與銀杏通常再過5-7週落葉",
-    "summary": "杉林溪楓葉與銀杏約三成轉色，可搭配波波草紅毯一起拍，接下來幾週色彩會更濃。",
-    "appeal": 4,
-    "appeal_reason": "中海拔紅楓與金黃銀杏同框，秋色層次豐富",
-    "articles": [
-      {
-        "title": "國慶連假必去！杉林溪楓紅、銀杏變色3成 波波草鋪成紅地毯",
-        "source": "Yahoo新聞",
-        "link": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxQN0dwOUhITFRqS3F0QWlQWE5HWVhtZ1V4M2dSb0FTRDQ4NDd5Y2FvbHFtWGlycGJGc0RqTVVzcE5iM203a2JNczg2N2cwRTNvb0ZERzVlZGM4Q1BXV09hSWZURmZCTVpQd25YbHNnLW9nSi02blBQSUhVQ1VVUzhhYWZtWkdOUVFiNlFBR3czYndxUnJyNENudzRvZ1pxQThEVnlCa3lfX29pM1hDdVpfUVI2LUJaUHoyZEdWVl9Hc1ZKMzV3RUFrelFJdG5SVk5VQ0E5bGtIU2E2bkdNT01vUDRhZ2J1OTQ0R1R0bS1YT2gyZHRkMThBbURNOUpKWDdVcERDTmkzYURnQ1UzNDZHbEN6MWlQdER0eXRzaC1jcU8xYTJqbkVCOWV3UTVjcmJsdlJ0VGN5dnRtODBEbG90bHAtMnJoM1FndnNVaTVUWjZUWjFKcWU1RlJPdUV6V1pwNUxHd1NGdlBFM0dGSWdiUXlpd01NWlhP?oc=5"
-      },
-      {
-        "title": "秋意濃！杉林溪楓紅、銀杏轉色 波波草豔如紅毯",
-        "source": "自由時報",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9fWWQ4RWd2N0Mtdk5MT3h4UXU3WDNwenhjT2doR0JTYy00eHk4ak95a3pPTnFVdEpxWHNqVFVNX2NFSXdJUGhuQV9OOGtpSEVDeUZheml1MmZ1UGNOVmkwVUZBRlfSAWpBVV95cUxOaVo1OWRESTJrSWhXY0thdS1DX1hwa2ZjcFFJNF9Cc0lLdHM3N2EtZW5nNklJRHNodU1lek9fOHpybWJrbFhiZF94Z3I2NmQxbVpQdkxlTGUtRkVzQTFudDlvekoyOEpaVGV3?oc=5"
-      },
-      {
-        "title": "杉林溪楓葉已3成轉紅波波草豔如「紅毯」美極了- 綜合",
-        "source": "華視新聞網",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4tTmt2T2xnMUdMUzdxX2FWUG9JTlRWMEVSVEZKbzU0TzZ4RmVfMnZfMEJQTFZ1VTVEVWhhbExubXlLWmN0OHBmTlZrbUpmejh5c2s3NEFjYms2X2cwT3VMam0wbnNkZmNlbGctbnZYUms?oc=5"
-      }
-    ],
-    "id": "ff68a527",
-    "first_seen": "2026-10-13",
-    "last_seen": "2026-10-13",
-    "region": "中部",
-    "score_parts": {
-      "appeal": 4,
-      "timing": 4,
-      "buzz": 3
-    },
-    "score_value": 3.9,
-    "score": 4
-  },
-  {
-    "subject": "秋楓、雲海、森林火車",
-    "category": "foliage",
-    "location_name": "阿里山",
-    "county": "嘉義縣",
-    "lat": 23.511,
-    "lng": 120.802,
-    "status": "starting",
-    "date_start": "2026-10-06",
-    "date_end": "",
-    "est_end": "2026-12-15",
-    "est_basis": "10/6楓葉漸紅，阿里山楓紅通常11月最盛、12月中前後結束",
-    "summary": "阿里山秋楓逐漸轉紅，可拍雲海與森林火車；注意觀日步道11/1起封閉一年。",
-    "appeal": 4,
-    "appeal_reason": "楓紅、雲海與森林火車能同框，畫面獨特",
-    "articles": [
-      {
-        "title": "阿里山秋楓漸紅、雲海火車伴景邀遊， 但提醒觀日步道11月1日起將封閉1年",
-        "source": "udn 女子漾",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5nSnp4dDh1VkhfSHk1OGozUmRKUHNlRWlWdlctRUExT3lDUVhOTV9iaW5DYTF4QVU2c2E5dHRESlozOE1zR01LVUQ4aTdGdzVlRDc5Qk11ZFZ5b0Vj0gFiQVVfeXFMT1FWaHVrZ0hVVm16RVZEWXl4WklMNkRmalR4RkVUa3dFXzd4XzZheEZCY3lrVGxXUEVIejRQYnd0WVRaajEtcTlTOGttTXhpRWcwS01TV2hVTS1CWnVCSnlReEE?oc=5"
-      },
-      {
-        "title": "討論牆 | 阿里山秋楓漸紅、雲海火車伴景邀遊， 但提醒觀日步道11月1日起將封閉1年",
-        "source": "LINE TODAY",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1xekowZnk5cTRiUEQ4RVpNRUhZaXpDY0NOLTBqc2xncldMMGk5elo1dGlFY294NzlZbEs0T2s1eTBGRkZTLXI4YTdTQ2t2X0h6RXUyZ1lPZENwNG5ibFlpaHVVUEM?oc=5"
-      },
-      {
-        "title": "阿里山秋楓漸紅、雲海火車伴景邀遊， 但提醒觀日步道11月1日起將封閉1年",
-        "source": "旅遊經",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5QMFpUUXRONlZTdFdsZThoR0RTQl92b2N2a3RXMVlnTDhIYXI1QmFHVXRocUNLdFRGMjYxLS1ydXM5eXRjN0xJM21mNzByb3A2TnktLTJHYUJDOGwtN1BqRExOMVlBOWJ1SmNZUTFzc1ZIVkYx?oc=5"
-      }
-    ],
-    "id": "927f80ab",
-    "first_seen": "2026-10-13",
-    "last_seen": "2026-10-13",
-    "region": "南部",
-    "score_parts": {
-      "appeal": 4,
-      "timing": 4,
-      "buzz": 3
-    },
-    "score_value": 3.9,
-    "score": 4
-  },
-  {
-    "subject": "百合花海",
-    "category": "flower",
-    "location_name": "阿里山國家森林遊樂區",
-    "county": "嘉義縣",
-    "lat": 23.511,
-    "lng": 120.802,
-    "status": "peak",
-    "date_start": "2026-10-08",
-    "date_end": "",
-    "est_end": "2026-11-01",
-    "est_basis": "10/8-10/12報導盛開，栽植百合花期約3週",
-    "summary": "阿里山百合花季百種花卉盛開，並有30款荷蘭新品種首度亮相。",
-    "appeal": 3,
-    "appeal_reason": "人工栽植花展，雖然繽紛但較常見",
-    "articles": [
-      {
-        "title": "阿里山百合花季湧人潮百種花卉爭豔 荷蘭30款新品種首度亮相",
-        "source": "UDN",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBNUXN4M0RXZUJxWEt6VER0amI4TWhkVHhsVEZBVk5FalFwdlEwQ3BZRGJtOVhxa1pWdUJJV0prUWdjVF9tMUg1clpXTUVyUjJo0gFWQVVfeXFMTmxXVzhQd1lPMlFlMU00ZlZjTmVCbWJ1N2JoSUUwLUlVaVRBNUhudUpmcnB1NGNNb1EtcEFMUmRicGxQb0ROM1o5akliVk9HTnZkWXUxbnc?oc=5"
-      },
-      {
-        "title": "雙十連假衝阿里山！百合花海盛開、奮起湖喝冠軍咖啡，再搭白沙屯媽祖限定小火車",
-        "source": "食尚玩家",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBQOUFjMEkzYU56THNPenBseXpYLUpVcko3LWhaRXNZcHMtOTA5V2xBLTVtalBDdW5wMTJrejBZWW94Y1VzcmhNTzh0S2pWWWVVUXBLONIBWkFVX3lxTE13LVlNNF9UeU4tR3daXzFLNy1jMjAwTnk0VEd3b0VRRl9mZ0NhWDF2aUl5eG1UdmQ5VTNYYmFVVjBRbEExc18tbHJmdU1DVXpxWmF3d0JRYWp3QQ?oc=5"
-      },
-      {
-        "title": "奮起湖慢遊接百合花季 阿里山10月賞花集章趣",
-        "source": "樂上新聞網",
-        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9idTN1Q2dmSkNQeWxQWElNa2NqQjEwWEJnWlR3ck5HNUVfYUFwTmdBdkhyNzhXVDZSX2ZEbzBPZ3VWNDBzdEV3OWtCNjQ?oc=5"
-      }
-    ],
-    "id": "6244db13",
-    "first_seen": "2026-10-13",
-    "last_seen": "2026-10-13",
-    "region": "南部",
-    "score_parts": {
-      "appeal": 3,
-      "timing": 5,
-      "buzz": 3
-    },
-    "score_value": 3.8,
-    "score": 4
-  },
-  {
     "subject": "芒花",
     "category": "grass",
     "location_name": "草嶺古道",
     "county": "新北市",
-    "lat": 25.009,
-    "lng": 121.912,
-    "status": "upcoming",
+    "lat": 25.006,
+    "lng": 121.905,
+    "status": "starting",
     "date_start": "2026-10-31",
     "date_end": "2026-11-30",
     "est_end": "2026-11-30",
-    "est_basis": "官方芒花季10/31開跑，報導稱芒花一路美到11月底",
-    "summary": "2026草嶺古道芒花季25週年10/31登場，啞口銀白芒花海可美到11月底，假日有接駁並提供免費古裝體驗。",
+    "est_basis": "官方稱芒花季10/31登場，銀白芒花可美到11月底",
+    "summary": "草嶺古道芒花季迎來25週年，10/31開跑，有免費古裝體驗和假日接駁；銀白芒花從埡口一路美到11月底，可以拍古道人物與芒花海同框。",
     "appeal": 4,
-    "appeal_reason": "東北角山稜芒花海搭配古道與海景，經典秋季畫面",
+    "appeal_reason": "東北角經典芒花稜線，逆光銀白芒浪很上鏡",
     "articles": [
       {
         "title": "草嶺古道不只芒草，還能眺望龜山島海景？",
@@ -600,8 +336,277 @@
     "region": "北部",
     "score_parts": {
       "appeal": 4,
-      "timing": 3,
+      "timing": 4,
       "buzz": 5
+    },
+    "score_value": 4.1,
+    "score": 4
+  },
+  {
+    "subject": "波波草（紅地毯）",
+    "category": "grass",
+    "location_name": "杉林溪森林生態渡假園區",
+    "county": "南投縣",
+    "lat": 23.636,
+    "lng": 120.795,
+    "status": "peak",
+    "date_start": "2026-10-07",
+    "date_end": "",
+    "est_end": "2026-10-31",
+    "est_basis": "10/11報導波波草全翻紅，紅色通常維持約2-3週後轉褐",
+    "summary": "杉林溪的波波草到10/11已經全面翻紅，鋪成一片紅地毯，正是最佳拍攝時機。",
+    "appeal": 3,
+    "appeal_reason": "圓球狀紅草成片很吸睛，但屬園區人工植栽",
+    "articles": [
+      {
+        "title": "國慶連假必去！杉林溪楓紅、銀杏變色3成 波波草鋪成紅地毯",
+        "source": "Yahoo新聞",
+        "link": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxQN0dwOUhITFRqS3F0QWlQWE5HWVhtZ1V4M2dSb0FTRDQ4NDd5Y2FvbHFtWGlycGJGc0RqTVVzcE5iM203a2JNczg2N2cwRTNvb0ZERzVlZGM4Q1BXV09hSWZURmZCTVpQd25YbHNnLW9nSi02blBQSUhVQ1VVUzhhYWZtWkdOUVFiNlFBR3czYndxUnJyNENudzRvZ1pxQThEVnlCa3lfX29pM1hDdVpfUVI2LUJaUHoyZEdWVl9Hc1ZKMzV3RUFrelFJdG5SVk5VQ0E5bGtIU2E2bkdNT01vUDRhZ2J1OTQ0R1R0bS1YT2gyZHRkMThBbURNOUpKWDdVcERDTmkzYURnQ1UzNDZHbEN6MWlQdER0eXRzaC1jcU8xYTJqbkVCOWV3UTVjcmJsdlJ0VGN5dnRtODBEbG90bHAtMnJoM1FndnNVaTVUWjZUWjFKcWU1RlJPdUV6V1pwNUxHd1NGdlBFM0dGSWdiUXlpd01NWlhP?oc=5"
+      },
+      {
+        "title": "秋意濃！杉林溪楓紅、銀杏轉色 波波草豔如紅毯",
+        "source": "自由時報",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9fWWQ4RWd2N0Mtdk5MT3h4UXU3WDNwenhjT2doR0JTYy00eHk4ak95a3pPTnFVdEpxWHNqVFVNX2NFSXdJUGhuQV9OOGtpSEVDeUZheml1MmZ1UGNOVmkwVUZBRlfSAWpBVV95cUxOaVo1OWRESTJrSWhXY0thdS1DX1hwa2ZjcFFJNF9Cc0lLdHM3N2EtZW5nNklJRHNodU1lek9fOHpybWJrbFhiZF94Z3I2NmQxbVpQdkxlTGUtRkVzQTFudDlvekoyOEpaVGV3?oc=5"
+      },
+      {
+        "title": "杉林溪楓葉已3成轉紅波波草豔如「紅毯」美極了- 綜合",
+        "source": "華視新聞網",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4tTmt2T2xnMUdMUzdxX2FWUG9JTlRWMEVSVEZKbzU0TzZ4RmVfMnZfMEJQTFZ1VTVEVWhhbExubXlLWmN0OHBmTlZrbUpmejh5c2s3NEFjYms2X2cwT3VMam0wbnNkZmNlbGctbnZYUms?oc=5"
+      },
+      {
+        "title": "波斯菊花海\"浪漫盛開\"一片粉 杉林溪波波草\"全翻紅\"│中視新聞 20261011",
+        "source": "中視全球資訊網",
+        "link": "https://news.google.com/rss/articles/CBMihANBVV95cUxQMnUwMlJnM2RkRWxmeHQybHNiSktFZjBlX3J5dDI4RVl1ZUtmblJCSGtSUGp3cUx3V2hQU2NNVWVOR3VGSHlWR2ZYbHlPclpySmkxYV9HOVhhUmQwdlVSTkhoR3lEYTFJZ0JjaThwb01Db3d4RFV4Q1cwWEZEaHdzaXlBdjF5cXBDM3BFeEVBZ3pWYm5TWFZYWl9MOUFvSU5haGNOTnhNUGRzdXg1S01GVTNndmtJSjZPcjlGS1ZpTGVyd2xyNy1xU2o2WE15THhNOGhpR2swWVZqZXE2N0VIbE1yb1AtRFRUY2lXMlAwUmpJUjhZR3pyZWJVRW8ybGlsaUhJZFQ4eVEwc3NNQWxldWlfNHBZNHVDZDFibDRTN082VmZoaXdDeWRKRWJPU0t1anM0Sm1GRmNQVWFoeWpmTDVfRDVqTk12bERhakhuOHRzRHN2bk5xcXNtbzBTYTExcks3T2FURy1kRTBQeDRHaVE1QllmU0owbDFVcGJ0MkJQWWZY?oc=5"
+      },
+      {
+        "title": "《生活一把罩》波斯菊花海「浪漫盛開」一片粉 杉林溪波波草「全翻紅」",
+        "source": "中視全球資訊網",
+        "link": "https://news.google.com/rss/articles/CBMihwNBVV95cUxNNUtyMUctb2VydmlPSGdPOExIRUdjNGo1bmRJU3hmNjB0RTVCNkF4eUdrWXIwbUJKSXJFdGZGX1FKcFpiTWJONFhINnVvcTdMNkRpVER3dFVLSGFON2kydUk0WEJ3SW9sQkJETndBNE5KeVlPdk9KbktxS0ZHT3dRcGN5U1NwVzBROU1yajRBVVNfdzJPbUxIVDhFUUxsQUh6RGdBR2hVVmZyaUNLck9wVUdjNzc5RmZvV3BvcDlnSDBxUkU4b1luemRlY1p3SmtnMUxUVkZlTXpOaVpCZnRFLTJGY1JJMVNHUVQtQWE1Vm1mVGQ4WFk3d29tMG5vYzQ0UEpnMVJnQjZ6QVZxN3g2c2p6OGJFRmpXalZVOV9CbDdkS3ozdzVIaGZ4NHdvVzVlbnVLZUFqdUpTZ0lVYy1MdU9ZcEV1Mkk0UTN5QjdUcjE2MmdBN0RwRlR1Y2NfeHd2VThZczlfalNubFRSbUFwUmlyanN2bGtFQW85RFFSdWxDay01S3FR?oc=5"
+      }
+    ],
+    "id": "19efcffe",
+    "first_seen": "2026-10-13",
+    "last_seen": "2026-10-13",
+    "region": "中部",
+    "score_parts": {
+      "appeal": 3,
+      "timing": 5,
+      "buzz": 4
+    },
+    "score_value": 3.9,
+    "score": 4
+  },
+  {
+    "subject": "雲海、光環",
+    "category": "landscape",
+    "location_name": "金龍山",
+    "county": "南投縣",
+    "lat": 23.9,
+    "lng": 120.95,
+    "status": "ongoing",
+    "date_start": "",
+    "date_end": "",
+    "est_end": "",
+    "est_basis": "",
+    "summary": "10/8金龍山雲海層層堆疊，還出現彩虹光圈，可以把握晴朗清晨上山。",
+    "appeal": 4,
+    "appeal_reason": "雲海加光環（佛光），難得的光學現象",
+    "articles": [
+      {
+        "title": "絕美!浩瀚雲海\"山巒翻湧\" 如\"人間仙境\"上山搶拍│中視新聞 20261008",
+        "source": "中視全球資訊網",
+        "link": "https://news.google.com/rss/articles/CBMi7gJBVV95cUxOY1RaeG5sY0k2UmhDUFpEYXhwYjFkN2UtZkdDaS1YcjhhOUFsRUN0M29yREZVSEREVzFsbDRSUnZocmQwUE03dW9RNm1PbXh1ZkJQenFldHAxUklxbXQ1eXVwWThyampUdmxnTUVqbEFaOGNMVGhCZFJFc2hSTkMyekRJOWpMN01tRGhZLS11akEySFR3TVNpcEx5XzhYTlB0RTZKd3ZrenRRMHBPUWxTNzlLMF84MWR4LTUyVW9QckcxS3hvOE1Ybnc5bko5Y0taNlpYZkxKa2l3U0NlS3pRZnJWSFgyQkNMTXg2MnBkczRLblptTVgwODdoTU5reUNrTHdwNnBhM2lsS3lrMTJvS1RoVkNhQkkyb1hNMHRnMDRQcjNRZ3g4UmpKMUlUSm5TNE9lQk9IcjlKRi1OUjlFekQzUGxXTzlVUnktX0VaNnBoVXBKYy1SYzhJMF9zbHN2WExTZk40Zk9CekI3Y2c?oc=5"
+      },
+      {
+        "title": "南投金龍山雲海美景再現！　雲霧堆疊光圈彩虹",
+        "source": "鏡新聞",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8xeWRObFJGLU9hZGVkX1dFNXZkanFqcXFuMEYyTXhaN3lJeGs0SnFUek9taDl1ZVpoUVhRWTVMRWNrX3c2dVpsQTFJakEybXk1dWxLSGowSVDSAV5BVV95cUxPQ1BWV01oalVTUTFFWDdGMmJCcUJPbGpvN3VGTzc0N3RwVVFibENXbnRhVUZ3aGFtM3Uxc2pJdTdVejRFcmIzeEctZmZOaWVEbk5FcnRCNDZEWjYtSEh3?oc=5"
+      },
+      {
+        "title": "金龍山雲海層層堆疊超吸睛 國慶連假氣溫再回暖!│中視新聞 20261008",
+        "source": "中視全球資訊網",
+        "link": "https://news.google.com/rss/articles/CBMigANBVV95cUxNZHRERm15b2NZQV9ZSXBFbG5VcnhlVjl0dmo5UlBwSU1tc2ZlTHZQZ0lnSmZmY2tyRzRxa3ZDZ1lud1FBQjRMRVd1UGNZUWFNQm5WUnpHNFo1RTN0T1FheHJLc0N4aXR1UENnU242Zktocy1HUmNFNzlMNGRFYUV2ZVBBWU5PM0tZWE5HeWcxQl9fY1plTm5Semc5UUtDdHpIS2RXaGZaMFFmUi03S0JnOHAxZUE0d2ZiWllEakZ1LWhFdnpibmJRdTZ2OGswWlV5Q0xuNTd4YlNWSFNuWExpZk5JZTVoUkNVN1Y4NUE4UXdxc3RMeS00NmFxcWxvM3BOODVmazZZMUtSUTRveFFIbF9vRlVCZUZ1RVU0REJmcXNvUGFaV1FYMXZtejhoZm1PMmd1R2s0bW1IMUJETGxXU0dVYS1RNUhaSGEyazRXRldSd0I2Zm9ZUzZrQjBqNnQ4SkM3LXpTN2FCdlFTcWdEYVdXYlJyWEdLNnhZNDQwem4?oc=5"
+      },
+      {
+        "title": "討論牆 | 南投金龍山雲海美景再現！ 雲霧堆疊光圈彩虹",
+        "source": "LINE TODAY",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9MTURuNC01dXVScEowVl9JMnNQUkxzbXZyMEZIdFQ5REk5Vl9OWXcwMzJmWGpNN1RIM3ktWVAtZEV3bDBmUVhRNG5CejJLcjRGQXNfNk5FT1dZbDhjTW5RcGZEak8?oc=5"
+      }
+    ],
+    "id": "2c350773",
+    "first_seen": "2026-10-13",
+    "last_seen": "2026-10-13",
+    "region": "中部",
+    "score_parts": {
+      "appeal": 4,
+      "timing": 4,
+      "buzz": 3
+    },
+    "score_value": 3.9,
+    "score": 4
+  },
+  {
+    "subject": "楓紅、銀杏",
+    "category": "foliage",
+    "location_name": "杉林溪森林生態渡假園區",
+    "county": "南投縣",
+    "lat": 23.636,
+    "lng": 120.795,
+    "status": "starting",
+    "date_start": "2026-10-07",
+    "date_end": "",
+    "est_end": "2026-12-10",
+    "est_basis": "10/7楓紅與銀杏約三成轉色，杉林溪楓紅通常延續到12月上旬",
+    "summary": "杉林溪的楓葉和銀杏在10/7約三成轉色，正在轉紅，11月可望進入滿紅。",
+    "appeal": 4,
+    "appeal_reason": "中海拔楓紅與金黃銀杏並陳，色彩層次豐富",
+    "articles": [
+      {
+        "title": "國慶連假必去！杉林溪楓紅、銀杏變色3成 波波草鋪成紅地毯",
+        "source": "Yahoo新聞",
+        "link": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxQN0dwOUhITFRqS3F0QWlQWE5HWVhtZ1V4M2dSb0FTRDQ4NDd5Y2FvbHFtWGlycGJGc0RqTVVzcE5iM203a2JNczg2N2cwRTNvb0ZERzVlZGM4Q1BXV09hSWZURmZCTVpQd25YbHNnLW9nSi02blBQSUhVQ1VVUzhhYWZtWkdOUVFiNlFBR3czYndxUnJyNENudzRvZ1pxQThEVnlCa3lfX29pM1hDdVpfUVI2LUJaUHoyZEdWVl9Hc1ZKMzV3RUFrelFJdG5SVk5VQ0E5bGtIU2E2bkdNT01vUDRhZ2J1OTQ0R1R0bS1YT2gyZHRkMThBbURNOUpKWDdVcERDTmkzYURnQ1UzNDZHbEN6MWlQdER0eXRzaC1jcU8xYTJqbkVCOWV3UTVjcmJsdlJ0VGN5dnRtODBEbG90bHAtMnJoM1FndnNVaTVUWjZUWjFKcWU1RlJPdUV6V1pwNUxHd1NGdlBFM0dGSWdiUXlpd01NWlhP?oc=5"
+      },
+      {
+        "title": "秋意濃！杉林溪楓紅、銀杏轉色 波波草豔如紅毯",
+        "source": "自由時報",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9fWWQ4RWd2N0Mtdk5MT3h4UXU3WDNwenhjT2doR0JTYy00eHk4ak95a3pPTnFVdEpxWHNqVFVNX2NFSXdJUGhuQV9OOGtpSEVDeUZheml1MmZ1UGNOVmkwVUZBRlfSAWpBVV95cUxOaVo1OWRESTJrSWhXY0thdS1DX1hwa2ZjcFFJNF9Cc0lLdHM3N2EtZW5nNklJRHNodU1lek9fOHpybWJrbFhiZF94Z3I2NmQxbVpQdkxlTGUtRkVzQTFudDlvekoyOEpaVGV3?oc=5"
+      },
+      {
+        "title": "杉林溪楓葉已3成轉紅波波草豔如「紅毯」美極了- 綜合",
+        "source": "華視新聞網",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4tTmt2T2xnMUdMUzdxX2FWUG9JTlRWMEVSVEZKbzU0TzZ4RmVfMnZfMEJQTFZ1VTVEVWhhbExubXlLWmN0OHBmTlZrbUpmejh5c2s3NEFjYms2X2cwT3VMam0wbnNkZmNlbGctbnZYUms?oc=5"
+      }
+    ],
+    "id": "ff68a527",
+    "first_seen": "2026-10-13",
+    "last_seen": "2026-10-13",
+    "region": "中部",
+    "score_parts": {
+      "appeal": 4,
+      "timing": 4,
+      "buzz": 3
+    },
+    "score_value": 3.9,
+    "score": 4
+  },
+  {
+    "subject": "秋楓、雲海、森林火車",
+    "category": "foliage",
+    "location_name": "阿里山",
+    "county": "嘉義縣",
+    "lat": 23.51,
+    "lng": 120.802,
+    "status": "starting",
+    "date_start": "",
+    "date_end": "",
+    "est_end": "2026-12-15",
+    "est_basis": "10/7報導秋楓漸紅，阿里山楓紅通常11月到12月中最佳",
+    "summary": "阿里山秋楓漸紅，可以拍雲海和森林火車同框；注意觀日步道11/1起封閉一年。",
+    "appeal": 4,
+    "appeal_reason": "楓紅、雲海與森林火車可同框",
+    "articles": [
+      {
+        "title": "阿里山秋楓漸紅、雲海火車伴景邀遊， 但提醒觀日步道11月1日起將封閉1年",
+        "source": "udn 女子漾",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5nSnp4dDh1VkhfSHk1OGozUmRKUHNlRWlWdlctRUExT3lDUVhOTV9iaW5DYTF4QVU2c2E5dHRESlozOE1zR01LVUQ4aTdGdzVlRDc5Qk11ZFZ5b0Vj0gFiQVVfeXFMT1FWaHVrZ0hVVm16RVZEWXl4WklMNkRmalR4RkVUa3dFXzd4XzZheEZCY3lrVGxXUEVIejRQYnd0WVRaajEtcTlTOGttTXhpRWcwS01TV2hVTS1CWnVCSnlReEE?oc=5"
+      },
+      {
+        "title": "討論牆 | 阿里山秋楓漸紅、雲海火車伴景邀遊， 但提醒觀日步道11月1日起將封閉1年",
+        "source": "LINE TODAY",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1xekowZnk5cTRiUEQ4RVpNRUhZaXpDY0NOLTBqc2xncldMMGk5elo1dGlFY294NzlZbEs0T2s1eTBGRkZTLXI4YTdTQ2t2X0h6RXUyZ1lPZENwNG5ibFlpaHVVUEM?oc=5"
+      },
+      {
+        "title": "阿里山秋楓漸紅、雲海火車伴景邀遊， 但提醒觀日步道11月1日起將封閉1年",
+        "source": "旅遊經",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5QMFpUUXRONlZTdFdsZThoR0RTQl92b2N2a3RXMVlnTDhIYXI1QmFHVXRocUNLdFRGMjYxLS1ydXM5eXRjN0xJM21mNzByb3A2TnktLTJHYUJDOGwtN1BqRExOMVlBOWJ1SmNZUTFzc1ZIVkYx?oc=5"
+      }
+    ],
+    "id": "927f80ab",
+    "first_seen": "2026-10-13",
+    "last_seen": "2026-10-13",
+    "region": "南部",
+    "score_parts": {
+      "appeal": 4,
+      "timing": 4,
+      "buzz": 3
+    },
+    "score_value": 3.9,
+    "score": 4
+  },
+  {
+    "subject": "百合花海",
+    "category": "flower",
+    "location_name": "阿里山國家森林遊樂區",
+    "county": "嘉義縣",
+    "lat": 23.51,
+    "lng": 120.802,
+    "status": "peak",
+    "date_start": "",
+    "date_end": "",
+    "est_end": "2026-10-31",
+    "est_basis": "10/12報導盛開，百合花期約2-3週",
+    "summary": "阿里山百合花季正盛開，有百種花卉爭豔，荷蘭30款新品種首度展出。",
+    "appeal": 3,
+    "appeal_reason": "高山園區花海，屬人工栽植",
+    "articles": [
+      {
+        "title": "阿里山百合花季湧人潮百種花卉爭豔 荷蘭30款新品種首度亮相",
+        "source": "UDN",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBNUXN4M0RXZUJxWEt6VER0amI4TWhkVHhsVEZBVk5FalFwdlEwQ3BZRGJtOVhxa1pWdUJJV0prUWdjVF9tMUg1clpXTUVyUjJo0gFWQVVfeXFMTmxXVzhQd1lPMlFlMU00ZlZjTmVCbWJ1N2JoSUUwLUlVaVRBNUhudUpmcnB1NGNNb1EtcEFMUmRicGxQb0ROM1o5akliVk9HTnZkWXUxbnc?oc=5"
+      },
+      {
+        "title": "雙十連假衝阿里山！百合花海盛開、奮起湖喝冠軍咖啡，再搭白沙屯媽祖限定小火車",
+        "source": "食尚玩家",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBQOUFjMEkzYU56THNPenBseXpYLUpVcko3LWhaRXNZcHMtOTA5V2xBLTVtalBDdW5wMTJrejBZWW94Y1VzcmhNTzh0S2pWWWVVUXBLONIBWkFVX3lxTE13LVlNNF9UeU4tR3daXzFLNy1jMjAwTnk0VEd3b0VRRl9mZ0NhWDF2aUl5eG1UdmQ5VTNYYmFVVjBRbEExc18tbHJmdU1DVXpxWmF3d0JRYWp3QQ?oc=5"
+      },
+      {
+        "title": "奮起湖慢遊接百合花季 阿里山10月賞花集章趣",
+        "source": "樂上新聞網",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9idTN1Q2dmSkNQeWxQWElNa2NqQjEwWEJnWlR3ck5HNUVfYUFwTmdBdkhyNzhXVDZSX2ZEbzBPZ3VWNDBzdEV3OWtCNjQ?oc=5"
+      }
+    ],
+    "id": "6244db13",
+    "first_seen": "2026-10-13",
+    "last_seen": "2026-10-13",
+    "region": "南部",
+    "score_parts": {
+      "appeal": 3,
+      "timing": 5,
+      "buzz": 3
+    },
+    "score_value": 3.8,
+    "score": 4
+  },
+  {
+    "subject": "日出雲海",
+    "category": "landscape",
+    "location_name": "合歡山",
+    "county": "南投縣",
+    "lat": 24.14,
+    "lng": 121.27,
+    "status": "ongoing",
+    "date_start": "",
+    "date_end": "",
+    "est_end": "",
+    "est_basis": "",
+    "summary": "10/10合歡山日出照亮整片雲海，秋冬是高山雲海的好季節。",
+    "appeal": 4,
+    "appeal_reason": "高山日出雲海，壯闊經典",
+    "articles": [
+      {
+        "title": "太美了！合歡山日出照亮整片雲海 國旗迎風飄揚慶雙十",
+        "source": "記者爆料網",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4yVVN2TmM3cFgzSHd0UU5HNVI3U3M2OVQtT2JpVGJibXlaWXNhMVlEZ29ERjJMNEFaYkJaRW4xMVRMekoxT3FQR3Jsc1IxZw?oc=5"
+      }
+    ],
+    "id": "d8715ed3",
+    "first_seen": "2026-10-13",
+    "last_seen": "2026-10-13",
+    "region": "中部",
+    "score_parts": {
+      "appeal": 4,
+      "timing": 4,
+      "buzz": 1
     },
     "score_value": 3.7,
     "score": 4
@@ -611,16 +616,16 @@
     "category": "flower",
     "location_name": "士林官邸",
     "county": "臺北市",
-    "lat": 25.093,
-    "lng": 121.531,
+    "lat": 25.094,
+    "lng": 121.53,
     "status": "peak",
     "date_start": "2026-10-07",
     "date_end": "",
     "est_end": "2026-10-25",
-    "est_basis": "10/7盛開，蒜香藤每波花期約2-3週",
-    "summary": "士林官邸蒜香藤盛開，紫色花串像紫鈴鐺般垂掛，在市區就能拍到。",
+    "est_basis": "10/7報導盛開，蒜香藤一波花期約2-3週",
+    "summary": "士林官邸的蒜香藤正盛開，紫色花串掛滿棚架，很適合拍紫色花廊。",
     "appeal": 3,
-    "appeal_reason": "紫色花牆漂亮，但規模小、屬於常見花種",
+    "appeal_reason": "紫色花牆美，但規模不大",
     "articles": [
       {
         "title": "紫鈴鐺為您祈福！士林官邸蒜香藤盛開",
@@ -645,16 +650,16 @@
     "category": "event",
     "location_name": "苗栗（2027台灣燈會）",
     "county": "苗栗縣",
-    "lat": 24.605,
-    "lng": 120.826,
+    "lat": 24.56,
+    "lng": 120.82,
     "status": "upcoming",
     "date_start": "",
     "date_end": "",
     "est_end": "",
     "est_basis": "",
-    "summary": "2027台灣燈會在苗栗舉辦，長春集團「鑽石之光」互動燈區已亮相。",
+    "summary": "2027台灣燈會在苗栗舉辦，長春集團打造的「鑽石之光」互動燈區已經曝光。",
     "appeal": 5,
-    "appeal_reason": "全國最大燈會，大型主燈與燈區非常壯觀",
+    "appeal_reason": "全國最大燈會，大型燈區夜景壯觀",
     "articles": [
       {
         "title": "長春「鑽石之光」閃耀苗栗 科技與永續點亮台灣燈會",
@@ -700,10 +705,10 @@
     "date_start": "2026-11-01",
     "date_end": "",
     "est_end": "2026-12-31",
-    "est_basis": "楓紅季11月登場，奧萬大楓紅通常11月中至12月下旬",
-    "summary": "奧萬大楓紅季11月登場，並有草地野餐音樂會，楓紅盛期約在11月中旬至12月。",
+    "est_basis": "楓紅季11月登場，奧萬大楓紅通常從11月中持續到12月下旬",
+    "summary": "奧萬大楓紅季11月登場，還有草地野餐音樂會；楓紅高峰預計在11月中到12月。",
     "appeal": 4,
-    "appeal_reason": "台灣代表性的楓香林，滿山紅葉十分上鏡",
+    "appeal_reason": "台灣代表性賞楓地，大片青楓林轉紅",
     "articles": [
       {
         "title": "奧萬大楓紅季11月登場草地野餐音樂會串聯山村遊程- 瘋台灣",
@@ -724,6 +729,45 @@
     "score": 3
   },
   {
+    "subject": "秋焰祭煙火",
+    "category": "event",
+    "location_name": "青草湖",
+    "county": "新竹市",
+    "lat": 24.788,
+    "lng": 120.958,
+    "status": "ongoing",
+    "date_start": "",
+    "date_end": "",
+    "est_end": "",
+    "est_basis": "",
+    "summary": "新竹青草湖秋焰祭已經登場，有蠟筆小新主題，湖畔煙火照亮夜空，可以拍煙火在湖面的倒影。",
+    "appeal": 3,
+    "appeal_reason": "湖面倒影煙火，規模中等",
+    "articles": [
+      {
+        "title": "新竹青草湖秋焰祭登場 蠟筆小新現身璀璨煙火照亮夜空",
+        "source": "UDN",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBIU2pwdEs2dy1lR3VNdExrSzYzMFY0TWxKVXhHcG1MWFBBV1RwdVhMRDNFUmEwbEY1ZmhvdUxoZjh1SjZVcmM5enplc2JRSFc40gFWQVVfeXFMTkdIMW5GWENGMnAyam5ONkFUamxvakFsem56WTZidlRXQjdveGRFV3JDNUIwVlo0Tk81MWVaSTZOSThxc19XU2xvTWZva1ZESjY5dkJGTVE?oc=5"
+      },
+      {
+        "title": "期間限定「海岸藝術展」免費逛！美拍８大藝術作品，嘗在地小吃、看湖畔煙火",
+        "source": "食尚玩家",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5hZHE4RVZuR0Y2NFE4UTBISUsxaFo3bFJXWkd0d0k0WUowcmxPVHFlOS16dUdsNWNEZlJFaVVTNUFiMlJBT1IwaFJPTWZ4LTZvY3Y5N2N5bTN1SE930gFcQVVfeXFMTmFkcThFVm5HRjY0UThRMEhJSzFoWjdsUldaR3R3STRZSjBybE9UcWU5LXp1R2w1Y0RmUkVpVVM1QWIyUkFPUjBoUk9NZngtNm9jdjk3Y3ltM3VIT3c?oc=5"
+      }
+    ],
+    "id": "47ae9ccc",
+    "first_seen": "2026-10-13",
+    "last_seen": "2026-10-13",
+    "region": "北部",
+    "score_parts": {
+      "appeal": 3,
+      "timing": 4,
+      "buzz": 2
+    },
+    "score_value": 3.3,
+    "score": 3
+  },
+  {
     "subject": "國慶煙火",
     "category": "event",
     "location_name": "台東（115年國慶煙火）",
@@ -735,9 +779,9 @@
     "date_end": "2026-10-10",
     "est_end": "",
     "est_basis": "",
-    "summary": "115年國慶煙火已於10/10在台東施放，共30分鐘、1.9萬發。",
+    "summary": "115年國慶煙火10/10在台東施放30分鐘、1.9萬發，活動已經結束。",
     "appeal": 5,
-    "appeal_reason": "國家級大型煙火，時間長、規模大",
+    "appeal_reason": "國家級大型煙火，海岸夜空長時間施放",
     "articles": [
       {
         "title": "影／長達30分鐘！115年國慶煙火台東登場 1.9萬發點亮夜空",
@@ -807,16 +851,16 @@
     "category": "event",
     "location_name": "台北101",
     "county": "臺北市",
-    "lat": 25.034,
-    "lng": 121.565,
+    "lat": 25.0339,
+    "lng": 121.5645,
     "status": "ended",
     "date_start": "2026-10-10",
     "date_end": "2026-10-10",
     "est_end": "",
     "est_basis": "",
-    "summary": "台北101國慶煙火搭配600台無人機的14分鐘展演，已於10/10晚上結束。",
+    "summary": "10/10台北101國慶煙火搭配600台無人機，演出14分鐘，已經結束。",
     "appeal": 5,
-    "appeal_reason": "地標大樓煙火加上大規模無人機秀",
+    "appeal_reason": "地標大樓煙火加大量無人機，畫面壯觀",
     "articles": [
       {
         "title": "台北101國慶煙火、無人機璀璨綻放夜空 台新新光金獨家贊助",
@@ -959,15 +1003,15 @@
     "location_name": "新社花海",
     "county": "臺中市",
     "lat": 24.18,
-    "lng": 120.808,
+    "lng": 120.81,
     "status": "upcoming",
     "date_start": "",
     "date_end": "",
     "est_end": "",
     "est_basis": "",
-    "summary": "2026新社花海以三麗鷗為主題，是台中規模最大的花海展，已公布接駁資訊。",
+    "summary": "2026新社花海以三麗鷗為主題，展區資訊和接駁已經公布，可以順便到附近果園採果。",
     "appeal": 3,
-    "appeal_reason": "大面積花田，但屬於商業主題布置",
+    "appeal_reason": "大面積花田但主題造景偏商業",
     "articles": [
       {
         "title": "來新社採果賞花解鎖季節限定玩法| 雜誌",
@@ -993,45 +1037,6 @@
     "score": 3
   },
   {
-    "subject": "秋焰祭煙火",
-    "category": "event",
-    "location_name": "青草湖",
-    "county": "新竹市",
-    "lat": 24.785,
-    "lng": 120.968,
-    "status": "unknown",
-    "date_start": "",
-    "date_end": "",
-    "est_end": "",
-    "est_basis": "",
-    "summary": "新竹青草湖秋焰祭已登場，有蠟筆小新與煙火照亮湖面，後續場次請查官方資訊。",
-    "appeal": 3,
-    "appeal_reason": "湖畔煙火有倒影，但規模屬於地方等級",
-    "articles": [
-      {
-        "title": "新竹青草湖秋焰祭登場 蠟筆小新現身璀璨煙火照亮夜空",
-        "source": "UDN",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBIU2pwdEs2dy1lR3VNdExrSzYzMFY0TWxKVXhHcG1MWFBBV1RwdVhMRDNFUmEwbEY1ZmhvdUxoZjh1SjZVcmM5enplc2JRSFc40gFWQVVfeXFMTkdIMW5GWENGMnAyam5ONkFUamxvakFsem56WTZidlRXQjdveGRFV3JDNUIwVlo0Tk81MWVaSTZOSThxc19XU2xvTWZva1ZESjY5dkJGTVE?oc=5"
-      },
-      {
-        "title": "期間限定「海岸藝術展」免費逛！美拍８大藝術作品，嘗在地小吃、看湖畔煙火",
-        "source": "食尚玩家",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5hZHE4RVZuR0Y2NFE4UTBISUsxaFo3bFJXWkd0d0k0WUowcmxPVHFlOS16dUdsNWNEZlJFaVVTNUFiMlJBT1IwaFJPTWZ4LTZvY3Y5N2N5bTN1SE930gFcQVVfeXFMTmFkcThFVm5HRjY0UThRMEhJSzFoWjdsUldaR3R3STRZSjBybE9UcWU5LXp1R2w1Y0RmUkVpVVM1QWIyUkFPUjBoUk9NZngtNm9jdjk3Y3ltM3VIT3c?oc=5"
-      }
-    ],
-    "id": "47ae9ccc",
-    "first_seen": "2026-10-13",
-    "last_seen": "2026-10-13",
-    "region": "北部",
-    "score_parts": {
-      "appeal": 3,
-      "timing": 2,
-      "buzz": 2
-    },
-    "score_value": 2.5,
-    "score": 3
-  },
-  {
     "subject": "國慶大會、雷虎小組彩煙",
     "category": "event",
     "location_name": "總統府前凱達格蘭大道",
@@ -1043,9 +1048,9 @@
     "date_end": "2026-10-10",
     "est_end": "",
     "est_basis": "",
-    "summary": "115年國慶大會已於10/10舉行，有遊行隊伍與雷虎小組彩煙衝場。",
+    "summary": "10/10國慶大會已經結束，有警犬參與遊行，最後由雷虎小組彩煙收尾。",
     "appeal": 4,
-    "appeal_reason": "雷虎小組彩煙通場氣勢壯觀，一年才一次",
+    "appeal_reason": "雷虎彩煙劃過總統府，畫面震撼",
     "articles": [
       {
         "title": "總會教社挺進國慶遊行 推廣防災士厚植社會韌性",
@@ -1066,6 +1071,11 @@
         "title": "亞運銅牌林仲威首度參加國慶大會遊行笑稱沒想到自己一台車| 運動",
         "source": "中央社 CNA",
         "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3SFlvLVNUS1U5SG5kWC1udmFXMFhLdUc5RFJlUFV4QzZLNjJrSHJ4NHR5S3VHN3dDSjFiOGtQUWpJY0l5b0NrWHdiR2pZNmUySjJSLWpsZ1l5OXFlZW5z?oc=5"
+      },
+      {
+        "title": "國慶遊行帥氣特勤同框「超萌汪汪隊」　超大反差網友全融化",
+        "source": "ETtoday寵物雲",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1fSklBVkxualBaQTh1WmhfMUZfQllRLUJzMDdzMldSRS1ldDRVRGRoQy1hX2E3dnFtYmd6UjNJT3hfbWV2YjRwRXRHSU1GQdIBTEFVX3lxTE9jaUpVSHJKSVNHaFc5UmFtMGhEU0N6RkZmUnZMZDNOel92WFA4SU02SHZqd1Z4R3NBVnN0RThFOWE2bUhFRnBrUk9TRjI?oc=5"
       }
     ],
     "id": "d21c26fc",
@@ -1075,9 +1085,43 @@
     "score_parts": {
       "appeal": 4,
       "timing": 0,
-      "buzz": 3
+      "buzz": 4
     },
-    "score_value": 2.3,
+    "score_value": 2.4,
+    "score": 2
+  },
+  {
+    "subject": "地景花海",
+    "category": "flower",
+    "location_name": "後壁",
+    "county": "臺南市",
+    "lat": 23.366,
+    "lng": 120.36,
+    "status": "upcoming",
+    "date_start": "",
+    "date_end": "",
+    "est_end": "",
+    "est_basis": "",
+    "summary": "後壁八所學校聯手播種打造農村地景花海，目前剛播種，開花後可以拍稻鄉田野花景。",
+    "appeal": 3,
+    "appeal_reason": "農村地景花田，屬常見休耕花海",
+    "articles": [
+      {
+        "title": "八校攜手播種打造地景花海 串聯農村體驗活絡後壁商圈",
+        "source": "中華日報",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5aTG1pS1JIc2lFREdBX1F1Z2F3cXlBR2lPVUpncXFxc003WDlyU20wWUstZVlueUlXUXNsLVpuVEFOQlA3b1NFWnhEeVNLZXNpdEE?oc=5"
+      }
+    ],
+    "id": "e296f099",
+    "first_seen": "2026-10-13",
+    "last_seen": "2026-10-13",
+    "region": "南部",
+    "score_parts": {
+      "appeal": 3,
+      "timing": 2,
+      "buzz": 1
+    },
+    "score_value": 2.4,
     "score": 2
   },
   {
@@ -1088,13 +1132,13 @@
     "lat": 25.036,
     "lng": 121.567,
     "status": "ended",
-    "date_start": "2026-10-09",
+    "date_start": "2026-10-10",
     "date_end": "2026-10-11",
     "est_end": "",
     "est_basis": "",
-    "summary": "寶可夢30週年「PokéXciting! in 台北」皮卡丘遊行已在雙十連假於信義區舉行。",
+    "summary": "雙十連假在信義區舉行的寶可夢30週年皮卡丘遊行已經結束，主辦方表示後續還有更多活動。",
     "appeal": 3,
-    "appeal_reason": "人偶遊行熱鬧可愛，但屬於商業活動",
+    "appeal_reason": "人偶遊行有趣，但屬商業活動",
     "articles": [
       {
         "title": "萌翻！寶可夢30週年慶典遊行 萬人搶拍百變怪、暴走伊布",
@@ -1174,16 +1218,16 @@
     "category": "event",
     "location_name": "台茂購物中心",
     "county": "桃園市",
-    "lat": 25.054,
-    "lng": 121.293,
-    "status": "upcoming",
+    "lat": 25.038,
+    "lng": 121.296,
+    "status": "unknown",
     "date_start": "",
     "date_end": "",
     "est_end": "",
     "est_basis": "",
-    "summary": "台茂10月有5分鐘煙火秀與6米紫色軟糖熊，確切日期請查官方公告。",
+    "summary": "台茂10月活動有5分鐘璀璨煙火秀和6米紫色軟糖熊，確切施放日期要再查。",
     "appeal": 2,
-    "appeal_reason": "商場的小型短時間煙火",
+    "appeal_reason": "商場小型煙火",
     "articles": [
       {
         "title": "台茂10月活動搶先看！ 5分鐘「璀璨煙火秀」+「6米紫色軟糖熊」空降暴走、「萬聖親子變裝」再送禮券",
@@ -1204,20 +1248,54 @@
     "score": 2
   },
   {
-    "subject": "國慶大遊行",
+    "subject": "部落國慶閱兵遊行",
     "category": "event",
-    "location_name": "台南水交社",
-    "county": "臺南市",
-    "lat": 22.976,
-    "lng": 120.211,
+    "location_name": "鳳林中興部落",
+    "county": "花蓮縣",
+    "lat": 23.74,
+    "lng": 121.45,
     "status": "ended",
     "date_start": "2026-10-10",
     "date_end": "2026-10-10",
     "est_end": "",
     "est_basis": "",
-    "summary": "水交社晴空藝術節國慶大遊行已於10/10舉行，由儀隊與軍樂壓軸。",
+    "summary": "鳳林中興部落的國慶閱兵遊行在10/10舉行，已經結束。",
     "appeal": 3,
-    "appeal_reason": "儀隊軍樂加上眷村氛圍，屬地方遊行",
+    "appeal_reason": "部落特色閱兵，人文題材少見",
+    "articles": [
+      {
+        "title": "鳳林中興部落國慶閱兵遊行",
+        "source": "更生新聞網",
+        "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE0zQ0stTTNZa3FHcWg0c2ZGNlBZNFVaNldPazI3TTl6M0pObVFPOW9XdVNPWFFtN0UxM3RkRkdDMXBFRlkybGo5aWdR?oc=5"
+      }
+    ],
+    "id": "31dcff76",
+    "first_seen": "2026-10-13",
+    "last_seen": "2026-10-13",
+    "region": "東部",
+    "score_parts": {
+      "appeal": 3,
+      "timing": 0,
+      "buzz": 1
+    },
+    "score_value": 1.6,
+    "score": 2
+  },
+  {
+    "subject": "國慶大遊行",
+    "category": "event",
+    "location_name": "台南水交社",
+    "county": "臺南市",
+    "lat": 22.975,
+    "lng": 120.205,
+    "status": "ended",
+    "date_start": "2026-10-10",
+    "date_end": "2026-10-10",
+    "est_end": "",
+    "est_basis": "",
+    "summary": "台南水交社晴空藝術節國慶大遊行已經結束，有儀隊和軍樂壓軸。",
+    "appeal": 2,
+    "appeal_reason": "地方型遊行",
     "articles": [
       {
         "title": "儀隊軍樂震撼壓軸 台南水交社大遊行賀雙十",
@@ -1235,45 +1313,11 @@
     "last_seen": "2026-10-13",
     "region": "南部",
     "score_parts": {
-      "appeal": 3,
+      "appeal": 2,
       "timing": 0,
       "buzz": 2
     },
-    "score_value": 1.7,
-    "score": 2
-  },
-  {
-    "subject": "部落國慶閱兵遊行",
-    "category": "event",
-    "location_name": "鳳林中興部落",
-    "county": "花蓮縣",
-    "lat": 23.75,
-    "lng": 121.45,
-    "status": "ended",
-    "date_start": "2026-10-10",
-    "date_end": "2026-10-10",
-    "est_end": "",
-    "est_basis": "",
-    "summary": "鳳林中興部落國慶閱兵遊行已於10/10舉行。",
-    "appeal": 2,
-    "appeal_reason": "小型部落地方活動",
-    "articles": [
-      {
-        "title": "鳳林中興部落國慶閱兵遊行",
-        "source": "更生新聞網",
-        "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE0zQ0stTTNZa3FHcWg0c2ZGNlBZNFVaNldPazI3TTl6M0pObVFPOW9XdVNPWFFtN0UxM3RkRkdDMXBFRlkybGo5aWdR?oc=5"
-      }
-    ],
-    "id": "31dcff76",
-    "first_seen": "2026-10-13",
-    "last_seen": "2026-10-13",
-    "region": "東部",
-    "score_parts": {
-      "appeal": 2,
-      "timing": 0,
-      "buzz": 1
-    },
-    "score_value": 1.1,
+    "score_value": 1.2,
     "score": 1
   }
 ]
