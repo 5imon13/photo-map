@@ -1,8 +1,11 @@
 # Photo Map Taiwan
 
-Finds photo-worthy scenes and events in Taiwan (芒草, 楓紅, 花季, 煙火, 賞鳥...) from recent news and shows them on a map.
+Finds photo-worthy scenes and events in Taiwan (芒草, 楓紅, 花季, 煙火, 賞鳥...) and shows them on a map.
 
-Pipeline: Google News RSS → Claude extracts spots (place, status, dates, coordinates) → merged into `data/spots.json` → `docs/index.html`
+Sources (`sources.py`, each fails independently): Google News, 觀光署 event open data, 花IN台北 (臺北市公園處),
+national parks (陽明山, 太魯閣, 雪霸, 台江), 林業保育署 forest recreation news, recent PTT Hiking posts.
+
+Pipeline: sources → Claude extracts spots (place, status, dates, coordinates) → merged into `data/spots.json` → `docs/index.html`
 
 ## Run locally
 
