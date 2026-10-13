@@ -36,12 +36,14 @@ SPOT_SCHEMA = {
                     "est_end": {"type": "string", "description": "Nature spots only: estimated YYYY-MM-DD the scene is over, or empty string"},
                     "est_basis": {"type": "string", "description": "Short reason for est_end in Traditional Chinese, or empty string"},
                     "summary": {"type": "string", "description": "One sentence in Traditional Chinese for a photographer"},
+                    "lens": {"type": "string", "description": "Recommended focal lengths (full-frame) and gear, Traditional Chinese"},
+                    "tips": {"type": "string", "description": "1-2 short shooting tips, Traditional Chinese"},
                     "appeal": {"type": "integer", "description": "1-5, how photogenic / rare the scene itself is"},
                     "appeal_reason": {"type": "string", "description": "Short reason for the appeal rating, Traditional Chinese"},
                     "article_ids": {"type": "array", "items": {"type": "integer"}},
                 },
                 "required": ["existing_id", "subject", "category", "location_name", "county", "lat", "lng", "status",
-                             "date_start", "date_end", "est_end", "est_basis", "summary", "appeal", "appeal_reason", "article_ids"],
+                             "date_start", "date_end", "est_end", "est_basis", "summary", "lens", "tips", "appeal", "appeal_reason", "article_ids"],
                 "additionalProperties": False,
             },
         }
@@ -79,6 +81,11 @@ Rules:
   estimate when the scene will be over, from the reported status, the report date, and how long this plant's bloom
   or this bird's stay typically lasts in Taiwan at that altitude. est_basis says briefly how you estimated it,
   e.g. "10/7 三成轉紅，楓紅通常約3-4週後落葉". If you have no reasonable basis, leave both empty.
+- lens: full-frame focal lengths with what each is for, plus key gear, e.g.
+  "70–200mm（逆光散景）、16–35mm（芒草海全景）· 腳架 · CPL". Birds: long telephoto. Fireworks: tripod + release.
+- tips: 1-2 practical tips specific to this subject and season: best time of day / light direction, technique,
+  crowds or access, and rules (e.g. drones need permits in national parks). Do not invent specific viewpoints,
+  trail names or facilities that are not in the items; keep place-specific claims to what the items say.
 - appeal: rate only the scene itself, not timing or popularity.
   5 = rare or spectacular (large fireworks, rare bird, famous peak bloom), 4 = very photogenic seasonal scene,
   3 = nice but common, 2 = minor (small local show, commercial event), 1 = barely photogenic."""

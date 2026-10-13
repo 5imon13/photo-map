@@ -3,6 +3,7 @@
     python update.py           Local, all steps (extraction via `claude -p` on your Claude plan)
     python update.py prepare   Fetch headlines, write data/work/prompt.txt for an external extractor
     python update.py apply     Read data/work/extracted.json, merge into history, rebuild the site
+    python update.py rebuild   Rebuild docs/index.html from saved data only (after page template changes)
 
 The cloud routine runs `prepare`, does the extraction itself, then runs `apply`.
 """
@@ -30,11 +31,13 @@ def now() -> datetime:
 
 
 def build_site(spots: list[dict], status: dict[str, str], alerts: list[dict]) -> None:
+    # "Updated" = when the spot data was last refreshed, even when only the page is rebuilt
+    data_time = datetime.fromtimestamp(SPOTS_FILE.stat().st_mtime, TAIWAN)
     template = (ROOT / "map_template.html").read_text(encoding="utf-8")
     page = (template.replace("__SPOTS__", json.dumps(spots, ensure_ascii=False))
                     .replace("__STATUS__", json.dumps(status, ensure_ascii=False))
                     .replace("__ALERTS__", json.dumps(alerts, ensure_ascii=False))
-                    .replace("__UPDATED__", now().strftime("%Y-%m-%d %H:%M")))
+                    .replace("__UPDATED__", data_time.strftime("%Y-%m-%d %H:%M")))
     SITE_FILE.parent.mkdir(exist_ok=True)
     SITE_FILE.write_text(page, encoding="utf-8")
 
@@ -74,6 +77,12 @@ def apply() -> None:
     save(store.load(SPOTS_FILE), attach_articles(validate(raw), articles), status)
 
 
+def rebuild() -> None:
+    status, alerts = health.last_status(HEALTH_FILE)
+    build_site(store.load(SPOTS_FILE), status, alerts)
+    print(f"Rebuilt {SITE_FILE.relative_to(ROOT)}")
+
+
 def run_local() -> None:
     SPOTS_FILE.parent.mkdir(exist_ok=True)
     known = store.load(SPOTS_FILE)
@@ -83,4 +92,4 @@ def run_local() -> None:
 
 
 if __name__ == "__main__":
-    {"prepare": prepare, "apply": apply}.get(sys.argv[1] if len(sys.argv) > 1 else "", run_local)()
+    {"prepare": prepare, "apply": apply, "rebuild": rebuild}.get(sys.argv[1] if len(sys.argv) > 1 else "", run_local)()

@@ -6,10 +6,11 @@
 <title>Photo Map Taiwan</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/suncalc/1.9.0/suncalc.min.js"></script>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font-family: system-ui, "Microsoft JhengHei", sans-serif; display: flex; height: 100vh; background: #f6f5f2; color: #222; }
-  #side { width: 360px; overflow-y: auto; padding: 16px; border-right: 1px solid #ddd; }
+  #side { width: 380px; overflow-y: auto; padding: 16px; border-right: 1px solid #ddd; }
   #map { flex: 1; }
   h1 { font-size: 18px; margin: 0 0 4px; }
   .updated { font-size: 12px; color: #777; margin-bottom: 12px; }
@@ -33,25 +34,47 @@
   .tag { font-size: 11px; padding: 0 5px; border-radius: 4px; background: #eee; margin-left: 4px; }
   .tag.exp { background: #f3d6d6; color: #a33; }
   .tag.maybe { background: #f7ecc6; color: #8a6400; }
-  .popup .why.est { background: #fbf4dc; color: #6b5200; }
-  .popup .why { font-size: 12px; color: #555; margin: 4px 0; padding: 4px 6px; background: #f4f4f4; border-radius: 4px; }
-  .popup a { display: block; font-size: 12px; margin-top: 3px; }
-  @media (max-width: 700px) { body { flex-direction: column-reverse; } #side { width: 100%; height: 50vh; border: 0; } }
+
+  /* Detail panel */
+  #detail { display: none; }
+  .back { font-size: 13px; color: #555; cursor: pointer; margin-bottom: 10px; display: inline-block; }
+  .d-title { font-size: 17px; font-weight: 700; margin: 0 0 2px; padding-left: 8px; border-left: 5px solid #999; }
+  .d-meta { font-size: 12px; color: #666; margin: 4px 0 8px; }
+  .card { background: #fff; border-radius: 8px; padding: 10px 12px; margin-bottom: 10px; font-size: 13px; }
+  .card h3 { font-size: 13px; margin: 0 0 6px; color: #444; display: flex; justify-content: space-between; align-items: baseline; }
+  .card h3 small { font-weight: normal; color: #999; font-size: 11px; }
+  .note { font-size: 12px; color: #6b5200; background: #fbf4dc; border-radius: 4px; padding: 4px 6px; margin-top: 6px; }
+  .muted { color: #888; font-size: 12px; }
+  .kv { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; }
+  .kv b { font-weight: 600; color: #555; white-space: nowrap; }
+  .days { display: flex; gap: 4px; overflow-x: auto; margin-bottom: 8px; }
+  .day { flex: 0 0 auto; text-align: center; padding: 4px 6px; border-radius: 6px; border: 1px solid #e3e3e3; cursor: pointer; font-size: 11px; min-width: 44px; }
+  .day.on { border-color: #222; background: #222; color: #fff; }
+  .day .ic { font-size: 18px; line-height: 1.3; }
+  .hint { display: inline-block; font-size: 12px; padding: 1px 6px; border-radius: 4px; background: #eef5ee; color: #2d6a3a; margin: 2px 4px 2px 0; }
+  .hint.bad { background: #f3eeee; color: #8a4b4b; }
+  .sources a { display: block; font-size: 12px; margin-top: 3px; color: #1a5fb4; }
+  .sources a:not([href]) { color: #555; }
+  details.score summary { cursor: pointer; font-size: 12px; color: #666; }
+  @media (max-width: 700px) { body { flex-direction: column-reverse; } #side { width: 100%; height: 55vh; border: 0; } }
 </style>
 </head>
 <body>
 <div id="side">
-  <h1>📷 Photo Map Taiwan</h1>
-  <div id="alerts"></div>
-  <div class="updated">Updated __UPDATED__ · <details id="sources"><summary>資料來源</summary></details></div>
-  <div class="row" id="regions"></div>
-  <div class="row" id="filters"></div>
-  <div class="row">
-    <label class="toggle"><input type="checkbox" id="hideExpired" checked> 隱藏已結束</label>
-    <span class="chip" id="nearBtn">📍 依距離排序</span>
+  <div id="listview">
+    <h1>📷 Photo Map Taiwan</h1>
+    <div id="alerts"></div>
+    <div class="updated">Updated __UPDATED__ · <details id="sources"><summary>資料來源</summary></details></div>
+    <div class="row" id="regions"></div>
+    <div class="row" id="filters"></div>
+    <div class="row">
+      <label class="toggle"><input type="checkbox" id="hideExpired" checked> 隱藏已結束</label>
+      <span class="chip" id="nearBtn">📍 依距離排序</span>
+    </div>
+    <div id="count"></div>
+    <div id="list"></div>
   </div>
-  <div id="count"></div>
-  <div id="list"></div>
+  <div id="detail"></div>
 </div>
 <div id="map"></div>
 <script>
@@ -65,10 +88,12 @@ const STATUS = { upcoming: "即將登場", starting: "初期", peak: "盛期", f
 const REGIONS = ["全部", "北部", "中部", "南部", "東部", "離島"];
 const REGION_VIEW = { "全部": [[23.7, 120.95], 8], "北部": [[24.95, 121.45], 10], "中部": [[24.0, 120.85], 9],
                       "南部": [[22.95, 120.45], 9], "東部": [[23.7, 121.45], 9], "離島": [[24.3, 119.5], 8] };
+const TZ = "Asia/Taipei";
 
-const today = new Date().toLocaleDateString("sv");  // YYYY-MM-DD in local time
+const ymd = d => d.toLocaleDateString("sv", { timeZone: TZ });  // YYYY-MM-DD in Taiwan time
+const today = ymd(new Date());
 const daysAgo = d => Math.round((new Date(today) - new Date(d)) / 864e5);
-const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 const dates = s => s.date_start ? `${s.date_start}${s.date_end && s.date_end !== s.date_start ? " ~ " + s.date_end : ""}` : "";
 SPOTS.forEach(s => {
   const end = s.date_end || (s.category === "event" ? s.date_start : "");
@@ -119,15 +144,8 @@ SPOTS.forEach(s => {
   s.marker = L.circleMarker([s.lat, s.lng], {
     radius: 5 + s.score * 2, color: "#fff", weight: 2, fillColor: COLORS[s.category],
     fillOpacity: s.expired || s.maybeOver ? .3 : Math.max(.35, .9 - s.age * .04) });
-  const p = s.score_parts;
-  s.marker.bindPopup(() => `<div class="popup"><b>${esc(s.subject)} · ${esc(s.location_name)}</b><br>
-    ${meta(s)}<br>${esc(s.summary)}
-    <div class="why">分數 ${s.score_value} =景色 ${p.appeal}×0.5 + 時機 ${p.timing}×0.4 + 熱度 ${p.buzz}×0.1<br>
-    景色：${esc(s.appeal_reason)}<br>熱度：${s.articles.length} 篇報導</div>
-    ${s.est_end ? `<div class="why est">⚠ 預估結束 ${esc(s.est_end)} 為 AI 推估，非官方資訊，出發前請確認最新花況。<br>依據：${esc(s.est_basis)}</div>` : ""}
-    ${s.articles.map(a => a.link
-      ? `<a href="${esc(a.link)}" target="_blank">${esc(a.title)} · ${esc(a.source)}</a>`
-      : `<a>${esc(a.title)} · ${esc(a.source)}</a>`).join("")}</div>`);
+  s.marker.bindTooltip(`${s.subject} · ${s.location_name}`);
+  s.marker.on("click", () => showDetail(s));
 });
 
 function visible(s) {
@@ -146,11 +164,200 @@ function render() {
     el.style.borderLeftColor = COLORS[s.category];
     el.innerHTML = `<div class="t">${esc(s.subject)} · ${esc(s.location_name)}</div>
       <div class="m">${meta(s)}</div><div class="s">${esc(s.summary)}</div>`;
-    el.onclick = () => { map.setView([s.lat, s.lng], 12); s.marker.openPopup(); };
+    el.onclick = () => showDetail(s);
     list.appendChild(el);
   });
   document.getElementById("count").textContent = `${shown.length} / ${SPOTS.length} 個地點`;
 }
+
+/* ---------- Light, night sky and weather ---------- */
+
+const hm = t => t && !isNaN(t) ? t.toLocaleTimeString("zh-TW", { hour: "2-digit", minute: "2-digit", hour12: false, timeZone: TZ }) : "—";
+const noonOf = day => new Date(`${day}T12:00:00+08:00`);
+const addDays = (day, n) => ymd(new Date(noonOf(day).getTime() + n * 864e5));
+const COMPASS = ["北", "北北東", "東北", "東北東", "東", "東南東", "東南", "南南東", "南", "南南西", "西南", "西南西", "西", "西北西", "西北", "北北西"];
+function bearing(t, s) {  // SunCalc azimuth is from south, clockwise to west
+  const deg = (SunCalc.getPosition(t, s.lat, s.lng).azimuth * 180 / Math.PI + 180 + 360) % 360;
+  return `${Math.round(deg)}° ${COMPASS[Math.round(deg / 22.5) % 16]}`;
+}
+
+function lightCard(s, day) {
+  const t = SunCalc.getTimes(noonOf(day), s.lat, s.lng);
+  return `<div class="card"><h3>☀️ 光線 <small>${day}</small></h3><div class="kv">
+    <b>日出</b><span>${hm(t.sunrise)} · 方位 ${bearing(t.sunrise, s)}</span>
+    <b>早晨黃金時刻</b><span>${hm(t.sunrise)}–${hm(t.goldenHourEnd)}</span>
+    <b>早晨藍調（約）</b><span>${hm(t.dawn)}–${hm(t.sunrise)}</span>
+    <b>傍晚黃金時刻</b><span>${hm(t.goldenHour)}–${hm(t.sunset)}</span>
+    <b>日落</b><span>${hm(t.sunset)} · 方位 ${bearing(t.sunset, s)}</span>
+    <b>傍晚藍調（約）</b><span>${hm(t.sunset)}–${hm(t.dusk)}</span>
+  </div></div>`;
+}
+
+const MOON_NAMES = ["新月", "眉月", "上弦月", "盈凸月", "滿月", "虧凸月", "下弦月", "殘月"];
+const MOON_ICONS = ["🌑", "🌒", "🌓", "🌔", "🌕", "🌖", "🌗", "🌘"];
+const GC = { ra: 266.4168, dec: -29.0078 };  // Milky Way galactic center, degrees
+
+function gcAltitude(t, lat, lng) {
+  const rad = Math.PI / 180;
+  const d = t.getTime() / 864e5 + 2440587.5 - 2451545.0;
+  const lst = (280.46061837 + 360.98564736629 * d + lng) % 360;
+  const h = (lst - GC.ra) * rad;
+  return Math.asin(Math.sin(lat * rad) * Math.sin(GC.dec * rad) +
+                   Math.cos(lat * rad) * Math.cos(GC.dec * rad) * Math.cos(h)) / rad;
+}
+
+function milkyWay(s, day) {
+  // Astronomical night: from tonight's night start to tomorrow's night end
+  const start = SunCalc.getTimes(noonOf(day), s.lat, s.lng).night;
+  const end = SunCalc.getTimes(noonOf(addDays(day, 1)), s.lat, s.lng).nightEnd;
+  if (!start || !end || isNaN(start) || isNaN(end)) return "無完整天文夜";
+  let first = null, last = null, best = 0, gcUp = false;
+  for (let t = start.getTime(); t <= end.getTime(); t += 10 * 6e4) {
+    const at = new Date(t), alt = gcAltitude(at, s.lat, s.lng);
+    if (alt < 10) continue;
+    gcUp = true;
+    const moonUp = SunCalc.getMoonPosition(at, s.lat, s.lng).altitude > 0;
+    if (moonUp && SunCalc.getMoonIllumination(at).fraction > 0.2) continue;
+    first ??= at; last = at; best = Math.max(best, alt);
+  }
+  if (first) return `銀河核心可見 ${hm(first)}–${hm(last)}（最高仰角 ${Math.round(best)}°）`;
+  return gcUp ? "銀河核心在天上，但月光太亮" : "今晚銀河核心不在夜空中（台灣約 2–10 月可見）";
+}
+
+function nightCard(s, day) {
+  const ill = SunCalc.getMoonIllumination(noonOf(day));
+  const idx = Math.round(ill.phase * 8) % 8;
+  const mt = SunCalc.getMoonTimes(noonOf(day), s.lat, s.lng);
+  const moonTimes = mt.alwaysUp ? "整天在天上" : mt.alwaysDown ? "整天在地平線下" : `月出 ${hm(mt.rise)} · 月落 ${hm(mt.set)}`;
+  return `<div class="card"><h3>🌙 夜空 <small>${day}</small></h3><div class="kv">
+    <b>月相</b><span>${MOON_ICONS[idx]} ${MOON_NAMES[idx]}（${Math.round(ill.fraction * 100)}%）</span>
+    <b>月亮</b><span>${moonTimes}</span>
+    <b>銀河</b><span>${milkyWay(s, day)}</span>
+  </div></div>`;
+}
+
+function wmoIcon(code) {
+  if (code === 0) return "☀️";
+  if (code <= 2) return "🌤️";
+  if (code === 3) return "☁️";
+  if (code === 45 || code === 48) return "🌫️";
+  if (code >= 95) return "⛈️";
+  if (code >= 80) return "🌦️";
+  if (code >= 51) return "🌧️";
+  return "☁️";
+}
+
+const weatherCache = new Map();
+function fetchWeather(s) {
+  if (!weatherCache.has(s.id)) {
+    const url = "https://api.open-meteo.com/v1/forecast?" + new URLSearchParams({
+      latitude: s.lat, longitude: s.lng, timezone: TZ, forecast_days: 7,
+      hourly: "cloud_cover_low,cloud_cover_mid,cloud_cover_high,precipitation_probability,visibility",
+      daily: "weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max",
+    });
+    weatherCache.set(s.id, fetch(url).then(r => r.ok ? r.json() : Promise.reject(r.status)));
+  }
+  return weatherCache.get(s.id);
+}
+
+function skyAt(w, t) {  // hourly forecast for the hour nearest to time t
+  const key = `${ymd(t)}T${String(Math.round((t.getTime() / 36e5 + 8) % 24) % 24).padStart(2, "0")}:00`;
+  const i = w.hourly.time.indexOf(key);
+  if (i < 0) return null;
+  const h = w.hourly;
+  return { low: h.cloud_cover_low[i], mid: h.cloud_cover_mid[i], high: h.cloud_cover_high[i],
+           rain: h.precipitation_probability[i], vis: h.visibility[i] };
+}
+
+function glowHint(x, label) {
+  if (!x) return "";
+  const upper = Math.max(x.mid, x.high);
+  if (x.rain >= 50) return `<span class="hint bad">${label}：降雨機率 ${x.rain}%</span>`;
+  if (x.low >= 70) return `<span class="hint bad">${label}：低雲多，光線易被遮</span>`;
+  if (upper >= 20 && upper <= 80 && x.low < 40) return `<span class="hint">🔥 ${label}有機會火燒雲</span>`;
+  if (upper < 20 && x.low < 30) return `<span class="hint">${label}：晴朗，雲少</span>`;
+  return `<span class="hint bad">${label}：雲量不利</span>`;
+}
+
+function cloudLine(x) {
+  return x ? `低雲 ${x.low}% · 中雲 ${x.mid}% · 高雲 ${x.high}% · 降雨 ${x.rain}%` +
+             (x.vis != null ? ` · 能見度 ${(x.vis / 1000).toFixed(0)} km` : "") : "—";
+}
+
+function weatherCard(s, w, day) {
+  const d = w.daily, names = ["日", "一", "二", "三", "四", "五", "六"];
+  const strip = d.time.map((t, i) => `<div class="day ${t === day ? "on" : ""}" data-day="${t}">
+      ${i === 0 ? "今天" : "週" + names[noonOf(t).getDay()]}<div class="ic">${wmoIcon(d.weather_code[i])}</div>
+      ${Math.round(d.temperature_2m_max[i])}°/${Math.round(d.temperature_2m_min[i])}°<br>☔${d.precipitation_probability_max[i] ?? "—"}%</div>`).join("");
+  const st = SunCalc.getTimes(noonOf(day), s.lat, s.lng);
+  const rise = skyAt(w, st.sunrise), set = skyAt(w, st.sunset);
+  const seaOfClouds = w.elevation >= 1500 && rise && rise.low >= 50 && rise.rain < 40
+    ? `<span class="hint">☁️ 清晨有機會雲海</span>` : "";
+  return `<div class="card"><h3>🌤️ 天氣 <small>海拔約 ${Math.round(w.elevation)} m · Open-Meteo</small></h3>
+    <div class="days">${strip}</div>
+    <div class="kv"><b>日出時</b><span>${cloudLine(rise)}</span><b>日落時</b><span>${cloudLine(set)}</span></div>
+    <div style="margin-top:6px">${glowHint(rise, "日出")}${glowHint(set, "日落")}${seaOfClouds}</div>
+    <div class="muted" style="margin-top:4px">火燒雲、雲海提示為依雲量推估，僅供參考。</div></div>`;
+}
+
+/* ---------- Detail panel ---------- */
+
+let current = null, currentDay = today;
+
+function showDetail(s, keepDay = false) {
+  current = s;
+  if (!keepDay) currentDay = today;
+  history.replaceState(null, "", "#" + s.id);
+  document.getElementById("listview").style.display = "none";
+  const el = document.getElementById("detail");
+  el.style.display = "block";
+  const p = s.score_parts;
+  el.innerHTML = `<span class="back" id="back">← 返回列表</span>
+    <div class="d-title" style="border-left-color:${COLORS[s.category]}">${esc(s.subject)} · ${esc(s.location_name)}</div>
+    <div class="d-meta">${meta(s)}</div>
+    <div class="card">${esc(s.summary)}
+      ${s.est_end ? `<div class="note">⚠ 預估結束 ${esc(s.est_end)} 為 AI 推估，非官方資訊，出發前請確認最新狀況。<br>依據：${esc(s.est_basis)}</div>` : ""}
+      <details class="score"><summary>分數 ${s.score_value} 怎麼算</summary>
+        <div class="muted">= 景色 ${p.appeal}×0.5 + 時機 ${p.timing}×0.4 + 熱度 ${p.buzz}×0.1<br>
+        景色：${esc(s.appeal_reason)}<br>熱度：${s.articles.length} 篇資料</div></details></div>
+    <div id="weather"><div class="card muted">載入天氣中…</div></div>
+    <div id="sky"></div>
+    ${s.lens || s.tips ? `<div class="card"><h3>📷 拍攝建議 <small>AI 建議，僅供參考</small></h3><div class="kv">
+      ${s.lens ? `<b>鏡頭</b><span>${esc(s.lens)}</span>` : ""}
+      ${s.tips ? `<b>技巧</b><span>${esc(s.tips)}</span>` : ""}</div></div>` : ""}
+    <div class="card sources"><h3>資料來源</h3>${s.articles.map(a => a.link
+      ? `<a href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.title)} · ${esc(a.source)}</a>`
+      : `<a>${esc(a.title)} · ${esc(a.source)}</a>`).join("")}</div>`;
+  document.getElementById("back").onclick = closeDetail;
+  renderDay(s);
+  fetchWeather(s).then(w => { if (current === s) renderWeather(s, w); })
+    .catch(() => { if (current === s) document.getElementById("weather").innerHTML = `<div class="card muted">天氣資料暫時無法取得</div>`; });
+  document.getElementById("side").scrollTop = 0;
+  map.setView([s.lat, s.lng], Math.max(map.getZoom(), 11));
+}
+
+function renderDay(s) {
+  document.getElementById("sky").innerHTML = lightCard(s, currentDay) + nightCard(s, currentDay);
+}
+
+function renderWeather(s, w) {
+  const box = document.getElementById("weather");
+  box.innerHTML = weatherCard(s, w, currentDay);
+  box.querySelectorAll(".day").forEach(d => d.onclick = () => {
+    currentDay = d.dataset.day;
+    renderWeather(s, w);
+    renderDay(s);
+  });
+}
+
+function closeDetail() {
+  current = null;
+  history.replaceState(null, "", location.pathname);
+  document.getElementById("detail").style.display = "none";
+  document.getElementById("listview").style.display = "block";
+}
+
+/* ---------- Filters and controls ---------- */
 
 const regionsEl = document.getElementById("regions");
 REGIONS.forEach(r => {
@@ -199,6 +406,9 @@ nearBtn.onclick = () => {
 };
 
 render();
+// A link with #<spot id> opens that spot directly, so a spot can be shared
+const linked = SPOTS.find(s => s.id === location.hash.slice(1));
+if (linked) showDetail(linked);
 </script>
 </body>
 </html>

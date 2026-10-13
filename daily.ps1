@@ -1,5 +1,6 @@
 # Daily update: refresh the map and publish it to GitHub Pages.
-# Run by Windows Task Scheduler ("Photo Map daily update", 07:07 and 16:07). Log: logs\YYYY-MM-DD.log
+# Run by Windows Task Scheduler ("Photo Map daily update", 07:07 and 16:07) through run_hidden.vbs,
+# so no window shows. Log: logs\YYYY-MM-DD.log
 
 $ErrorActionPreference = "Stop"
 Set-Location $PSScriptRoot
