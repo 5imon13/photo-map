@@ -13,6 +13,9 @@
   #map { flex: 1; }
   h1 { font-size: 18px; margin: 0 0 4px; }
   .updated { font-size: 12px; color: #777; margin-bottom: 12px; }
+  .updated details { display: inline; cursor: pointer; }
+  .updated details[open] { display: block; margin-top: 4px; }
+  .updated .failed { color: #a33; }
   .row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; align-items: center; }
   .chip { font-size: 12px; padding: 3px 9px; border-radius: 12px; background: #fff; border: 1px solid #ccc; cursor: pointer; user-select: none; }
   .chip.off { opacity: .35; }
@@ -37,7 +40,7 @@
 <body>
 <div id="side">
   <h1>📷 Photo Map Taiwan</h1>
-  <div class="updated">Updated __UPDATED__ · from news of the past 14 days</div>
+  <div class="updated">Updated __UPDATED__ · <details id="sources"><summary>資料來源</summary></details></div>
   <div class="row" id="regions"></div>
   <div class="row" id="filters"></div>
   <div class="row">
@@ -50,6 +53,7 @@
 <div id="map"></div>
 <script>
 const SPOTS = __SPOTS__;
+const SOURCE_STATUS = __STATUS__;
 const COLORS = { flower: "#e0569b", foliage: "#d9541e", grass: "#b59a45", bird: "#2a8fbd",
                  event: "#7b4fd6", landscape: "#2f9e6e", other: "#888" };
 const LABELS = { flower: "花", foliage: "楓紅", grass: "芒草", bird: "鳥", event: "活動", landscape: "風景", other: "其他" };
@@ -117,7 +121,9 @@ SPOTS.forEach(s => {
     <div class="why">分數 ${s.score_value} =景色 ${p.appeal}×0.5 + 時機 ${p.timing}×0.4 + 熱度 ${p.buzz}×0.1<br>
     景色：${esc(s.appeal_reason)}<br>熱度：${s.articles.length} 篇報導</div>
     ${s.est_end ? `<div class="why est">⚠ 預估結束 ${esc(s.est_end)} 為 AI 推估，非官方資訊，出發前請確認最新花況。<br>依據：${esc(s.est_basis)}</div>` : ""}
-    ${s.articles.map(a => `<a href="${esc(a.link)}" target="_blank">${esc(a.title)}</a>`).join("")}</div>`);
+    ${s.articles.map(a => a.link
+      ? `<a href="${esc(a.link)}" target="_blank">${esc(a.title)} · ${esc(a.source)}</a>`
+      : `<a>${esc(a.title)} · ${esc(a.source)}</a>`).join("")}</div>`);
 });
 
 function visible(s) {
@@ -167,6 +173,9 @@ Object.keys(COLORS).filter(c => SPOTS.some(s => s.category === c)).forEach(c => 
 });
 
 hideExpired.onchange = render;
+
+document.getElementById("sources").insertAdjacentHTML("beforeend", Object.entries(SOURCE_STATUS).map(([name, st]) =>
+  `<div class="${st.startsWith("FAILED") ? "failed" : ""}">${esc(name)}：${st.startsWith("FAILED") ? "暫時無法取得" : esc(st.replace(" items", " 則"))}</div>`).join(""));
 
 const nearBtn = document.getElementById("nearBtn");
 nearBtn.onclick = () => {

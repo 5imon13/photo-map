@@ -27,15 +27,16 @@ def now() -> datetime:
     return datetime.now(TAIWAN)
 
 
-def build_site(spots: list[dict]) -> None:
+def build_site(spots: list[dict], status: dict[str, str]) -> None:
     template = (ROOT / "map_template.html").read_text(encoding="utf-8")
     page = (template.replace("__SPOTS__", json.dumps(spots, ensure_ascii=False))
+                    .replace("__STATUS__", json.dumps(status, ensure_ascii=False))
                     .replace("__UPDATED__", now().strftime("%Y-%m-%d %H:%M")))
     SITE_FILE.parent.mkdir(exist_ok=True)
     SITE_FILE.write_text(page, encoding="utf-8")
 
 
-def save(known: list[dict], extracted: list[dict]) -> None:
+def save(known: list[dict], extracted: list[dict], status: dict[str, str]) -> None:
     spots = store.merge(known, extracted, now().date())
     print(f"Extracted {len(extracted)} spots this run, {len(spots)} on the map\n")
     for s in spots:
@@ -43,34 +44,36 @@ def save(known: list[dict], extracted: list[dict]) -> None:
         print(f"  {s['score_value']:.1f} {s['subject']} @ {s['location_name']} ({s['region']}) "
               f"- {s['status']}  [appeal {p['appeal']} / timing {p['timing']} / buzz {p['buzz']}]")
     SPOTS_FILE.write_text(json.dumps(spots, ensure_ascii=False, indent=2), encoding="utf-8")
-    build_site(spots)
+    build_site(spots, status)
     print(f"\nWrote {SPOTS_FILE.relative_to(ROOT)} and {SITE_FILE.relative_to(ROOT)}")
 
 
 def prepare() -> None:
     WORK_DIR.mkdir(parents=True, exist_ok=True)
-    articles = fetch_articles()
+    articles, status = fetch_articles()
     known = store.load(SPOTS_FILE)
+    (WORK_DIR / "status.json").write_text(json.dumps(status, ensure_ascii=False), encoding="utf-8")
     (WORK_DIR / "headlines.json").write_text(
         json.dumps([asdict(a) for a in articles], ensure_ascii=False), encoding="utf-8")
     (WORK_DIR / "prompt.txt").write_text(build_prompt(articles, known, now().date()), encoding="utf-8")
     (WORK_DIR / "schema.json").write_text(json.dumps(SPOT_SCHEMA, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Fetched {len(articles)} headlines, {len(known)} known spots")
+    print(f"Fetched {len(articles)} items, {len(known)} known spots")
     print(f"Wrote data/work/prompt.txt and schema.json; write the result to data/work/extracted.json")
 
 
 def apply() -> None:
     articles = [Article(**a) for a in json.loads((WORK_DIR / "headlines.json").read_text(encoding="utf-8"))]
     raw = json.loads((WORK_DIR / "extracted.json").read_text(encoding="utf-8"))
-    save(store.load(SPOTS_FILE), attach_articles(validate(raw), articles))
+    status = json.loads((WORK_DIR / "status.json").read_text(encoding="utf-8"))
+    save(store.load(SPOTS_FILE), attach_articles(validate(raw), articles), status)
 
 
 def run_local() -> None:
     SPOTS_FILE.parent.mkdir(exist_ok=True)
     known = store.load(SPOTS_FILE)
-    articles = fetch_articles()
-    print(f"Fetched {len(articles)} headlines, {len(known)} known spots")
-    save(known, extract_spots(articles, known, now().date()))
+    articles, status = fetch_articles()
+    print(f"Fetched {len(articles)} items, {len(known)} known spots")
+    save(known, extract_spots(articles, known, now().date()), status)
 
 
 if __name__ == "__main__":

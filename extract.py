@@ -51,12 +51,22 @@ SPOT_SCHEMA = {
 }
 
 SYSTEM = """You help a landscape and event photographer in Taiwan find what is worth shooting.
-You receive this week's news headlines. Extract photo-worthy spots IN TAIWAN only:
-seasonal nature (flowers, autumn leaves, silver grass, birds), landscapes (sea of clouds, stars),
-and public events (fireworks, parades, festivals, lantern shows).
+You receive recent items from several kinds of sources, each tagged with where it came from:
+- Google News headlines.
+- Official event listings (觀光署): dated events with place and coordinates. Most are not photo subjects;
+  keep only visually striking public events (fireworks, parades, festivals, lantern shows, indigenous ceremonies,
+  flower/ecology events). Skip runs, markets, concerts in halls, sales, food events, admin notices.
+- Official bloom / park / forest news (花IN台北, national parks, 林業保育署): reliable bloom status and seasonal
+  events; ignore closures, construction, recruitment and admin notices unless they affect a photo spot.
+- PTT first-hand reports: hikers' trip posts. Use only when they describe current scenery in Taiwan
+  (silver grass, autumn colors, sea of clouds...); skip trips abroad and posts without scenery details.
+
+Extract photo-worthy spots IN TAIWAN only: seasonal nature (flowers, autumn leaves, silver grass, birds),
+landscapes (sea of clouds, stars), and public events (fireworks, parades, festivals, lantern shows).
 
 Rules:
 - Skip anything outside Taiwan (Japan/Korea/Hong Kong foliage etc.), ads, finance and unrelated news.
+- When an item gives coordinates, use them for lat/lng.
 - Skip generic listicles that don't name a specific place with current conditions or dates.
 - Merge headlines about the same place and subject into one spot; list every related article id.
 - If a spot matches one in "Known spots" (same place and subject), set existing_id to its id
@@ -76,10 +86,11 @@ Rules:
 
 def build_prompt(articles: list[Article], known: list[dict], today: date) -> str:
     known_lines = [f"- id={s['id']}: {s['subject']} @ {s['location_name']} ({s['county']})" for s in known]
-    lines = [f"[{i}] {a.title} ({a.source}, {a.published})" for i, a in enumerate(articles)]
+    lines = [f"[{i}] <{a.query}> {a.title} ({a.source}, {a.published})" + (f" | {a.detail}" if a.detail else "")
+             for i, a in enumerate(articles)]
     return (f"{SYSTEM}\n\nToday is {today.isoformat()}.\n\n"
             "Known spots:\n" + ("\n".join(known_lines) or "(none)") +
-            "\n\nHeadlines:\n" + "\n".join(lines))
+            "\n\nItems:\n" + "\n".join(lines))
 
 
 def validate(raw: dict) -> list[dict]:
@@ -116,7 +127,7 @@ def extract_spots(articles: list[Article], known: list[dict], today: date) -> li
     env = {k: v for k, v in os.environ.items() if k not in ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN")}
     result = subprocess.run(
         [claude, "-p", "--output-format", "json", "--json-schema", json.dumps(SPOT_SCHEMA), "--tools", ""],
-        input=build_prompt(articles, known, today), capture_output=True, text=True, encoding="utf-8", env=env, timeout=600,
+        input=build_prompt(articles, known, today), capture_output=True, text=True, encoding="utf-8", env=env, timeout=1200,
     )
     if result.returncode != 0:
         raise RuntimeError(f"claude -p failed (exit {result.returncode}): {result.stderr or result.stdout}")
