@@ -75,8 +75,9 @@
   .sources a { display: block; font-size: 12px; margin-top: 4px; color: #1a5fb4; }
   .sources a:not([href]) { color: #555; }
   details.score summary { cursor: pointer; font-size: 12px; color: #666; margin-top: 6px; }
-  #seasonal { margin-top: 14px; border-top: 1px dashed #ccc; padding-top: 10px; }
-  #seasonal summary { cursor: pointer; font-size: 14px; font-weight: 600; color: #444; padding: 4px 0; }
+  #seasonal { margin: 0 0 8px; border: 1px dashed #c9c9c9; border-radius: 8px; padding: 2px 10px; background: #fbfaf7; }
+  #seasonal[open] { padding-bottom: 6px; }
+  #seasonal summary { cursor: pointer; font-size: 13px; font-weight: 600; color: #444; padding: 7px 0; }
   #seasonal .intro { margin: 2px 0 8px; }
   .spot.seasonal { background: transparent; border: 1px dashed #bbb; border-left-width: 5px; border-left-style: dashed; }
   .tag.season { background: #e8eef7; color: #36507a; }
@@ -123,17 +124,17 @@
     <div id="listview">
       <div id="alerts"></div>
       <div class="updated">最後更新 __UPDATED__ · <details id="sources"><summary>資料來源</summary></details></div>
+      <details id="seasonal" hidden>
+        <summary></summary>
+        <div class="muted intro">依往年經驗通常這時候值得拍，但本週沒有報導確認。由 AI 列出，出發前請先查最新狀況。</div>
+        <div id="seasonalList"></div>
+      </details>
       <div id="filters-panel">
         <div class="row" id="regions"></div>
         <div class="row" id="filters"></div>
         <div class="row"><label class="toggle"><input type="checkbox" id="hideExpired" checked> 隱藏已結束</label></div>
       </div>
       <div id="list"></div>
-      <details id="seasonal" hidden>
-        <summary></summary>
-        <div class="muted intro">依往年經驗通常這時候值得拍，但本週沒有報導確認。由 AI 列出，出發前請先查最新狀況。</div>
-        <div id="seasonalList"></div>
-      </details>
     </div>
     <div id="detail"></div>
   </div>
@@ -206,9 +207,9 @@ function meta(s) {
 }
 
 SPOTS.forEach(s => {
+  s.fill = s.expired || s.maybeOver ? .3 : Math.max(.35, .9 - s.age * .04);
   s.marker = L.circleMarker([s.lat, s.lng], {
-    radius: 5 + s.score * 2, color: "#fff", weight: 2, fillColor: COLORS[s.category],
-    fillOpacity: s.expired || s.maybeOver ? .3 : Math.max(.35, .9 - s.age * .04) });
+    radius: 5 + s.score * 2, color: "#fff", weight: 2, fillColor: COLORS[s.category], fillOpacity: s.fill });
   if (!mobile.matches) s.marker.bindTooltip(`${s.subject} · ${s.location_name}`);  // no hover on touch screens
   s.marker.on("click", () => showDetail(s));
 });
@@ -217,11 +218,19 @@ const seasonalBox = document.getElementById("seasonal");
 SEASONAL.forEach(s => {
   s.seasonal = true;
   s.marker = L.circleMarker([s.lat, s.lng], {
-    radius: 9, color: COLORS[s.category], weight: 2, dashArray: "4 3", fillColor: "#fff", fillOpacity: .6 });
+    radius: 10, color: COLORS[s.category], weight: 3, dashArray: "5 3", fillColor: "#fff", fillOpacity: .85 });
   if (!mobile.matches) s.marker.bindTooltip(`往年此時：${s.subject} · ${s.location_name}`);
   s.marker.on("click", () => showDetail(s));
 });
-seasonalBox.addEventListener("toggle", render);
+seasonalBox.addEventListener("toggle", () => {
+  render();
+  if (!seasonalBox.open || current) return;
+  // Show where they are: lower the sheet if it hides the map, and fit the map to them
+  if (sheetState === "full") setSheet("half");
+  const pts = SEASONAL.filter(s => s.marker._map).map(s => [s.lat, s.lng]);
+  if (pts.length) map.fitBounds(pts, { paddingTopLeft: [30, 30], maxZoom: 11,
+    paddingBottomRight: [30, 30 + (mobile.matches ? snapHeights()[sheetState] : 0)] });
+});
 const findSpot = id => SPOTS.find(x => x.id === id) || SEASONAL.find(x => x.id === id);
 
 function visible(s) {
@@ -234,6 +243,9 @@ function render() {
   const shown = SPOTS.filter(visible);
   if (me) shown.sort((a, b) => km(a) - km(b));
   SPOTS.forEach(s => visible(s) ? s.marker.addTo(map) : s.marker.remove());
+  // While "往年此時" is open, fade this week's markers so the dashed seasonal ones stand out
+  const seasonalOpen = document.getElementById("seasonal").open;
+  SPOTS.forEach(s => s.marker.setStyle(seasonalOpen ? { fillOpacity: .12, opacity: .3 } : { fillOpacity: s.fill, opacity: 1 }));
   shown.forEach(s => {
     const el = document.createElement("div");
     el.className = "spot" + (s.expired || s.maybeOver || s.age > 7 ? " old" : "");
