@@ -2,42 +2,42 @@
   "Google News": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-10-15 09:27",
+    "last_ok": "2026-10-15 16:11",
     "last_problem": "",
-    "last_status": "170 items"
+    "last_status": "173 items"
   },
   "觀光署活動": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-10-15 09:27",
+    "last_ok": "2026-10-15 16:11",
     "last_problem": "FAILED: TimeoutError: The read operation timed out",
-    "last_status": "92 items"
+    "last_status": "97 items"
   },
   "花IN台北": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-10-15 09:27",
+    "last_ok": "2026-10-15 16:11",
     "last_problem": "",
     "last_status": "9 items"
   },
   "國家公園": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-10-15 09:27",
+    "last_ok": "2026-10-15 16:11",
     "last_problem": "",
-    "last_status": "37 items"
+    "last_status": "35 items"
   },
   "森林遊樂區": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-10-15 09:27",
+    "last_ok": "2026-10-15 16:11",
     "last_problem": "",
     "last_status": "8 items"
   },
   "PTT": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-10-15 09:27",
+    "last_ok": "2026-10-15 16:11",
     "last_problem": "",
     "last_status": "6 items"
   }
