@@ -18,6 +18,7 @@ start docs\index.html
 - Extraction runs through Claude Code headless mode (`claude -p`), using your Claude plan; no API key or API billing.
   Keep "extra usage" off in your claude.ai settings so hitting the limit fails instead of charging.
 - At 07:07 and 16:07 Windows Task Scheduler runs `daily.ps1`: update, then commit and push `data/spots.json` + `docs/index.html`
+  (waits up to 10 min for github.com and retries git 3 times; task time limit 60 min)
   (GitHub Pages republishes the site). Logs in `logs/`. `update.py prepare`/`apply` split the run for an external extractor.
 - Each run merges into `data/spots.json`; spots drop off 14 days after the news last mentioned them
   (announced future events stay until their date passes).
