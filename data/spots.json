@@ -1,21 +1,97 @@
 [
   {
+    "subject": "台灣山毛櫸金黃、楓紅",
+    "category": "foliage",
+    "location_name": "太平山翠峰湖山毛櫸步道",
+    "county": "宜蘭縣",
+    "lat": 24.508,
+    "lng": 121.606,
+    "status": "peak",
+    "date_start": "",
+    "date_end": "",
+    "est_end": "2026-11-20",
+    "est_basis": "11/2報導秋色正美，山毛櫸金黃通常約2-3週後落葉；PTT提及11月底已落光",
+    "summary": "太平山秋色正美，翠峰湖霧氣繚繞、楓紅如畫，山毛櫸步道進入金黃季。",
+    "lens": "16–35mm（霧中林相）、70–200mm（金黃葉片特寫）· 腳架 · CPL",
+    "tips": "霧天正適合拍翠峰湖仙境氛圍，晴天則用CPL壓天空；山毛櫸步道假日需留意園區管制。",
+    "appeal": 5,
+    "appeal_reason": "冰河孑遺山毛櫸金黃林，一年僅短暫數週",
+    "articles": [
+      {
+        "title": "秋遊宜蘭5大提案！新開幕「百年林場星巴克」必訪 漫步芒花古道、搭蹦蹦車追逐最美秋色",
+        "source": "Yahoo新聞",
+        "link": "https://news.google.com/rss/articles/CBMiqgRBVV95cUxPZnA3d2lLaU9UUzNUeVphZ1BpZ3Z2NmdMZ1M3ZnVoMVdKeTJmTGNYcXlKZG5PV3BsTVBMYVdOdlBWUThrNDFlOER5Q2NZV0RHWU45RXNESVA1UEdiclg0b3lRdHh3X1BYeF93blVNYmt3RHYtejVsNmdYNDVQbEdTYV9QaDd2eFQxRVg2NGx3NlZKem13UVlMUTdoUk5DczRPc2cwMHF4bHctRXhJMzlBdVdOMFhHM29xZGd5OWxPR0UzQ201MVA4ZmF4dWwxVGVBSGFneERVZWpNOEgwNzRqcjl1Wi1TZ2wzbDk1eXdwMmtWWEVZQWFnaU5YSWxPbXQ3MDVReG5raDRIQTc4bXlDS2diNG1Rck1qcUMwMl9jN3JMUGV4MC02U2IyRHhGelFhTkZNdXZJZXZMSlpWdFdYbXRoSUV1ampxX2ZBa3hXWG5CemhTdEZJRjB6bWRYSmNrMVhBV3hZZkk5U2FNaFMwZmRvWlR6a1VHZWtLT0M0a3NxRTR4N3RBNVRxUko3cVZSdUlyUkFGRUVlZkp4X0hCX0dGQ1U0NUd5d0lQNmdCNFVRUlFNMDdnT3gzcGk2NDgweXlYSVNqSnAzY1hMVjJyNFhaR0toZTd5MW1iVTBIeUdDeVl4Z2I5S3lzazJtNUVKQUVpeWYzUC03Vzh5TjhfeGxHR1NTc1JZcGNTVVUwX2h6TjIydEltYWJBbGg4Q1RfbHVaZUpJaGllUQ?oc=5"
+      },
+      {
+        "title": "2026太平山台灣山毛櫸旺季 翠峰景觀道路動態車輛總量管制措施",
+        "source": "林業保育署 宜蘭分署",
+        "link": "https://recreation.forest.gov.tw/News/News?id=20261001001"
+      },
+      {
+        "title": "[遊記] 從太平山望向太平洋：望洋山步道",
+        "source": "PTT Hiking",
+        "link": "https://www.ptt.cc/bbs/Hiking/M.1791783528.A.017.html"
+      },
+      {
+        "title": "〈中華旅遊〉太平山蹦蹦車賞森林 訪觀魚步道",
+        "source": "中華新聞雲／中華日報",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9NeW1jOFhuamhOUnE2Y081cjdnSWNzOXJFckx6czdVd1docHl0Mk8tWWxCdjhEMldpS0RkSG5EbUNrbXRLcDlOdTVraG55Z3VRNnc?oc=5"
+      },
+      {
+        "title": "太平山蹦蹦車自115年10月3日起局部行駛",
+        "source": "林業保育署 宜蘭分署",
+        "link": "https://recreation.forest.gov.tw/News/News?id=20261002001"
+      },
+      {
+        "title": "薔琵颱風影響｜宜蘭分署所轄森林育樂場域預警性休園/封閉訊息",
+        "source": "林業保育署 宜蘭分署",
+        "link": "https://recreation.forest.gov.tw/News/News?id=20261021002"
+      },
+      {
+        "title": "薔琵颱風逼近 林業保育署籲暫勿入山 留意園區及步道訊息",
+        "source": "林業保育署 森林育樂組",
+        "link": "https://recreation.forest.gov.tw/News/News?id=20261021001"
+      },
+      {
+        "title": "[遊記] 讓別人的機車爬山-三星望洋山毛櫸步道",
+        "source": "PTT Hiking",
+        "link": "https://www.ptt.cc/bbs/Hiking/M.1793508725.A.240.html"
+      },
+      {
+        "title": "太平山秋色正美！翠峰湖仙氣繚繞、楓紅如畫 把握季節美景上山走一回",
+        "source": "台灣新聞雲",
+        "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5xaUdWZFdfZ2hpU2dsdU1vUjR6M2JKcGtWTFlWeDhSTGc1X3F6aFVFcFBqejdXNFNlN25JR2o4VkZGdGh0MlQw?oc=5"
+      }
+    ],
+    "id": "6396d914",
+    "first_seen": "2026-10-13",
+    "last_seen": "2026-11-03",
+    "region": "東部",
+    "score_parts": {
+      "appeal": 5,
+      "timing": 5,
+      "buzz": 5
+    },
+    "score_value": 5.0,
+    "score": 5
+  },
+  {
     "subject": "黑面琵鷺",
     "category": "bird",
     "location_name": "七股黑面琵鷺保護區",
     "county": "臺南市",
-    "lat": 23.05,
+    "lat": 23.045,
     "lng": 120.07,
-    "status": "ongoing",
+    "status": "starting",
     "date_start": "",
     "date_end": "",
-    "est_end": "2027-04-15",
-    "est_basis": "黑琵通常10月抵台，隔年3–4月北返",
-    "summary": "台江黑琵季進行中，11/14在曾文溪口濕地有「夕賞黑琵．夜觀星」活動。",
-    "lens": "500–600mm（覓食特寫）、100–400mm（群飛）· 腳架",
-    "tips": "漲退潮之間黑琵比較活躍；傍晚逆光可以拍剪影。",
+    "est_end": "2027-04-30",
+    "est_basis": "黑琵秋末陸續抵達，通常停留至隔年4月",
+    "summary": "秋末黑面琵鷺陸續抵達曾文溪口，台江處11/14辦「夕賞黑琵、夜觀星」活動。",
+    "lens": "500–600mm（覓食特寫）、100–400mm（群飛）· 腳架 · 增距鏡",
+    "tips": "傍晚覓食起飛最活躍，順光位置拍羽色；勿越線干擾鳥群。",
     "appeal": 5,
-    "appeal_reason": "國際瀕危的珍稀鳥種",
+    "appeal_reason": "全球瀕危珍稀候鳥",
     "articles": [
       {
         "title": "黑琵10月首次普查 台南480隻",
@@ -80,7 +156,7 @@
     ],
     "id": "e42b4bf4",
     "first_seen": "2026-10-13",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "南部",
     "score_parts": {
       "appeal": 5,
@@ -95,18 +171,18 @@
     "category": "landscape",
     "location_name": "合歡山",
     "county": "南投縣",
-    "lat": 24.14,
-    "lng": 121.27,
+    "lat": 24.138,
+    "lng": 121.275,
     "status": "ongoing",
     "date_start": "",
     "date_end": "",
     "est_end": "",
     "est_basis": "",
-    "summary": "合歡山雲海吸引大批遊客，但塞車、違停、亂丟垃圾的亂象很多。",
-    "lens": "16–35mm（雲海日出）、70–200mm（山稜雲浪）· 腳架",
-    "tips": "連假翠峰到大禹嶺有總量與高乘載管制，盡量平日前往；不要違停，垃圾請帶下山。",
+    "summary": "合歡山雲海季人潮湧入，連假在翠峰至大禹嶺實施交通管制。",
+    "lens": "16–35mm（日出雲海全景）、70–200mm（山稜壓縮）· 腳架",
+    "tips": "連假實施總量與高乘載管制，勿違停；凌晨氣溫極低需保暖。",
     "appeal": 5,
-    "appeal_reason": "高山日出雲海非常壯麗",
+    "appeal_reason": "高山日出雲海壯闊",
     "articles": [
       {
         "title": "太美了！合歡山日出照亮整片雲海 國旗迎風飄揚慶雙十",
@@ -151,7 +227,7 @@
     ],
     "id": "d8715ed3",
     "first_seen": "2026-10-13",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "中部",
     "score_parts": {
       "appeal": 5,
@@ -166,18 +242,18 @@
     "category": "foliage",
     "location_name": "杉林溪森林生態渡假園區",
     "county": "南投縣",
-    "lat": 23.636,
+    "lat": 23.638,
     "lng": 120.79,
     "status": "starting",
-    "date_start": "2026-10-26",
+    "date_start": "2026-10-27",
     "date_end": "",
     "est_end": "2026-11-25",
-    "est_basis": "10/26報導楓葉逐漸轉紅，業者說11月中旬前最佳，之後約1–2週落葉",
-    "summary": "杉林溪楓葉逐漸轉紅，業者建議在11月中旬前前往賞楓，園區花卉同時盛開。",
-    "lens": "70–200mm（逆光楓葉特寫）、16–35mm（楓林全景）· 腳架 · CPL",
-    "tips": "上午9–10點的斜射逆光最能讓楓葉發亮；山區午後容易起霧，可以拍霧中楓林。",
+    "est_basis": "10/27漸染紅，報導建議把握11月中旬前，楓紅約3-4週",
+    "summary": "杉林溪楓葉漸轉紅，網路熱議秋季賞楓景點第一名，建議11月中旬前前往。",
+    "lens": "70–200mm（逆光楓葉散景）、16–35mm（楓林全景）· CPL · 腳架",
+    "tips": "上午側逆光讓楓葉透光最紅；假日人多，平日早上進園較好拍。",
     "appeal": 4,
-    "appeal_reason": "網路熱議賞楓景點第一名，楓色有層次",
+    "appeal_reason": "中海拔楓紅層次豐富",
     "articles": [
       {
         "title": "國慶連假必去！杉林溪楓紅、銀杏變色3成 波波草鋪成紅地毯",
@@ -227,7 +303,7 @@
     ],
     "id": "ff68a527",
     "first_seen": "2026-10-13",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "中部",
     "score_parts": {
       "appeal": 4,
@@ -243,17 +319,17 @@
     "location_name": "阿里山（嘉義雲海季）",
     "county": "嘉義縣",
     "lat": 23.51,
-    "lng": 120.8,
-    "status": "starting",
+    "lng": 120.805,
+    "status": "ongoing",
     "date_start": "2026-11-02",
     "date_end": "",
     "est_end": "",
     "est_basis": "",
-    "summary": "嘉義雲海季11/2登場，串聯阿里山、奮起湖等山區路線，並有數位集章活動。",
-    "lens": "16–35mm（雲海全景）、70–200mm（山稜壓縮雲浪）· 腳架 · ND",
-    "tips": "雨後轉晴的清晨最容易出現雲海；可以用慢快門拍出雲流的動態。",
+    "summary": "嘉義雲海季11/2登場，串聯阿里山、奮起湖等山區路線，秋冬為雲海季節。",
+    "lens": "70–200mm（雲海層次、山稜壓縮）、16–35mm（日出全景）· 腳架 · ND/漸層鏡",
+    "tips": "雨後放晴、高壓穩定的清晨最易有雲海；日出前提早到位。",
     "appeal": 4,
-    "appeal_reason": "阿里山雲海非常壯觀",
+    "appeal_reason": "秋冬阿里山雲海與日出",
     "articles": [
       {
         "title": "阿里山秋楓漸紅、雲海火車伴景邀遊， 但提醒觀日步道11月1日起將封閉1年",
@@ -389,147 +465,21 @@
         "title": "追雲海還能抽遊戲主機！ 嘉義雲海季串聯三大山區景點- 旅遊新聞",
         "source": "PChome Online 新聞",
         "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPLW50S2VxeWhDNlo3Wm81QXpyN0hGNm83UkUtcjl4UzN4LXhOSHVob3BmSWYzZXZjMXdQRWJqZjV4Nmo1RzFKX0NEQXhobGIta1N2YkEwRmNxS3d1QTU0UWxIMlhXbWJjZFVGR0tPV25VSF9yWDBwZWlIVkt0Y3JOZUJHcnRLT012MGc?oc=5"
+      },
+      {
+        "title": "嘉義賞雲海、追雲瀑景點必收！「雲海季」集章活動抽Switch2、皮克敏周邊好禮",
+        "source": "Yahoo新聞",
+        "link": "https://news.google.com/rss/articles/CBMi3ANBVV95cUxQUnR0RG5TdVFvMXNnS3BkTG9DdHZUODVLQmd4U1F1ZlBGaG1aVGtSVDRHTXhZZFNHLUN2bDFmaXZPSjdybE9XTTVsVmZNZDdrN0M0XzdBVktNWEY3WWtkRlAyVXRERFRrWk13Y0pPT19iWmJaZFYwTVBuZ3c0YVBhaVJHOUxyQWRfTXJHQWViRlpjWFJySUU5OUxSYXNOZWlYaTZEZTd0YzZsd3dxQ3lWYm0zNGNGdXVoNUdOX0hPRWthakgzVE1aMlFXX1hvRGs4aktsa3UxRWRyOTBlQlk4UUk5aENPV2NIeG01VXh1ZnQ0b0NUWjZWR2pqQ1dwd1ZRQ29kU3dBNDM2VW9RV3IwN0M1VUlfaTU3ci1tNENkeHNtNGlVdGF0d3djWXRuMFNMMW0taEVRaGt5N3VFeVRaT0FwUGRrUXFJTTIxUHJYZHE3NHFSOV9ORC1tckZNZnFUOUdqaHpxREV0bjdEbE94b0xvZW9tR1BqblEtRVRRNm11REh2aUFoZVRfWF93MnNZaHFCX2pCNmZJdFNZZ2lFb3p3SVVJbDVTTWVTY3Z4TUtRVVB4clZSVGlBYVROYndDUGgxTDBUdXAwUk1GSDJ2dXdoalVBQ000WmUzWg?oc=5"
+      },
+      {
+        "title": "秋冬到阿里山賞雲海 住英迪格酒店體驗高空頌缽與日出美景",
+        "source": "Yahoo新聞",
+        "link": "https://news.google.com/rss/articles/CBMijANBVV95cUxQQTJaMlUxU3N4SldiTFBUZmN1MGZRSVNSaXhhcGpHNDhobElTaUI0ME9BbkJVYkU1Mi1CcXdsNVFPWE11UEQtTy1SWDRrdE1HZDF3NkM1d1dKRkZscXRHQ2taVzlaWkV1ejk2dUVTcU1OcVFFM2NKWE94SFZKRHJPZkFGUTRvRzZhaHdncGFGbnk5U2IwSTBsNTVSMjZQNkJmX1ZPUkpYVHdVZXZuNlFxN1JfdjNsRnp2ZWpPdTFaenMtc3BlNmJPZkdhWVhKaGE5Y2FJcDIta0tsT3RVYS1vb2FCRVVWbGlCampJSHBOTE94bXBReFVFWGFGX1RPdmpDOWs0YUZ4aF9PRUg1T3JzUEhhYkdLek1ES0hINldUVFU5NEMtWDdWajdKVUVpekVqdHZPbU51T0g4NUVxLTgxUEkzb1ZKN1NPVEo2VDZTbzFRZy1rc1cxUWs4M0tCVTR4QzZYbWxvOUJHYU0zXzhxV3cxb3FzRWpZOUgwdDdKM3VBZ2htYTFCOVI4QUU?oc=5"
       }
     ],
     "id": "927f80ab",
     "first_seen": "2026-10-13",
-    "last_seen": "2026-11-02",
-    "region": "南部",
-    "score_parts": {
-      "appeal": 4,
-      "timing": 4,
-      "buzz": 5
-    },
-    "score_value": 4.1,
-    "score": 4
-  },
-  {
-    "subject": "雲海",
-    "category": "landscape",
-    "location_name": "隙頂二延平步道",
-    "county": "嘉義縣",
-    "lat": 23.458,
-    "lng": 120.698,
-    "status": "ongoing",
-    "date_start": "",
-    "date_end": "",
-    "est_end": "",
-    "est_basis": "",
-    "summary": "隙頂二延平步道被列為嘉義雲海季亮點之一，秋冬午後常見雲海翻騰與夕陽。",
-    "lens": "16–35mm（雲海夕陽全景）、70–200mm（茶園與雲瀑層次）· 腳架 · GND",
-    "tips": "午後2–5點雲海機率高，可待到夕陽火燒雲；假日觀景處人多，需提早卡位。",
-    "appeal": 4,
-    "appeal_reason": "茶園、雲瀑與夕陽同框，公路可達",
-    "articles": [
-      {
-        "title": "秋遊隙頂雲之旅登場！ 二延平賞雲海品茶香",
-        "source": "自由時報",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5xUjV4YnZvVDJrQVBVakJvZDU0X1VJWEJqRGhsVUo2WGJHVXJvaktzRUh0emNrMGoySjNVNFo1RmxZckM3YXVGMHE4QjdWbjVfTXRIT2RyQWN0c2dYZmtLa0pqQmbSAWpBVV95cUxOMEtoRkxaVXU5U0I3djIxbUY5Mmk5UHMzMXhoaFI1blgySGYyYkFZUXk5cWY0czBkQkdrQ3FWdmZqNEdEaml0MWF2aXQtUUE0V0V2Z0J0eEVqS0xiVWxEdjlaWDdyZ3FiN2x3?oc=5"
-      },
-      {
-        "title": "春夏秋冬泡進一杯茶！番路鄉農會四序茶會 隙頂賞雲海品好茶",
-        "source": "台灣好報",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfeFlKbWpWYzQ2SV9JZng2UWZqUERDalE5Vm1LeEVrSTVtVEJXWUpfZVViQlVGaXpfcDVzLW85UDNCbkRhSGlnLUplLTRodHI4cEVJ?oc=5"
-      },
-      {
-        "title": "嘉義縣「雲海季」11月登場 旅遊抽新款Switch",
-        "source": "中央社 CNA",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1nTHJLZXgwdm5mSjVoajdaSjYtbGlBMndra3RQbVVPa1dlWlFtT2xmM2NpSkhPNjVlWTFLQl8zNjZlV19ZSXZKNUI1Y1VpcExkeDdQWnk2cnFwX19iWDAw?oc=5"
-      },
-      {
-        "title": "慢遊嘉義「雲海季」11月2日登場 旅遊集章抽Switch2等好禮 - 墨新聞-MORE News",
-        "source": "墨新聞-MORE News",
-        "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9SSTU5OE5JN19PRXFNaVJZMnpZbDdXNzJwbC1NbkNvMmZRY09ZdFpjdmsxYktDdm15a3BBS2xIelViQQ?oc=5"
-      },
-      {
-        "title": "阿里山雲海搬進國際旅展 二延平步道、茶山部落成亮點",
-        "source": "經濟日報",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JdjFNaUdTNVlOM09GRFRlVUpGUV9qY0xyWUtzdUNRT0xPWGdaTThDN205Vk8yd2hXY1N3bFdJZ3BTZ1lNdUhPUlFvZk03c1VHNnNmQzY5Z0dMaHpTUW1iaFRpUFJRZjBXVGNxSmxwTWYxYmRkVVJtNlZTSldlZ1nSAWJBVV95cUxOMGNsMk5uWF9QM3ZXcWZxWlpkWnRjaEQ3MFJzRExjMjB5WVFRRFoybkNNbHh6SnFoNmRwMVFhQ3JCUUN2Rmxpd1FYVjhTNmYwSzdMdHZIQjNNZkVNT2VaQ1dudw?oc=5"
-      },
-      {
-        "title": "漫遊嘉義「雲海季」 集章抽好禮 | 青年日報",
-        "source": "LINE TODAY",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9LY1lPa3VNd3RnRzItWG91SWszX09Mc2xGYTVQZElfYXpZbkNxamNhQS15YXowX0pGNzVEbDF0NGs1VnFCeUlidWlXaHBaazZMY0lkV2hR?oc=5"
-      },
-      {
-        "title": "慢遊嘉義「雲海季」11月登場 集章抽Switch 2及限量好禮",
-        "source": "Yahoo新聞",
-        "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNbGRxZ0FHTElYbTZ0c09xYU1uejhvRURENTIxdDlVOWxmTmpjM21HNnZJdFFPX3JPRjA3bFdZUlVCOFlISmtpZmJiQ3NPWU4tcnIwcEx2dWJJZVZxZXFHblRnNC03VzA5dmgxMlJfQ3NJalA0bUhBbkZMcENMeHFPVkJJR0piVUhsMDNpMTdnVlNRX3daWEM0akdwamdrRHNWQnpXMFROLUN0RlhLVXYybVlQZWhWZEx2bWZyTWdTdVVra015dEYtbUZ1UWdsNUhHTDdDdUxocjYwNlVvYy1UQktlWU5ibkhaM3l2X2xPN0Q4NlpodlRBaXhHM1lSS283X01xSWNwSF92WGpyZTROWE5KNHc4MGtuNkhfQ0FQM0VwVUhvTEQwRG9uQzdHc0o2clV5bV8wYnNSamx1?oc=5"
-      },
-      {
-        "title": "嘉縣全新旅遊主題「雲海季」 完成任務抽Switch 2",
-        "source": "Yahoo新聞",
-        "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxObGVqZzE2QmN1cTNBclhqakVGclV2cnJnTUJBd2p6LWtfUHRORDFVa2JDVm5JV1dERElOMGlUM2cxZnBKeTl0UENabDAwVWlGNTJPTnFkRWVJR01GMm1OWHVwVDl3Q1hMT2VHcEpkX3g2R29lV01JLXp3Z1VFUGwtUHlSMFZvelpjZEtGYUQzNkhnSm1obndTOVZxZ0RTb3Q0bFBRdkFzaF91aU05WFhKM2h3RGx0T2xxS0VVYkJrT19yc0pTTUJxUGNmWUdEb0FKRzZhRFhLaVhFNUZrb2RlelBvWVA2VEJGbVBUZmtjaXU5R0YxYlR3SHFlTFA3OE9sVEwxOExFNVp3c2lQUDZzbngxbHB6Z3hDTkd1SnU1V3I?oc=5"
-      },
-      {
-        "title": "嘉義「雲海季」11/2登場！旅遊集章抽Switch 2、皮克敏周邊 玩法一次看",
-        "source": "Yahoo新聞",
-        "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNY2wxNkpZWlg1eGZIOFV5a2NsOXF4OTgzbUVsMkx0WFZISjEtYWswRjQydWZtTW1iY2tva3BRd1o2ZGQ1cnFNQndDalZhVFhlVS1yMDd4MTA2VmY5QUpMaFBhQmJrU1ItRk11T21KaW9MdjJNS0h0cjNTR3pOTTR4LXc2UnlpY3hyVzdUQXNOdncxSWZhZ3Jnc2lUamdpT0ZTZmxPNDVfbVN2SjMwN2ZMR3M0d0xwc1EzaE1DcE9xRXBlU2h5Xy1PYmt6UkRST0VzcjV2WE05TVk3TGFhUU1aUnZVSFpZZ2lMS1FnbWRxdmVQUkgz?oc=5"
-      },
-      {
-        "title": "慢遊嘉義雲海季開跑 走訪阿里山、梅山抽好禮",
-        "source": "樂上新聞網",
-        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBhTW5pRnBNU1NvYWdKTzR6dlFnWU0yLUd6NWEzekZ2bmdqYmpNZERscmhwMWpGNDdUZUxiSmVNZHp2Qy1TUVlfNER4WTY?oc=5"
-      },
-      {
-        "title": "慢遊嘉義「雲海季」11月2日登場 集章抽好禮",
-        "source": "自由時報",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9EOTVGWmt1cVNHVmgzSGlodmozOGZ0b1czZnpaZ2RqVTMyWFlCRENxZUNySWRhRGd5Q1hqNURlMFJWX2RkZGdwMlFFa3dmM1pzRmR1dWFIeXdHSUVaMEp2eVlfc1U2VGZnY1pLWGRKNNIBdEFVX3lxTFBsT2RYRFU3TTJBc1JmS3pDUmh2c0ZuY05tMUdoa2E0cVZ3OWVyMVI4RU5XUkhyUDF5WmIxUjBmbG13TnVjbkdHUmdaS1VqVVUtazNEUzZidUJyLVV0RW9ENlNkVmFFOHBGbE5nNV9BUXkxSmZy?oc=5"
-      },
-      {
-        "title": "慢遊嘉義「雲海季」11/2登場 旅遊集章抽好禮",
-        "source": "《旅奇傳媒》TR Omnimedia",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE85ZlRuRW1TWk9ZOURfbU90RzlLZHFGUU1NaDFUa2JTMDEtYk9lNm1UTGtsNm8wU1hOYWxiSElkakMzVmttNWNjQ2ExV1JPUWhtNy1NT0ZEWnA?oc=5"
-      },
-      {
-        "title": "慢遊嘉義「雲海季」11月登場 集章抽Switch 2及限量好禮",
-        "source": "新頭條",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1xajhZSUFwQWNmWGxSTGdwc01jMUZWcndCVDBYMUx2cHA3Z3c2Qkt3SjBqV1lxLW1jZDBMdzVSVWxMN3h1X3BQR3REeEdmNVFQR0h3bQ?oc=5"
-      },
-      {
-        "title": "阿里山雲海搬進國際旅展 二延平步道、茶山部落成亮點",
-        "source": "經濟日報",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSk42alluZmJqdnVSUE90RTNtb1BSREMyMkhRNXVPYmVVdHVHanhoaUtLOXVpSXRHZ3FUUTVBcXlYN1h3R0tUQnhxY2EzcElGLUZ3MGJqdEhPN3BVMDRvUXhISXZMemk3ZURiQUxrZ0YxS0s0Y3J0aEhHV2RXNERyaUloVDYtRlpodk9xeGlXbVZtRmfSAWJBVV95cUxOMGNsMk5uWF9QM3ZXcWZxWlpkWnRjaEQ3MFJzRExjMjB5WVFRRFoybkNNbHh6SnFoNmRwMVFhQ3JCUUN2Rmxpd1FYVjhTNmYwSzdMdHZIQjNNZkVNT2VaQ1dudw?oc=5"
-      },
-      {
-        "title": "慢遊嘉義「雲海季」11月2日登場 集章抽好禮",
-        "source": "自由時報",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5jQjB2c2dUc2RhYkJFZ2dfU0RKNTFOSlpMeFdhZm8wbFN0S09uY3ZIWm03OTl5bmpsdDdBOEhkQV9zSHp3SXFRMjl0RG5lQXk5NmJSWjFwMk1IWWpJZC1BMDNBT2w3ampHZVHSAWpBVV95cUxOY0IwdnNnVHNkYWJCRWdnX1NESjUxTkpaTHhXYWZvMGxTdEtPbmN2SFptNzk5eW5qbHQ3QThIZEFfc0h6d0lxUTI5dERuZUF5OTZiUloxcDJNSFlqSWQtQTAzQU9sN2pqR2VR?oc=5"
-      },
-      {
-        "title": "「嘉義雲海季」11/2登場！３大推薦路線玩阿里山、奮起湖，集章任務一次看",
-        "source": "食尚玩家",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9wTkVIdHo1V3dsWUR0OERzTVlKTEpFMXNGT1hXSjZPM1pBMWwtNWhPYUU4bUk3Q1ljNmRjOExrTzlPbGxrcThlTlJLc1VSZWJybE5EbNIBWkFVX3lxTFBRZkZzX2VBLTI4eWdsaXF6RHNsRWRJN1lpVE5KRnFLb0ZBdXFCZ1luTXkzaXV0Y0VDeTEzbmlvc0swYXVvNUgtZy1LUGJxV3FWd1ZxWnEyclNMdw?oc=5"
-      },
-      {
-        "title": "嘉義雲海季11/2登場 集章抽好禮",
-        "source": "自由時報",
-        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5kZFpSYU5VQ2lDT1lDMzg2WjBMVzhpQlpVT2ZVR2ctTkpZZ3JJMzNSall2ZVVkMTJRRk5UbUoyU0Q1ZmhwdXpzUV9vYVdLdjg0R2RNWkc1MWpuT1nSAWBBVV95cUxNeUtyYlZ1a0tiSDVHMUxtMDA4SVFfS2E0Vlc4aU5sRlN6U25aVUdCZ3p2VFVlSHFnRzNnbGJjVDFRazFjVFdiVlJmem0zMy13TFJ6SnJBXzVHaWpiU3lBN1M?oc=5"
-      },
-      {
-        "title": "嘉義山林輕旅行新玩法！參加「雲海季」集章解鎖限量好禮",
-        "source": "ShareLife 台灣旅行趣",
-        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1SN3VBenpXVTRiVW9pVDNmRlVMclRSN0ZNSjg2cDFBbF9oVUl4dFdqdkZGTm9hLXRscDZzTC1DQXQwdEQxeEx1MHIydk1jYmZzaGtOTkZWcU9Zak9FbWlN?oc=5"
-      },
-      {
-        "title": "「嘉義雲海季」11/2登場！３大推薦路線玩阿里山、奮起湖，集章任務一次看",
-        "source": "食尚玩家",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9wTkVIdHo1V3dsWUR0OERzTVlKTEpFMXNGT1hXSjZPM1pBMWwtNWhPYUU4bUk3Q1ljNmRjOExrTzlPbGxrcThlTlJLc1VSZWJybE5EbA?oc=5"
-      },
-      {
-        "title": "阿里山雲海搬進國際旅展二延平步道、茶山部落成亮點- 股市爆料同學會",
-        "source": "CMoney",
-        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ldlFVN0ZhdW1TUG1DU016bF81SGQweFE5NktPS2w0VmFNX2o4Q1B3Y0MtNDVHeE40QnVLeGlNYnhzZE5KVnp4dmJSSXJCMkp2VXFwZ2x1XzI?oc=5"
-      },
-      {
-        "title": "阿里山雲海搬進國際旅展 二延平步道、茶山部落成亮點",
-        "source": "UDN",
-        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBUVktqcWM1REttUEhNaDYyc0N1enJ0cVU3aEh1bFN0U3ZqWE5EMS1BZ1JqMzNQVmpITmR3eUZSaXppamQ3Tk5RZEZyTEQ3Zm5G0gFWQVVfeXFMUEpRTDNtQmF3bnhkMVFaSUdadTd1YkFRNXJoVEhKRkd4dDJ1Vm16QnFqS3N4VzdKUWtjNzBPRlN0MHkzWkJkblh6TGRpT1lnaEUtWmp3eUE?oc=5"
-      }
-    ],
-    "id": "30de66bb",
-    "first_seen": "2026-10-19",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "南部",
     "score_parts": {
       "appeal": 4,
@@ -549,13 +499,13 @@
     "status": "starting",
     "date_start": "2026-11-14",
     "date_end": "2026-12-13",
-    "est_end": "",
-    "est_basis": "",
-    "summary": "受薔琵颱風影響，草嶺古道芒花季延至11/14登場，活動至12/13，假日有接駁車可搭。",
-    "lens": "70–200mm（逆光芒花散景）、16–35mm（山稜芒草海與海景）· CPL",
-    "tips": "午後側逆光最能拍出芒花透亮的質感；東北季風強時要用較高快門凝住花穗，假日建議搭接駁車。",
+    "est_end": "2026-12-13",
+    "est_basis": "官方芒花季至12/13",
+    "summary": "草嶺古道芒花季因薔琵颱風延至11/14開幕，至12/13，有假日接駁與集章活動。",
+    "lens": "16–35mm（芒花山海全景）、70–200mm（逆光芒穗散景）· CPL",
+    "tips": "午後逆光芒穗最亮，留意東北季風強風；假日建議搭接駁。",
     "appeal": 4,
-    "appeal_reason": "山海與芒草同框，是北台灣經典秋景",
+    "appeal_reason": "東北角經典山海芒花景",
     "articles": [
       {
         "title": "草嶺古道不只芒草，還能眺望龜山島海景？",
@@ -780,8 +730,144 @@
     ],
     "id": "1de68b3a",
     "first_seen": "2026-10-13",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "北部",
+    "score_parts": {
+      "appeal": 4,
+      "timing": 4,
+      "buzz": 5
+    },
+    "score_value": 4.1,
+    "score": 4
+  },
+  {
+    "subject": "雲海",
+    "category": "landscape",
+    "location_name": "隙頂二延平步道",
+    "county": "嘉義縣",
+    "lat": 23.458,
+    "lng": 120.698,
+    "status": "ongoing",
+    "date_start": "",
+    "date_end": "",
+    "est_end": "",
+    "est_basis": "",
+    "summary": "隙頂二延平步道被列為嘉義雲海季亮點之一，秋冬午後常見雲海翻騰與夕陽。",
+    "lens": "16–35mm（雲海夕陽全景）、70–200mm（茶園與雲瀑層次）· 腳架 · GND",
+    "tips": "午後2–5點雲海機率高，可待到夕陽火燒雲；假日觀景處人多，需提早卡位。",
+    "appeal": 4,
+    "appeal_reason": "茶園、雲瀑與夕陽同框，公路可達",
+    "articles": [
+      {
+        "title": "秋遊隙頂雲之旅登場！ 二延平賞雲海品茶香",
+        "source": "自由時報",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5xUjV4YnZvVDJrQVBVakJvZDU0X1VJWEJqRGhsVUo2WGJHVXJvaktzRUh0emNrMGoySjNVNFo1RmxZckM3YXVGMHE4QjdWbjVfTXRIT2RyQWN0c2dYZmtLa0pqQmbSAWpBVV95cUxOMEtoRkxaVXU5U0I3djIxbUY5Mmk5UHMzMXhoaFI1blgySGYyYkFZUXk5cWY0czBkQkdrQ3FWdmZqNEdEaml0MWF2aXQtUUE0V0V2Z0J0eEVqS0xiVWxEdjlaWDdyZ3FiN2x3?oc=5"
+      },
+      {
+        "title": "春夏秋冬泡進一杯茶！番路鄉農會四序茶會 隙頂賞雲海品好茶",
+        "source": "台灣好報",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfeFlKbWpWYzQ2SV9JZng2UWZqUERDalE5Vm1LeEVrSTVtVEJXWUpfZVViQlVGaXpfcDVzLW85UDNCbkRhSGlnLUplLTRodHI4cEVJ?oc=5"
+      },
+      {
+        "title": "嘉義縣「雲海季」11月登場 旅遊抽新款Switch",
+        "source": "中央社 CNA",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1nTHJLZXgwdm5mSjVoajdaSjYtbGlBMndra3RQbVVPa1dlWlFtT2xmM2NpSkhPNjVlWTFLQl8zNjZlV19ZSXZKNUI1Y1VpcExkeDdQWnk2cnFwX19iWDAw?oc=5"
+      },
+      {
+        "title": "慢遊嘉義「雲海季」11月2日登場 旅遊集章抽Switch2等好禮 - 墨新聞-MORE News",
+        "source": "墨新聞-MORE News",
+        "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9SSTU5OE5JN19PRXFNaVJZMnpZbDdXNzJwbC1NbkNvMmZRY09ZdFpjdmsxYktDdm15a3BBS2xIelViQQ?oc=5"
+      },
+      {
+        "title": "阿里山雲海搬進國際旅展 二延平步道、茶山部落成亮點",
+        "source": "經濟日報",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JdjFNaUdTNVlOM09GRFRlVUpGUV9qY0xyWUtzdUNRT0xPWGdaTThDN205Vk8yd2hXY1N3bFdJZ3BTZ1lNdUhPUlFvZk03c1VHNnNmQzY5Z0dMaHpTUW1iaFRpUFJRZjBXVGNxSmxwTWYxYmRkVVJtNlZTSldlZ1nSAWJBVV95cUxOMGNsMk5uWF9QM3ZXcWZxWlpkWnRjaEQ3MFJzRExjMjB5WVFRRFoybkNNbHh6SnFoNmRwMVFhQ3JCUUN2Rmxpd1FYVjhTNmYwSzdMdHZIQjNNZkVNT2VaQ1dudw?oc=5"
+      },
+      {
+        "title": "漫遊嘉義「雲海季」 集章抽好禮 | 青年日報",
+        "source": "LINE TODAY",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9LY1lPa3VNd3RnRzItWG91SWszX09Mc2xGYTVQZElfYXpZbkNxamNhQS15YXowX0pGNzVEbDF0NGs1VnFCeUlidWlXaHBaazZMY0lkV2hR?oc=5"
+      },
+      {
+        "title": "慢遊嘉義「雲海季」11月登場 集章抽Switch 2及限量好禮",
+        "source": "Yahoo新聞",
+        "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNbGRxZ0FHTElYbTZ0c09xYU1uejhvRURENTIxdDlVOWxmTmpjM21HNnZJdFFPX3JPRjA3bFdZUlVCOFlISmtpZmJiQ3NPWU4tcnIwcEx2dWJJZVZxZXFHblRnNC03VzA5dmgxMlJfQ3NJalA0bUhBbkZMcENMeHFPVkJJR0piVUhsMDNpMTdnVlNRX3daWEM0akdwamdrRHNWQnpXMFROLUN0RlhLVXYybVlQZWhWZEx2bWZyTWdTdVVra015dEYtbUZ1UWdsNUhHTDdDdUxocjYwNlVvYy1UQktlWU5ibkhaM3l2X2xPN0Q4NlpodlRBaXhHM1lSS283X01xSWNwSF92WGpyZTROWE5KNHc4MGtuNkhfQ0FQM0VwVUhvTEQwRG9uQzdHc0o2clV5bV8wYnNSamx1?oc=5"
+      },
+      {
+        "title": "嘉縣全新旅遊主題「雲海季」 完成任務抽Switch 2",
+        "source": "Yahoo新聞",
+        "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxObGVqZzE2QmN1cTNBclhqakVGclV2cnJnTUJBd2p6LWtfUHRORDFVa2JDVm5JV1dERElOMGlUM2cxZnBKeTl0UENabDAwVWlGNTJPTnFkRWVJR01GMm1OWHVwVDl3Q1hMT2VHcEpkX3g2R29lV01JLXp3Z1VFUGwtUHlSMFZvelpjZEtGYUQzNkhnSm1obndTOVZxZ0RTb3Q0bFBRdkFzaF91aU05WFhKM2h3RGx0T2xxS0VVYkJrT19yc0pTTUJxUGNmWUdEb0FKRzZhRFhLaVhFNUZrb2RlelBvWVA2VEJGbVBUZmtjaXU5R0YxYlR3SHFlTFA3OE9sVEwxOExFNVp3c2lQUDZzbngxbHB6Z3hDTkd1SnU1V3I?oc=5"
+      },
+      {
+        "title": "嘉義「雲海季」11/2登場！旅遊集章抽Switch 2、皮克敏周邊 玩法一次看",
+        "source": "Yahoo新聞",
+        "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNY2wxNkpZWlg1eGZIOFV5a2NsOXF4OTgzbUVsMkx0WFZISjEtYWswRjQydWZtTW1iY2tva3BRd1o2ZGQ1cnFNQndDalZhVFhlVS1yMDd4MTA2VmY5QUpMaFBhQmJrU1ItRk11T21KaW9MdjJNS0h0cjNTR3pOTTR4LXc2UnlpY3hyVzdUQXNOdncxSWZhZ3Jnc2lUamdpT0ZTZmxPNDVfbVN2SjMwN2ZMR3M0d0xwc1EzaE1DcE9xRXBlU2h5Xy1PYmt6UkRST0VzcjV2WE05TVk3TGFhUU1aUnZVSFpZZ2lMS1FnbWRxdmVQUkgz?oc=5"
+      },
+      {
+        "title": "慢遊嘉義雲海季開跑 走訪阿里山、梅山抽好禮",
+        "source": "樂上新聞網",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBhTW5pRnBNU1NvYWdKTzR6dlFnWU0yLUd6NWEzekZ2bmdqYmpNZERscmhwMWpGNDdUZUxiSmVNZHp2Qy1TUVlfNER4WTY?oc=5"
+      },
+      {
+        "title": "慢遊嘉義「雲海季」11月2日登場 集章抽好禮",
+        "source": "自由時報",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9EOTVGWmt1cVNHVmgzSGlodmozOGZ0b1czZnpaZ2RqVTMyWFlCRENxZUNySWRhRGd5Q1hqNURlMFJWX2RkZGdwMlFFa3dmM1pzRmR1dWFIeXdHSUVaMEp2eVlfc1U2VGZnY1pLWGRKNNIBdEFVX3lxTFBsT2RYRFU3TTJBc1JmS3pDUmh2c0ZuY05tMUdoa2E0cVZ3OWVyMVI4RU5XUkhyUDF5WmIxUjBmbG13TnVjbkdHUmdaS1VqVVUtazNEUzZidUJyLVV0RW9ENlNkVmFFOHBGbE5nNV9BUXkxSmZy?oc=5"
+      },
+      {
+        "title": "慢遊嘉義「雲海季」11/2登場 旅遊集章抽好禮",
+        "source": "《旅奇傳媒》TR Omnimedia",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE85ZlRuRW1TWk9ZOURfbU90RzlLZHFGUU1NaDFUa2JTMDEtYk9lNm1UTGtsNm8wU1hOYWxiSElkakMzVmttNWNjQ2ExV1JPUWhtNy1NT0ZEWnA?oc=5"
+      },
+      {
+        "title": "慢遊嘉義「雲海季」11月登場 集章抽Switch 2及限量好禮",
+        "source": "新頭條",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1xajhZSUFwQWNmWGxSTGdwc01jMUZWcndCVDBYMUx2cHA3Z3c2Qkt3SjBqV1lxLW1jZDBMdzVSVWxMN3h1X3BQR3REeEdmNVFQR0h3bQ?oc=5"
+      },
+      {
+        "title": "阿里山雲海搬進國際旅展 二延平步道、茶山部落成亮點",
+        "source": "經濟日報",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSk42alluZmJqdnVSUE90RTNtb1BSREMyMkhRNXVPYmVVdHVHanhoaUtLOXVpSXRHZ3FUUTVBcXlYN1h3R0tUQnhxY2EzcElGLUZ3MGJqdEhPN3BVMDRvUXhISXZMemk3ZURiQUxrZ0YxS0s0Y3J0aEhHV2RXNERyaUloVDYtRlpodk9xeGlXbVZtRmfSAWJBVV95cUxOMGNsMk5uWF9QM3ZXcWZxWlpkWnRjaEQ3MFJzRExjMjB5WVFRRFoybkNNbHh6SnFoNmRwMVFhQ3JCUUN2Rmxpd1FYVjhTNmYwSzdMdHZIQjNNZkVNT2VaQ1dudw?oc=5"
+      },
+      {
+        "title": "慢遊嘉義「雲海季」11月2日登場 集章抽好禮",
+        "source": "自由時報",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5jQjB2c2dUc2RhYkJFZ2dfU0RKNTFOSlpMeFdhZm8wbFN0S09uY3ZIWm03OTl5bmpsdDdBOEhkQV9zSHp3SXFRMjl0RG5lQXk5NmJSWjFwMk1IWWpJZC1BMDNBT2w3ampHZVHSAWpBVV95cUxOY0IwdnNnVHNkYWJCRWdnX1NESjUxTkpaTHhXYWZvMGxTdEtPbmN2SFptNzk5eW5qbHQ3QThIZEFfc0h6d0lxUTI5dERuZUF5OTZiUloxcDJNSFlqSWQtQTAzQU9sN2pqR2VR?oc=5"
+      },
+      {
+        "title": "「嘉義雲海季」11/2登場！３大推薦路線玩阿里山、奮起湖，集章任務一次看",
+        "source": "食尚玩家",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9wTkVIdHo1V3dsWUR0OERzTVlKTEpFMXNGT1hXSjZPM1pBMWwtNWhPYUU4bUk3Q1ljNmRjOExrTzlPbGxrcThlTlJLc1VSZWJybE5EbNIBWkFVX3lxTFBRZkZzX2VBLTI4eWdsaXF6RHNsRWRJN1lpVE5KRnFLb0ZBdXFCZ1luTXkzaXV0Y0VDeTEzbmlvc0swYXVvNUgtZy1LUGJxV3FWd1ZxWnEyclNMdw?oc=5"
+      },
+      {
+        "title": "嘉義雲海季11/2登場 集章抽好禮",
+        "source": "自由時報",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5kZFpSYU5VQ2lDT1lDMzg2WjBMVzhpQlpVT2ZVR2ctTkpZZ3JJMzNSall2ZVVkMTJRRk5UbUoyU0Q1ZmhwdXpzUV9vYVdLdjg0R2RNWkc1MWpuT1nSAWBBVV95cUxNeUtyYlZ1a0tiSDVHMUxtMDA4SVFfS2E0Vlc4aU5sRlN6U25aVUdCZ3p2VFVlSHFnRzNnbGJjVDFRazFjVFdiVlJmem0zMy13TFJ6SnJBXzVHaWpiU3lBN1M?oc=5"
+      },
+      {
+        "title": "嘉義山林輕旅行新玩法！參加「雲海季」集章解鎖限量好禮",
+        "source": "ShareLife 台灣旅行趣",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1SN3VBenpXVTRiVW9pVDNmRlVMclRSN0ZNSjg2cDFBbF9oVUl4dFdqdkZGTm9hLXRscDZzTC1DQXQwdEQxeEx1MHIydk1jYmZzaGtOTkZWcU9Zak9FbWlN?oc=5"
+      },
+      {
+        "title": "「嘉義雲海季」11/2登場！３大推薦路線玩阿里山、奮起湖，集章任務一次看",
+        "source": "食尚玩家",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9wTkVIdHo1V3dsWUR0OERzTVlKTEpFMXNGT1hXSjZPM1pBMWwtNWhPYUU4bUk3Q1ljNmRjOExrTzlPbGxrcThlTlJLc1VSZWJybE5EbA?oc=5"
+      },
+      {
+        "title": "阿里山雲海搬進國際旅展二延平步道、茶山部落成亮點- 股市爆料同學會",
+        "source": "CMoney",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1ldlFVN0ZhdW1TUG1DU016bF81SGQweFE5NktPS2w0VmFNX2o4Q1B3Y0MtNDVHeE40QnVLeGlNYnhzZE5KVnp4dmJSSXJCMkp2VXFwZ2x1XzI?oc=5"
+      },
+      {
+        "title": "阿里山雲海搬進國際旅展 二延平步道、茶山部落成亮點",
+        "source": "UDN",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBUVktqcWM1REttUEhNaDYyc0N1enJ0cVU3aEh1bFN0U3ZqWE5EMS1BZ1JqMzNQVmpITmR3eUZSaXppamQ3Tk5RZEZyTEQ3Zm5G0gFWQVVfeXFMUEpRTDNtQmF3bnhkMVFaSUdadTd1YkFRNXJoVEhKRkd4dDJ1Vm16QnFqS3N4VzdKUWtjNzBPRlN0MHkzWkJkblh6TGRpT1lnaEUtWmp3eUE?oc=5"
+      }
+    ],
+    "id": "30de66bb",
+    "first_seen": "2026-10-19",
+    "last_seen": "2026-11-02",
+    "region": "南部",
     "score_parts": {
       "appeal": 4,
       "timing": 4,
@@ -836,13 +922,13 @@
     "status": "peak",
     "date_start": "2026-10-31",
     "date_end": "2026-11-22",
-    "est_end": "",
-    "est_basis": "",
-    "summary": "12.5公頃花海與19公尺高的三麗鷗甜點城堡花毯10/31開幕，展期到11/22。",
-    "lens": "16–35mm（花海廣角）、70–200mm（花田壓縮）· 偏光鏡",
-    "tips": "平日一早人少、光線柔和；活動期間交通管制，建議搭免費接駁車。",
+    "est_end": "2026-11-22",
+    "est_basis": "官方活動至11/22",
+    "summary": "10/31開幕的新社花海與「甜點王國」三麗鷗主題花毯，12.5公頃花海展至11/22。",
+    "lens": "16–35mm（花毯全景）、24–70mm（主題裝置）、70–200mm（花海壓縮）",
+    "tips": "開園即到避開人潮，花毯需找高處俯拍；假日交管請搭免費接駁。",
     "appeal": 3,
-    "appeal_reason": "花海規模大，但商業主題色彩重",
+    "appeal_reason": "大面積花海但偏商業主題",
     "articles": [
       {
         "title": "來新社採果賞花解鎖季節限定玩法| 雜誌",
@@ -1148,11 +1234,26 @@
         "title": "新社花海暨台中國際花毯節登場 143攤農特產品展售至11月22日",
         "source": "蕃新聞",
         "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8yeThoVE9Qdy1WQUtZSFhQaldzc0F4N25Hc3V1LU5uZGpjZGlsNElKNFN0THZ4WjdwcTZ1Yzg1d2ZIckV1X3luVTZkbm9PT2FzdUE?oc=5"
+      },
+      {
+        "title": "新社花海10/31開幕！中市交通局：首週發824班次 松竹與豐原線接駁最熱門",
+        "source": "臺中市政府全球資訊網",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9yR0RSaWU2SG56VGZ0dFZOVlo3ZUc1TGx6eF85MGMyNGZwTHNuQllIWnN2czdCUXphSnhOUnV6cWlqMUFGNXNuQmZDSG5wcEhnSnc?oc=5"
+      },
+      {
+        "title": "2026新社花海 「Hello臺中 花現新社」繽紛登場",
+        "source": "農業知識入口網",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE10TlZuNnF2aTFrU3E2TXA1ckhjQVRuTm5Cek5IeTl2WUV1NmsyYXZlS1hvc0FYTURWaTBGeTk1MnB2VzJNckc5REpIRG5hMXlEcDBWcy1HUnZlMWctMVVaQzZia09nckhoVG9Hdg?oc=5"
+      },
+      {
+        "title": "三麗鷗聯名花海太犯規！台中花毯節登場 秋遊台中山野6大路線一次收",
+        "source": "Yahoo新聞",
+        "link": "https://news.google.com/rss/articles/CBMivgNBVV95cUxOSmpJOUhmN1lnY3NLdk94a1Y2XzN0aDE5ck9UQmh6OEg5TjF4emZDc3dxU00zQjhOSTNwSUQwX09GUlAtbVJENWtpTWR0UXlmNHhEQTZUenlPd24tR2RudkJ4SWpyOUdhMnJCanZKQVFmc0V6R3lETVlWM1JFQkZ6cWExOVoxMXdpTTFrLTdfQ2RiVklwVWF0QzVCbjItaV9xUHh4QnVEMnNGaldyeUhYRzdfOUhYNkFjSkRzNjh3X3VKdklWMXZXVFRFMUVSX0RIR2dqQXNYZ293aEkxM1V6UnBqQWtIVWlWeEFtNUlkNkVtZmNLWkdycXBmbzRRX1RZa1RTSVNndEhJRjMxUWdVWTVxczlWVlFYdWVrY3UyVXptMTdOTXE5Z192Y0xMd3pLNVkwdjVWWE16WU1NUG5ENGpzOXNpVTdGaGlvYjRpelR1NUl2RnAzcnFBclZHNm43T2U4bWxqQXEzVEhKb1NoZlRIR2dRZmJmWUdSbHkyQTV2ZGdFcmd3SmlJSUNxczRQdE1fbW5GQ3Z6OW8weGJDV3YtRHdESXNNNjd4bzdIbHZxUWJqSDNpejdkbUVMZw?oc=5"
       }
     ],
     "id": "d7a53e83",
     "first_seen": "2026-10-13",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "中部",
     "score_parts": {
       "appeal": 3,
@@ -1223,18 +1324,18 @@
     "category": "flower",
     "location_name": "阿里山（低碳百合田）",
     "county": "嘉義縣",
-    "lat": 23.47,
-    "lng": 120.72,
+    "lat": 23.511,
+    "lng": 120.802,
     "status": "peak",
     "date_start": "2026-10-27",
     "date_end": "",
     "est_end": "2026-11-15",
-    "est_basis": "10/27 報導盛開，百合單波花期約2–3週",
-    "summary": "阿里山低碳百合田正值盛開，友善農業百合田成為山區秋季賞花亮點。",
-    "lens": "100mm 微距（百合特寫）、24–70mm（花田與山景）· 反光板",
-    "tips": "上午側光拍花瓣質感最佳；屬私人農田，請依現場動線勿踩踏。",
+    "est_basis": "10/27報導盛開，百合花期約2-3週",
+    "summary": "阿里山友善農業低碳百合田盛開。",
+    "lens": "24–70mm（花田與山景）、100mm微距（花朵特寫）",
+    "tips": "清晨霧氣中拍百合最有氛圍；勿踩入田區。",
     "appeal": 3,
-    "appeal_reason": "山區百合田畫面清新但面積有限",
+    "appeal_reason": "山區百合田，規模中等",
     "articles": [
       {
         "title": "阿里山百合花季湧人潮百種花卉爭豔 荷蘭30款新品種首度亮相",
@@ -1269,7 +1370,7 @@
     ],
     "id": "6244db13",
     "first_seen": "2026-10-13",
-    "last_seen": "2026-10-30",
+    "last_seen": "2026-11-03",
     "region": "南部",
     "score_parts": {
       "appeal": 3,
@@ -1277,77 +1378,6 @@
       "buzz": 4
     },
     "score_value": 3.9,
-    "score": 4
-  },
-  {
-    "subject": "台灣山毛櫸金黃",
-    "category": "foliage",
-    "location_name": "太平山翠峰湖山毛櫸步道",
-    "county": "宜蘭縣",
-    "lat": 24.51,
-    "lng": 121.61,
-    "status": "unknown",
-    "date_start": "",
-    "date_end": "",
-    "est_end": "2026-11-25",
-    "est_basis": "山毛櫸通常在10月底–11月中轉黃；PTT山友提到11月底葉子已經掉光",
-    "summary": "山友11/1發文提到前往太平山山毛櫸步道補拍，並說過去11月底去時葉子已經掉光。",
-    "lens": "24–70mm（金黃林道）、70–200mm（逆光葉片）· CPL",
-    "tips": "上山路況困難，請預留充裕時間；最好在11月中旬前前往。",
-    "appeal": 5,
-    "appeal_reason": "稀有的冰河孑遺樹種，秋天一片金黃",
-    "articles": [
-      {
-        "title": "秋遊宜蘭5大提案！新開幕「百年林場星巴克」必訪 漫步芒花古道、搭蹦蹦車追逐最美秋色",
-        "source": "Yahoo新聞",
-        "link": "https://news.google.com/rss/articles/CBMiqgRBVV95cUxPZnA3d2lLaU9UUzNUeVphZ1BpZ3Z2NmdMZ1M3ZnVoMVdKeTJmTGNYcXlKZG5PV3BsTVBMYVdOdlBWUThrNDFlOER5Q2NZV0RHWU45RXNESVA1UEdiclg0b3lRdHh3X1BYeF93blVNYmt3RHYtejVsNmdYNDVQbEdTYV9QaDd2eFQxRVg2NGx3NlZKem13UVlMUTdoUk5DczRPc2cwMHF4bHctRXhJMzlBdVdOMFhHM29xZGd5OWxPR0UzQ201MVA4ZmF4dWwxVGVBSGFneERVZWpNOEgwNzRqcjl1Wi1TZ2wzbDk1eXdwMmtWWEVZQWFnaU5YSWxPbXQ3MDVReG5raDRIQTc4bXlDS2diNG1Rck1qcUMwMl9jN3JMUGV4MC02U2IyRHhGelFhTkZNdXZJZXZMSlpWdFdYbXRoSUV1ampxX2ZBa3hXWG5CemhTdEZJRjB6bWRYSmNrMVhBV3hZZkk5U2FNaFMwZmRvWlR6a1VHZWtLT0M0a3NxRTR4N3RBNVRxUko3cVZSdUlyUkFGRUVlZkp4X0hCX0dGQ1U0NUd5d0lQNmdCNFVRUlFNMDdnT3gzcGk2NDgweXlYSVNqSnAzY1hMVjJyNFhaR0toZTd5MW1iVTBIeUdDeVl4Z2I5S3lzazJtNUVKQUVpeWYzUC03Vzh5TjhfeGxHR1NTc1JZcGNTVVUwX2h6TjIydEltYWJBbGg4Q1RfbHVaZUpJaGllUQ?oc=5"
-      },
-      {
-        "title": "2026太平山台灣山毛櫸旺季 翠峰景觀道路動態車輛總量管制措施",
-        "source": "林業保育署 宜蘭分署",
-        "link": "https://recreation.forest.gov.tw/News/News?id=20261001001"
-      },
-      {
-        "title": "[遊記] 從太平山望向太平洋：望洋山步道",
-        "source": "PTT Hiking",
-        "link": "https://www.ptt.cc/bbs/Hiking/M.1791783528.A.017.html"
-      },
-      {
-        "title": "〈中華旅遊〉太平山蹦蹦車賞森林 訪觀魚步道",
-        "source": "中華新聞雲／中華日報",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9NeW1jOFhuamhOUnE2Y081cjdnSWNzOXJFckx6czdVd1docHl0Mk8tWWxCdjhEMldpS0RkSG5EbUNrbXRLcDlOdTVraG55Z3VRNnc?oc=5"
-      },
-      {
-        "title": "太平山蹦蹦車自115年10月3日起局部行駛",
-        "source": "林業保育署 宜蘭分署",
-        "link": "https://recreation.forest.gov.tw/News/News?id=20261002001"
-      },
-      {
-        "title": "薔琵颱風影響｜宜蘭分署所轄森林育樂場域預警性休園/封閉訊息",
-        "source": "林業保育署 宜蘭分署",
-        "link": "https://recreation.forest.gov.tw/News/News?id=20261021002"
-      },
-      {
-        "title": "薔琵颱風逼近 林業保育署籲暫勿入山 留意園區及步道訊息",
-        "source": "林業保育署 森林育樂組",
-        "link": "https://recreation.forest.gov.tw/News/News?id=20261021001"
-      },
-      {
-        "title": "[遊記] 讓別人的機車爬山-三星望洋山毛櫸步道",
-        "source": "PTT Hiking",
-        "link": "https://www.ptt.cc/bbs/Hiking/M.1793508725.A.240.html"
-      }
-    ],
-    "id": "6396d914",
-    "first_seen": "2026-10-13",
-    "last_seen": "2026-11-02",
-    "region": "東部",
-    "score_parts": {
-      "appeal": 5,
-      "timing": 2,
-      "buzz": 5
-    },
-    "score_value": 3.8,
     "score": 4
   },
   {
@@ -1362,11 +1392,11 @@
     "date_end": "2026-11-08",
     "est_end": "",
     "est_basis": "",
-    "summary": "鯤鯓王平安鹽祭11/7–11/8舉行，11/7上午7點起有請鹽科儀。",
-    "lens": "24–70mm（科儀）、16–35mm（鹽田）· 腳架",
-    "tips": "傍晚可在井仔腳瓦盤鹽田拍夕陽倒影；請鹽科儀一早就開始，要提早到場。",
+    "summary": "鯤鯓王平安鹽祭11/7–11/8，請鹽等傳統科儀結合沙洲鹽田景觀。",
+    "lens": "16–35mm（鹽山祭典全景）、70–200mm（科儀人像）",
+    "tips": "11/7早上7點起請鹽科儀，清晨側光拍鹽山與人潮；井仔腳鹽田夕陽也值得留下。",
     "appeal": 4,
-    "appeal_reason": "鹽田景觀結合王爺信仰，相當獨特",
+    "appeal_reason": "鹽田、鹽山與王爺信仰結合，獨特",
     "articles": [
       {
         "title": "2026鯤鯓王平安鹽祭",
@@ -1381,7 +1411,7 @@
     ],
     "id": "137e268e",
     "first_seen": "2026-10-13",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "南部",
     "score_parts": {
       "appeal": 4,
@@ -1660,63 +1690,22 @@
     "score": 4
   },
   {
-    "subject": "洛神花田",
-    "category": "flower",
-    "location_name": "金峰鄉（洛神花音樂節）",
-    "county": "臺東縣",
-    "lat": 22.59,
-    "lng": 120.97,
-    "status": "peak",
-    "date_start": "2026-10-31",
-    "date_end": "",
-    "est_end": "2026-11-25",
-    "est_basis": "10/31花季盛會；洛神花通常在11月採收完畢",
-    "summary": "金峰洛神花音樂節10/31吸引上千人，正值洛神花季。",
-    "lens": "90–105mm微距（紅色花萼）、24–70mm（山坡花田）",
-    "tips": "在順光下拍，洛神的紅色最飽和；進入私人農田前要先徵得農民同意。",
-    "appeal": 3,
-    "appeal_reason": "紅色果實和花田很有特色",
-    "articles": [
-      {
-        "title": "2026金峰鄉洛神花音樂節 感受秋日花季魅力 | 青年日報",
-        "source": "LINE TODAY",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1pSlVKcVVZbzZLVkgtR194Zjd4a05GT0hGMnhCY0FaM1VmekFublUyaEZkNXVZb3VEdlpjUjJreXRDY19NWFc0VF9QUHZXbEZmbkN0anhB?oc=5"
-      },
-      {
-        "title": "金峰洛神花音樂節開唱 千人湧入花季盛會",
-        "source": "原住民族文化事業基金會",
-        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1nUkNVX3dkWGhiNmVzLVF1RUk2SlBnR2dzNG9vVVV4aThrQkRpOEJtd3A1N0JuRk56VXE4N1h5LUJJdXRZQ3c?oc=5"
-      }
-    ],
-    "id": "deb49a0d",
-    "first_seen": "2026-10-30",
-    "last_seen": "2026-11-02",
-    "region": "東部",
-    "score_parts": {
-      "appeal": 3,
-      "timing": 5,
-      "buzz": 2
-    },
-    "score_value": 3.7,
-    "score": 4
-  },
-  {
     "subject": "雙色花海（金黃與粉紅花田）",
     "category": "flower",
     "location_name": "中壢聖德路花田",
     "county": "桃園市",
     "lat": 24.97,
-    "lng": 121.23,
+    "lng": 121.21,
     "status": "peak",
-    "date_start": "",
+    "date_start": "2026-10-28",
     "date_end": "",
     "est_end": "2026-11-20",
-    "est_basis": "10/28報導盛開，景觀花田花期通常約3–4週",
-    "summary": "中壢聖德路花田一半金黃一半粉紅，雙色花海10/28報導正盛開。",
-    "lens": "70–200mm（壓縮雙色花田）、24–70mm · CPL",
-    "tips": "低角度順光可強化金黃與粉紅對比；花田為農地，請從田埂拍攝勿踩入。",
+    "est_basis": "10/28盛開，秋季景觀花田約3-4週",
+    "summary": "中壢聖德路花田一半金黃一半粉紅，雙色對比吸睛。",
+    "lens": "16–35mm（雙色分界全景）、70–200mm（壓縮花田）· 空拍需合法",
+    "tips": "找能同時納入雙色分界的角度，傍晚低角度側光層次最好。",
     "appeal": 3,
-    "appeal_reason": "雙色對比花田好看但屬常見景觀作物",
+    "appeal_reason": "雙色對比少見但為田間花海",
     "articles": [
       {
         "title": "中壢聖德路花海！一半金黃一半粉紅 雙色花田超吸睛！",
@@ -1731,7 +1720,7 @@
     ],
     "id": "fab3c90b",
     "first_seen": "2026-10-23",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "北部",
     "score_parts": {
       "appeal": 3,
@@ -1753,11 +1742,11 @@
     "date_end": "2026-11-22",
     "est_end": "",
     "est_basis": "",
-    "summary": "臺灣國際衝浪公開賽11/6–11/22在東河金樽舉行。",
-    "lens": "150–600mm（衝浪動作）· 單腳架",
-    "tips": "上午順光拍浪頭；快門至少1/2000秒才能凝結動作。",
+    "summary": "臺灣國際衝浪公開賽11/6–11/22於東河金樽，東北季風助長浪勢。",
+    "lens": "100–400mm或150–600mm（浪上動作）· 高速連拍 · 單腳架",
+    "tips": "快門1/2000秒以上凍結浪花；上午順光拍浪面細節。",
     "appeal": 4,
-    "appeal_reason": "東海岸浪況佳，動作畫面精彩",
+    "appeal_reason": "國際賽事動態浪景",
     "articles": [
       {
         "title": "2026臺灣國際衝浪公開賽",
@@ -1767,12 +1756,53 @@
     ],
     "id": "43394527",
     "first_seen": "2026-10-13",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "東部",
     "score_parts": {
       "appeal": 4,
       "timing": 4,
       "buzz": 1
+    },
+    "score_value": 3.7,
+    "score": 4
+  },
+  {
+    "subject": "粉紫夏堇花圃",
+    "category": "flower",
+    "location_name": "日月潭向山公園雙心花圃",
+    "county": "南投縣",
+    "lat": 23.8548,
+    "lng": 120.9053,
+    "status": "peak",
+    "date_start": "2026-10-30",
+    "date_end": "",
+    "est_end": "2026-12-15",
+    "est_basis": "10/30換新綻放，夏堇花圃通常可維持1個多月",
+    "summary": "向山雙心花圃換上粉紫夏堇，雙心造型搭配日月潭湖景。",
+    "lens": "16–35mm（雙心與湖景）、24–70mm",
+    "tips": "高處俯角才看得出雙心造型；清晨湖面平靜有倒影。",
+    "appeal": 3,
+    "appeal_reason": "湖景加造型花圃",
+    "articles": [
+      {
+        "title": "日月潭新亮點！向山公園雙心花圃換新裝 粉紫夏堇浪漫綻放！",
+        "source": "Life 生活網",
+        "link": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxQWHFwTVo1WkFWVE1FYUhsV1p5OFMwZnlYWThrNU1HMHl1TTE3VGsyaUkzV1RRUVlocHVZaG1qOVptaUl3bTFuU2NtN21DbkNQS1lKcXJ5cmlqQW01UW0zRzhEQWc2eHpiMWVYRThJcndOaHhGOFR5VGp3WFhfT2RjUDB4eklZdnN6a0JlbWlGRkxibTFpUkd2U0NVQjBsNElnYTg2Wnh3S2NMOFNIY2k1WGNqVWRwR1dRX0k5R3BwckJwaDJ3Ni1NWUZFMjFDWmo0WFJOczZBOGtSUXNsMTQyZGJXaUs4VVJzbzNLWGNERHp1dDVEa2RQVUdqbXh1aHFZM2M3Ukh2V2hUVk5UbWZPLTYtMGtPcjhyYk1wd1dUVU44NTlEaW1tRG03b0FzNEt0M2FpTExnRUNFU0hpRV8wWmlTZkZFcXpZZkg1VHB6cUxVVC1yZEM0S2ZBMjI5N2FSLU41SkpiSjA5c0RrZU1aeXpkZnlpQQ?oc=5"
+      },
+      {
+        "title": "日月潭新亮點！向山公園雙心花圃換新裝 粉紫夏堇浪漫綻放！",
+        "source": "PChome Online 新聞",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWm1CXzM5ejRCYzZLMGhuSFBrelFxdzFOY2dkRmlBaFcyWUFTRi1RMXRWX1NPYnozaTZCci1BZkdHMGtmX1ljVDB4RnpOQTY2X3hjYmRjS0FVd1hXWDBmUEdiRVp5S09BSjNXY0RKbEhkeHZLMkMxSTIwTURQOXA4aVdpN0dWaVJTQ2pCNw?oc=5"
+      }
+    ],
+    "id": "682ca8d5",
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-11-03",
+    "region": "中部",
+    "score_parts": {
+      "appeal": 3,
+      "timing": 5,
+      "buzz": 2
     },
     "score_value": 3.7,
     "score": 4
@@ -1968,67 +1998,6 @@
     "score": 4
   },
   {
-    "subject": "獅子座流星雨、秋冬星空",
-    "category": "landscape",
-    "location_name": "恆春半島（墾丁）",
-    "county": "屏東縣",
-    "lat": 22,
-    "lng": 120.75,
-    "status": "upcoming",
-    "date_start": "2026-11-17",
-    "date_end": "2026-11-18",
-    "est_end": "",
-    "est_basis": "",
-    "summary": "獅子座流星雨11/18達到極大期，11/15還有火星、木星相會；南金牛座流星雨可能出現火流星。",
-    "lens": "14–24mm F2.8以下（廣角星空）· 腳架 · 快門線 · 除露帶",
-    "tips": "後半夜輻射點升高後流星較多，可用間隔拍攝後再疊圖；選擇南部低光害的地點。",
-    "appeal": 4,
-    "appeal_reason": "流星雨加上星空",
-    "articles": [
-      {
-        "title": "搶國旅補助 首選恆春半島秋冬星空",
-        "source": "信傳媒",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5fTVMxRzlfVE9TeGhIdHNUOUd6NGxTd3I4cEpJS1lQM3FFRGt3VXR0RTUydU5FQ3NnVndfQVZYeUw5WTliektjNnJHR2pBQWpqSGJUSFN1dnV0dw?oc=5"
-      },
-      {
-        "title": "搶國旅補助！小墾丁邀南十字工作室專業星空導覽 追尋獅子座流星雨、仰望七姊妹星團",
-        "source": "台灣好報",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ickhHaURKai0tVzhLcmRuRm9ISVBCLXZ4bGRqMmFzcGRtYk4tVEZrVmZzTVZSU2xCbzRDOGZ5TFB3UXpQTU5sdDJ2SUYtUkVMQ2c0?oc=5"
-      },
-      {
-        "title": "11月天象登場 木星合月、火星合木星、獅子座流星雨",
-        "source": "蕃新聞",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9aSGEzMWIteWRjM1Bub3JoN3p1eTAyVm0yQW9WSy1wQUNfSUNxQkIyNlo5RE9xWnZlZElBME9sUF9Dcnh5TlEyZk5fRWc3TFh3X1E?oc=5"
-      },
-      {
-        "title": "今夜賞「月入鬼宿星團」　獅子座流星雨中旬接力登場",
-        "source": "ETtoday新聞雲",
-        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5QWjRMU25mZjhiQjN1cGtST0QzMjlnaWtSU2h6NDJVbWUxREdiWFJsNHI1M0dyTUV5WmZYczBnSkxxVXFIbjRJcGF0RjUzc2R0eDFOTXJqNDhHMXBzdXfSAUtBVV95cUxOWkhLWEw2TWt3ejdaYURBM1NGRkluTVZ4Z0MyOUZ0YzE1SXExOGhYNWFQZ1ZpLUFnX0dhZFRHb1hjU2VYcldqeEZJRWs?oc=5"
-      },
-      {
-        "title": "11月夜空雙星伴月 11/15火星、木星相會 11/18獅子座流星雨極大期 | 青年日報",
-        "source": "LINE TODAY",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBSS2hjNGtUZ2NUZk1JSHlFVXppVUJrVk9jUXdYZkNMMFV1MEp5OWQ3dEZfYjM3R0xCVE83TW9tdzBTeFVSa1BDZUdIZmM0MG5kYWY5X2xR?oc=5"
-      },
-      {
-        "title": "11月流星雨接連登場　南金牛座或現「火流星」",
-        "source": "Sing Tao Daily 星島日報加拿大",
-        "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxQdnhmeHZGZlM4MVBHRVlYWlpnLUtMaDVOYU81YkRJMU43V2VnUzdUc1djSThEQXZqc0M2dTRzQXFUNnJFS3p0Mko1UWg0YkpQRTRReExySU5CMlExRF9XcTJfcTdTMkstOG9LdF85R3pKTVlGSWdBcW5kNHdTcF9tRjdfcFZZUEZPNE5EMXRsRU4zUzdRMm42dHlzRUJYRmFCWEwwVlhCSjJhaUpTVDFIZ094Zk1VVXdMQmdTYmR1TUNfNHY5d2FSajlpN3ZCODM0YzlnOFFkVVNjZ01qSHczX0RHNFZuM3J6eWZEN2QyMElKMzM5LVNYZXc2MHJ1Z1VWQXFPcy1RWGVKemVIMnhGYTU0RE11WUFzd25HNndiR0ZhVlEwcWk0a1dCOEh6NHBvcjdTTTIxY0Jibk5vaTNIeUtLdVctcmtFS050d2wzb9IBjwFBVV95cUxPeUpRMlRnLXZvbzlmY0V4OExoOTh6ck5UNFRPMnBqY016aW1SLUhUNDg4MnFRdWQzQm9NZWdWeGdORmhBX1pSeHlBdWgtVFN4S0xGcE5IX3RsM25JZldLQlV5THVWOEVZRVJ6dmxhVW1YUVdzYXNwUVNUNnZwTU91aXVrLXFzWmw2bTNUc2RBVQ?oc=5"
-      }
-    ],
-    "id": "f6188855",
-    "first_seen": "2026-10-29",
-    "last_seen": "2026-11-02",
-    "region": "南部",
-    "score_parts": {
-      "appeal": 4,
-      "timing": 3,
-      "buzz": 4
-    },
-    "score_value": 3.6,
-    "score": 4
-  },
-  {
     "subject": "美人樹",
     "category": "flower",
     "location_name": "臺北市街頭",
@@ -2177,18 +2146,18 @@
     "category": "event",
     "location_name": "碧潭風景區",
     "county": "新北市",
-    "lat": 24.957,
+    "lat": 24.958,
     "lng": 121.537,
     "status": "ongoing",
     "date_start": "",
     "date_end": "",
     "est_end": "",
     "est_basis": "",
-    "summary": "碧潭19公尺巨型小王子氣偶與發光天鵝船展出中，閉幕時會施放煙火。",
-    "lens": "16–35mm（氣偶與吊橋同框）、24–70mm（夜景）· 腳架",
-    "tips": "藍調時刻拍氣偶、發光天鵝船和吊橋燈光；閉幕煙火請先查好日期，提早卡位。",
+    "summary": "碧潭19公尺巨型小王子氣偶、發光天鵝船展出中，活動並有閉幕煙火。",
+    "lens": "16–35mm（氣偶與吊橋）、24–70mm · 腳架（夜景、煙火）",
+    "tips": "藍調時刻拍氣偶與吊橋燈光最好；閉幕煙火日期請查官方公告。",
     "appeal": 3,
-    "appeal_reason": "大型裝置配上水岸夜景",
+    "appeal_reason": "大型裝置配吊橋夜景",
     "articles": [
       {
         "title": "碧潭地景裝置展今登場！19公尺高巨型「小王子」　閉幕300秒煙火",
@@ -2213,7 +2182,7 @@
     ],
     "id": "d1183449",
     "first_seen": "2026-10-19",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "北部",
     "score_parts": {
       "appeal": 3,
@@ -2228,18 +2197,18 @@
     "category": "bird",
     "location_name": "華江雁鴨自然公園",
     "county": "臺北市",
-    "lat": 25.035,
-    "lng": 121.495,
+    "lat": 25.039,
+    "lng": 121.49,
     "status": "ongoing",
     "date_start": "",
     "date_end": "",
-    "est_end": "2027-03-15",
-    "est_basis": "雁鴨通常10月抵台，隔年3月北返",
-    "summary": "冬候鳥季節到了，華江雁鴨自然公園的雁鴨陸續報到。",
-    "lens": "400–600mm（雁鴨特寫）· 腳架或豆袋",
-    "tips": "早晨退潮時水鳥最活躍；在步道上保持距離，避免驚飛鳥群。",
+    "est_end": "2027-03-31",
+    "est_basis": "冬候鳥雁鴨通常停留至隔年3月",
+    "summary": "候鳥季節到來，華江雁鴨自然公園可觀察度冬雁鴨。",
+    "lens": "400–600mm（雁鴨特寫）· 腳架或單腳架 · 1.4x增距鏡",
+    "tips": "漲退潮影響鳥群距離，退潮時鳥較集中；清晨或傍晚光線柔和。",
     "appeal": 3,
-    "appeal_reason": "都市裡容易拍到的冬候鳥",
+    "appeal_reason": "都市常見度冬雁鴨",
     "articles": [
       {
         "title": "侯鳥季節，擁抱自然，感受大地上的溫柔【華江雁鴨自然公園台北端】",
@@ -2264,7 +2233,53 @@
     ],
     "id": "50513bc5",
     "first_seen": "2026-10-29",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
+    "region": "北部",
+    "score_parts": {
+      "appeal": 3,
+      "timing": 4,
+      "buzz": 3
+    },
+    "score_value": 3.4,
+    "score": 3
+  },
+  {
+    "subject": "花海、炮仗花長廊",
+    "category": "flower",
+    "location_name": "北投三層崎公園花海",
+    "county": "臺北市",
+    "lat": 25.125,
+    "lng": 121.511,
+    "status": "starting",
+    "date_start": "",
+    "date_end": "",
+    "est_end": "",
+    "est_basis": "",
+    "summary": "三層崎花海再添新植栽，期待炮仗花長廊未來綻放迎賓。",
+    "lens": "16–35mm（花海坡地）、70–200mm",
+    "tips": "坡地花海午後側光層次佳。",
+    "appeal": 3,
+    "appeal_reason": "都市花海",
+    "articles": [
+      {
+        "title": "台版富良野增「炮仗花長廊」　北投三層崎花海明年1/27開幕",
+        "source": "ETtoday旅遊雲",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5xVlR6TlVCQTlLQ0NRTFFqNHpjdEo1VFlSR3p4SUtmQmVRbUlDMGM5VzRHbU93Yk0xQzlTSUtqMGxPMF9uLUtSTVQya19rVjNaeFNDVGFtVTB4d9IBT0FVX3lxTE12VWZ2aWxsMWVBV3VVbk80ZktzRExVRjFkRzdTUjljR3UycEdBeTVZMmRJc3lrNUpJVDhpcG1YdThKVjZPZi1mNVNkNVFsRm8?oc=5"
+      },
+      {
+        "title": "三層崎花海再添生力軍 期待炮仗花長廊迎賓",
+        "source": "花IN台北 (臺北市公園處)",
+        "link": "https://flowersfestival.taipei/news/585.html"
+      },
+      {
+        "title": "三層崎花海新種炮仗花 呼應漸層花海更有層次美",
+        "source": "Yahoo新聞",
+        "link": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxPMW4zT2xtemt0RW44a2JGRzIyQmU5UXI5OThmME5uSTF0bkw2NGk2Ti15QTRfTW9qQS1tS01FT1ZUSTU5bFk5V21zWkRLNkgyLV9qeVhHTl9tTE80a2NuYXNmM2EzTVBVVFZzYUo4WG1vVlQ1NWFXUm81UEVEeWtmVjAxc2NDYTJKdHZSNzRaNVpkeDU1dWVzN3BveG5naUdKV1pob0E2VlZ4d3ktd2huWlQ2R0hseFpTQVEzdTRNLWpGb2JYdXdvcko0ODdXc1BsQkw5SzJVeWVMSGxsTWFLQW1wVDJwUkw3MDRkM1hiV1VDdlBmaUJrWFFGRmlSRG1Bcm8xbkNQQkc2OWc1WjJudV9TNWxOYlVvRkVGR1AwVEdjdGtremdrblJuT2o4MnVKUUFsbUFtQzdacGROM0NPb2xETEFiQ0hUam1LQlNsU3g?oc=5"
+      }
+    ],
+    "id": "bfe7b527",
+    "first_seen": "2026-10-22",
+    "last_seen": "2026-11-03",
     "region": "北部",
     "score_parts": {
       "appeal": 3,
@@ -2351,18 +2366,18 @@
     "category": "event",
     "location_name": "阿里山林業鐵路（賞楓列車）",
     "county": "嘉義縣",
-    "lat": 23.51,
-    "lng": 120.8,
+    "lat": 23.511,
+    "lng": 120.802,
     "status": "upcoming",
-    "date_start": "2026-12-01",
-    "date_end": "2026-12-31",
+    "date_start": "",
+    "date_end": "",
     "est_end": "",
     "est_basis": "",
-    "summary": "阿里山林鐵12月推出百年蒸汽火車「楓度翩翩」賞楓列車，共5梯次、每梯限100人，11/17開放訂票。",
-    "lens": "24–70mm（車廂與沿線楓紅）、70–200mm（蒸汽火車壓縮楓林）· 偏光鏡",
-    "tips": "11/17訂票要搶早；搭車時靠窗用高快門拍窗外楓紅，到站停留時可拍蒸汽機車噴煙的畫面。",
+    "summary": "阿里山林鐵百年蒸汽火車賞楓列車12月限定5梯次、每梯100人，11/17開放訂票。",
+    "lens": "24–70mm（列車與楓林同框）、70–200mm（壓縮蒸汽煙與車頭）· CPL",
+    "tips": "蒸汽煙在低溫清晨最濃，順光側拍車頭最立體；名額極少，11/17開賣需搶票。",
     "appeal": 4,
-    "appeal_reason": "蒸汽火車加上楓紅很少見",
+    "appeal_reason": "蒸汽老火車穿越楓紅，題材少見",
     "articles": [
       {
         "title": "訊息專區-最新消息-楓紅啟程！阿里山季節限定賞楓列車11月17日開放訂票",
@@ -2403,16 +2418,87 @@
         "title": "阿里山年度盛事「賞楓列車」12月登場！ 開放訂票時間、費用一次看 | 華視新聞",
         "source": "LINE TODAY",
         "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSFl5TXo1M2xGSjAwQk5ZTlo5T0M5Z3lSWGhnYi0xTmNIQUZaS0Y0Qy1MM0JLa0xKZEF1c0Vvc0diaGw5MktYUWFnd3ZXX0RrZG9sak5KcTZJejk1dlpLcG12ZGx3Sng5dFp6UlZUd2xjT1NOMm5CZWJZb0s0dUZybjBOcURmdw?oc=5"
+      },
+      {
+        "title": "阿里山林鐵賞楓列車12月啟動 11/17開放訂票|藝文臺灣",
+        "source": "僑新聞",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBzRUNITmozOWgtUzhEdExhUXdFeEQ3ZDE0UjcxUnBmVjhnb0RucTUyQXc0eEwwRko5ZmdxVkdxbG1yX2RMTTYxXzB1cw?oc=5"
+      },
+      {
+        "title": "錯過等明年！阿里山賞楓列車11/17開放搶票，限量500名額、遊程內容一次看",
+        "source": "食尚玩家",
+        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1EbjhtNGhaY1p6cUFPcW5BN081RkV6M05SRkc0eGpPMm5HZW5ya2VQU2NZeTBEUFowSEpRV04ySjgyT1FmWE90UExpYjhIYm95Ulk0MTRVZw?oc=5"
+      },
+      {
+        "title": "阿里山季節限定賞楓列車限定5梯次將開動 開放訂票預備開搶！",
+        "source": "旅遊經",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1XbU5BSHRKa2hsUk1CU3dlYU4tdlhZZ1ZJd25DUy1aUFFOejhybUtwLWYzaFZLb0h0MlRPTEw5QmN4aS1xeFBMZDRMTEhXVThjaE5KTzhYaXlKRUU4VEdZeHBhSTRmVDNlTU1ZZmFoSDBYaV9R?oc=5"
+      },
+      {
+        "title": "阿里山季節限定賞楓列車 11/17開放訂票 | 青年日報",
+        "source": "LINE TODAY",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE42WUR1OFJGdU8ySEZfZEROVDFOLW9KNUhiNmlkcWRRZm1fXzJuYjMxOEJmNW40ZjRaS3UxRkxiQWhKTW9oZkpuWTdlUkkyeHJZZTNUSkdR?oc=5"
+      },
+      {
+        "title": "廣角鏡／阿里山賞楓蒸汽列車 17日網路開搶",
+        "source": "UDN",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4yaTZ5T3FDZTJ2TldkZW9xTFN5V0xPU25VMjduQkgwRmhxQzQyRmFYSVR0SVh5a3Yzem13OVRaaWU1M0JfeV9jdzVkZ1dscUN6VDJVNGd30gFWQVVfeXFMTjJpNnlPcUNlMnZOV2Rlb3FMU3lXTE9TblUyN25CSDBGaHFDNDJGYVhJVHRJWHlrdjN6bXc5VFppZTUzQl95X2N3NWRnV2xxQ3pUMlU0Z3c?oc=5"
+      },
+      {
+        "title": "百年蒸汽火車載客追楓！阿里山賞楓列車12月開跑 每梯限100人",
+        "source": "UDN",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBOblZhLXdWcFJJT0ZOUFNEekh5OE04OTllM0ZOVzJJV3MwMmluSVYzMzhCS0VaQW5wU1JaZHEwQXlyWVowRGRwUi1hZ09xUzBMNHZhMXVwcDBzQ19NeEVSZGJxZkdVTHpkM29KQTZUeUVIN25nbFNCOERHcm0?oc=5"
+      },
+      {
+        "title": "阿里山賞楓列車11/17開賣 「限量5梯次」票價、行程亮點全攻略",
+        "source": "Yahoo新聞",
+        "link": "https://news.google.com/rss/articles/CBMi5wJBVV95cUxPSVFCOTdZU0hIWHIyczh4WjFzdjlwY3NzVWxhWVIxWFY0MnhsT0daT3lIZzl3c2kxVXM1U2ZkRG45NTBiZWxsQzQtWkFra0VwTVpOUURMRFVPcG1RVWltNzh6aVRuRV8wT3hGcFNEb3B1V29OYXZaR1RyZEY5TGlYVU1UUXd0RVFfNnRqT1ViSm02R2NCNDFTOHlGM1pNWHRkbzhoTnZxcUtoNkgwYi1zOFRqUTl2ci0tMFlXZVpySEJxdnhhT0JmU0FGaFBLV3MxRFNMRk9oYU11eUh1dVNSc2xwb2Q2N2dpcVpwY1BwSHd1VkJyRVluOGlpV1NCYUhHTWRBUjRLZkxjdkNvcnQzRG5Nd0YyUVZtRy1RT1RJb3JCT1JYdEM5X2plekZlYmxDeHRvdHFuaTJUTEJIMmEtcU1YV1NsdTAzZmE4YlBrOUJxUl9wNTQ3Wm9FbjZnM1c3NlVrSlRtSQ?oc=5"
       }
     ],
     "id": "fa8b6f33",
     "first_seen": "2026-11-02",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "南部",
     "score_parts": {
       "appeal": 4,
       "timing": 2,
       "buzz": 5
+    },
+    "score_value": 3.3,
+    "score": 3
+  },
+  {
+    "subject": "高樁舞獅、藝陣",
+    "category": "event",
+    "location_name": "高雄戲獅甲",
+    "county": "高雄市",
+    "lat": 22.6288,
+    "lng": 120.335,
+    "status": "upcoming",
+    "date_start": "2026-11-15",
+    "date_end": "2026-11-16",
+    "est_end": "",
+    "est_basis": "",
+    "summary": "高雄戲獅甲11/15–11/16，國際高樁舞獅競賽與地方藝陣。",
+    "lens": "70–200mm（高樁跳躍）、24–70mm（藝陣）",
+    "tips": "高速快門凍結獅頭騰躍，提前卡位低角度仰拍。",
+    "appeal": 4,
+    "appeal_reason": "高樁舞獅動作張力強",
+    "articles": [
+      {
+        "title": "2026高雄戲獅甲",
+        "source": "觀光署活動資料",
+        "link": "https://www.facebook.com/KaohsiungLionDance/?locale=zh_TW"
+      }
+    ],
+    "id": "b61c2cfb",
+    "first_seen": "2026-10-16",
+    "last_seen": "2026-11-03",
+    "region": "南部",
+    "score_parts": {
+      "appeal": 4,
+      "timing": 3,
+      "buzz": 1
     },
     "score_value": 3.3,
     "score": 3
@@ -2511,9 +2597,9 @@
     "date_end": "2026-11-08",
     "est_end": "",
     "est_basis": "",
-    "summary": "石頭在呼吸戶外光影裝置展到11/8結束；大農大富展區曾因颱風暫停。",
-    "lens": "16–35mm、24–70mm · 腳架",
-    "tips": "藍調時刻最能同時拍到裝置光影和天色；出發前請確認展區是否恢復開放。",
+    "summary": "石頭在呼吸戶外光影裝置展至11/8；大農大富展區曾因颱風暫停。",
+    "lens": "16–35mm（裝置全景）、24–70mm · 腳架",
+    "tips": "藍調時刻天空仍有顏色時拍光影最好；出發前確認展區開放狀態。",
     "appeal": 3,
     "appeal_reason": "戶外大型光影裝置",
     "articles": [
@@ -2525,7 +2611,7 @@
     ],
     "id": "48b10cc1",
     "first_seen": "2026-10-13",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "東部",
     "score_parts": {
       "appeal": 3,
@@ -2547,11 +2633,11 @@
     "date_end": "2026-11-08",
     "est_end": "",
     "est_basis": "",
-    "summary": "花蓮太平洋國際龍舟節11/6–11/8在鯉魚潭舉行。",
-    "lens": "100–400mm（划槳動作）、24–70mm（湖景）",
-    "tips": "從岸邊側拍水花與划手的表情；早上湖面平靜時可拍山影。",
+    "summary": "花蓮太平洋國際龍舟節11/6–11/8於鯉魚潭舉行。",
+    "lens": "70–200mm（划槳動作）、100–400mm（遠景壓縮）",
+    "tips": "高速快門凍結水花；清晨湖面山景倒影可拍龍舟靜態。",
     "appeal": 3,
-    "appeal_reason": "湖光山色配上龍舟競賽",
+    "appeal_reason": "湖光山色配龍舟競賽",
     "articles": [
       {
         "title": "2026 花蓮太平洋國際龍舟節",
@@ -2561,53 +2647,12 @@
     ],
     "id": "50afc579",
     "first_seen": "2026-10-13",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "東部",
     "score_parts": {
       "appeal": 3,
       "timing": 4,
       "buzz": 1
-    },
-    "score_value": 3.2,
-    "score": 3
-  },
-  {
-    "subject": "粉紫夏堇花圃",
-    "category": "flower",
-    "location_name": "日月潭向山公園雙心花圃",
-    "county": "南投縣",
-    "lat": 23.853,
-    "lng": 120.905,
-    "status": "peak",
-    "date_start": "2026-10-30",
-    "date_end": "",
-    "est_end": "2026-12-20",
-    "est_basis": "10/30換新花後盛開，夏堇花期大約6–8週",
-    "summary": "向山公園雙心花圃換上粉紫夏堇，正在盛開。",
-    "lens": "16–35mm（花圃與湖景）、70–200mm",
-    "tips": "上午順光時湖水最藍；可以登高俯拍雙心造型。",
-    "appeal": 2,
-    "appeal_reason": "小型造景花圃",
-    "articles": [
-      {
-        "title": "日月潭新亮點！向山公園雙心花圃換新裝 粉紫夏堇浪漫綻放！",
-        "source": "Life 生活網",
-        "link": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxQWHFwTVo1WkFWVE1FYUhsV1p5OFMwZnlYWThrNU1HMHl1TTE3VGsyaUkzV1RRUVlocHVZaG1qOVptaUl3bTFuU2NtN21DbkNQS1lKcXJ5cmlqQW01UW0zRzhEQWc2eHpiMWVYRThJcndOaHhGOFR5VGp3WFhfT2RjUDB4eklZdnN6a0JlbWlGRkxibTFpUkd2U0NVQjBsNElnYTg2Wnh3S2NMOFNIY2k1WGNqVWRwR1dRX0k5R3BwckJwaDJ3Ni1NWUZFMjFDWmo0WFJOczZBOGtSUXNsMTQyZGJXaUs4VVJzbzNLWGNERHp1dDVEa2RQVUdqbXh1aHFZM2M3Ukh2V2hUVk5UbWZPLTYtMGtPcjhyYk1wd1dUVU44NTlEaW1tRG03b0FzNEt0M2FpTExnRUNFU0hpRV8wWmlTZkZFcXpZZkg1VHB6cUxVVC1yZEM0S2ZBMjI5N2FSLU41SkpiSjA5c0RrZU1aeXpkZnlpQQ?oc=5"
-      },
-      {
-        "title": "日月潭新亮點！向山公園雙心花圃換新裝 粉紫夏堇浪漫綻放！",
-        "source": "PChome Online 新聞",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWm1CXzM5ejRCYzZLMGhuSFBrelFxdzFOY2dkRmlBaFcyWUFTRi1RMXRWX1NPYnozaTZCci1BZkdHMGtmX1ljVDB4RnpOQTY2X3hjYmRjS0FVd1hXWDBmUEdiRVp5S09BSjNXY0RKbEhkeHZLMkMxSTIwTURQOXA4aVdpN0dWaVJTQ2pCNw?oc=5"
-      }
-    ],
-    "id": "682ca8d5",
-    "first_seen": "2026-10-30",
-    "last_seen": "2026-11-02",
-    "region": "中部",
-    "score_parts": {
-      "appeal": 2,
-      "timing": 5,
-      "buzz": 2
     },
     "score_value": 3.2,
     "score": 3
@@ -2624,11 +2669,11 @@
     "date_end": "2026-11-07",
     "est_end": "",
     "est_basis": "",
-    "summary": "澎湖大行軍11/7由國軍帶隊，從西嶼出發，隊伍延伸到跨海大橋。",
-    "lens": "70–200mm（人龍壓縮）、16–35mm（大橋全景）",
-    "tips": "在橋頭用長焦拍隊伍綿延的畫面；冬季東北季風強，要注意相機的穩定。",
+    "summary": "澎湖冬季迎風大行軍11/7，國軍帶隊從西嶼走至通樑，隊伍綿延跨海大橋。",
+    "lens": "70–200mm（隊伍壓縮）、16–35mm（大橋全景）",
+    "tips": "在橋頭高處用長焦壓縮綿延人龍；東北季風強，注意器材防風。",
     "appeal": 3,
-    "appeal_reason": "跨海大橋上的人龍很壯觀",
+    "appeal_reason": "人龍跨海大橋具規模感",
     "articles": [
       {
         "title": "澎湖大行軍",
@@ -2638,8 +2683,44 @@
     ],
     "id": "aedefdc0",
     "first_seen": "2026-10-13",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "離島",
+    "score_parts": {
+      "appeal": 3,
+      "timing": 4,
+      "buzz": 1
+    },
+    "score_value": 3.2,
+    "score": 3
+  },
+  {
+    "subject": "客家秋收祭儀",
+    "category": "event",
+    "location_name": "內埔（六堆秋收祭）",
+    "county": "屏東縣",
+    "lat": 22.6584,
+    "lng": 120.5588,
+    "status": "upcoming",
+    "date_start": "2026-11-07",
+    "date_end": "2026-12-05",
+    "est_end": "",
+    "est_basis": "",
+    "summary": "六堆秋收祭系列活動11/7–12/5，含伯公祈福等客家祭儀。",
+    "lens": "24–70mm（祭儀人文）、35mm",
+    "tips": "祭儀進行中避免閃燈並尊重儀式動線。",
+    "appeal": 3,
+    "appeal_reason": "客家傳統人文題材",
+    "articles": [
+      {
+        "title": "2026六堆秋收祭系列活動",
+        "source": "觀光署活動資料",
+        "link": "https://www.facebook.com/liuduihakka/?locale=zh_TW"
+      }
+    ],
+    "id": "4973c9ba",
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-11-03",
+    "region": "南部",
     "score_parts": {
       "appeal": 3,
       "timing": 4,
@@ -2905,37 +2986,67 @@
     "score": 3
   },
   {
-    "subject": "臺灣欒樹",
-    "category": "flower",
-    "location_name": "東引國中小",
-    "county": "連江縣",
-    "lat": 26.368,
-    "lng": 120.49,
-    "status": "peak",
-    "date_start": "",
-    "date_end": "",
-    "est_end": "2026-11-15",
-    "est_basis": "10/13 報導盛開，欒樹黃花約2–3週後轉蒴果",
-    "summary": "馬祖東引國中小校園臺灣欒樹盛開，金黃花朵密布枝頭。",
-    "lens": "24–70mm（校園環境）、70–200mm（枝頭花序）",
-    "tips": "校園拍攝請於非上課時間並尊重校方規定；順光拍金黃最醒目。",
-    "appeal": 2,
-    "appeal_reason": "校園內少數樹木，規模小",
+    "subject": "獅子座流星雨、秋冬星空",
+    "category": "landscape",
+    "location_name": "恆春半島（墾丁）",
+    "county": "屏東縣",
+    "lat": 22,
+    "lng": 120.745,
+    "status": "upcoming",
+    "date_start": "2026-11-18",
+    "date_end": "2026-11-18",
+    "est_end": "",
+    "est_basis": "",
+    "summary": "獅子座流星雨11/18極大期（ZHR約15），11/15另有火星木星相會。",
+    "lens": "14–24mm f/2.8以下（星空廣角）· 腳架 · 快門線 · 除霧帶",
+    "tips": "獅子座約午夜後升起，後半夜至清晨最佳；用間隔拍攝連拍後疊圖。",
+    "appeal": 3,
+    "appeal_reason": "流星數量中等",
     "articles": [
       {
-        "title": "東引國中小「台灣欒樹」盛開 金黃花朵密布枝頭格外醒目",
-        "source": "馬祖日報",
-        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBpQ0k4el9PcktXUWdHYXVtVGpHTTZEMThaQzQ4UWZvOE9CaFVjeTEydm5hNzl1MWZfNDdpZ1RabUJaR1JqTlEzRzhsMm5iZktqZW1mQ2NMTWJtWW9kNGc?oc=5"
+        "title": "搶國旅補助 首選恆春半島秋冬星空",
+        "source": "信傳媒",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5fTVMxRzlfVE9TeGhIdHNUOUd6NGxTd3I4cEpJS1lQM3FFRGt3VXR0RTUydU5FQ3NnVndfQVZYeUw5WTliektjNnJHR2pBQWpqSGJUSFN1dnV0dw?oc=5"
+      },
+      {
+        "title": "搶國旅補助！小墾丁邀南十字工作室專業星空導覽 追尋獅子座流星雨、仰望七姊妹星團",
+        "source": "台灣好報",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ickhHaURKai0tVzhLcmRuRm9ISVBCLXZ4bGRqMmFzcGRtYk4tVEZrVmZzTVZSU2xCbzRDOGZ5TFB3UXpQTU5sdDJ2SUYtUkVMQ2c0?oc=5"
+      },
+      {
+        "title": "11月天象登場 木星合月、火星合木星、獅子座流星雨",
+        "source": "蕃新聞",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9aSGEzMWIteWRjM1Bub3JoN3p1eTAyVm0yQW9WSy1wQUNfSUNxQkIyNlo5RE9xWnZlZElBME9sUF9Dcnh5TlEyZk5fRWc3TFh3X1E?oc=5"
+      },
+      {
+        "title": "今夜賞「月入鬼宿星團」　獅子座流星雨中旬接力登場",
+        "source": "ETtoday新聞雲",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5QWjRMU25mZjhiQjN1cGtST0QzMjlnaWtSU2h6NDJVbWUxREdiWFJsNHI1M0dyTUV5WmZYczBnSkxxVXFIbjRJcGF0RjUzc2R0eDFOTXJqNDhHMXBzdXfSAUtBVV95cUxOWkhLWEw2TWt3ejdaYURBM1NGRkluTVZ4Z0MyOUZ0YzE1SXExOGhYNWFQZ1ZpLUFnX0dhZFRHb1hjU2VYcldqeEZJRWs?oc=5"
+      },
+      {
+        "title": "11月夜空雙星伴月 11/15火星、木星相會 11/18獅子座流星雨極大期 | 青年日報",
+        "source": "LINE TODAY",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBSS2hjNGtUZ2NUZk1JSHlFVXppVUJrVk9jUXdYZkNMMFV1MEp5OWQ3dEZfYjM3R0xCVE83TW9tdzBTeFVSa1BDZUdIZmM0MG5kYWY5X2xR?oc=5"
+      },
+      {
+        "title": "11月流星雨接連登場　南金牛座或現「火流星」",
+        "source": "Sing Tao Daily 星島日報加拿大",
+        "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxQdnhmeHZGZlM4MVBHRVlYWlpnLUtMaDVOYU81YkRJMU43V2VnUzdUc1djSThEQXZqc0M2dTRzQXFUNnJFS3p0Mko1UWg0YkpQRTRReExySU5CMlExRF9XcTJfcTdTMkstOG9LdF85R3pKTVlGSWdBcW5kNHdTcF9tRjdfcFZZUEZPNE5EMXRsRU4zUzdRMm42dHlzRUJYRmFCWEwwVlhCSjJhaUpTVDFIZ094Zk1VVXdMQmdTYmR1TUNfNHY5d2FSajlpN3ZCODM0YzlnOFFkVVNjZ01qSHczX0RHNFZuM3J6eWZEN2QyMElKMzM5LVNYZXc2MHJ1Z1VWQXFPcy1RWGVKemVIMnhGYTU0RE11WUFzd25HNndiR0ZhVlEwcWk0a1dCOEh6NHBvcjdTTTIxY0Jibk5vaTNIeUtLdVctcmtFS050d2wzb9IBjwFBVV95cUxPeUpRMlRnLXZvbzlmY0V4OExoOTh6ck5UNFRPMnBqY016aW1SLUhUNDg4MnFRdWQzQm9NZWdWeGdORmhBX1pSeHlBdWgtVFN4S0xGcE5IX3RsM25JZldLQlV5THVWOEVZRVJ6dmxhVW1YUVdzYXNwUVNUNnZwTU91aXVrLXFzWmw2bTNUc2RBVQ?oc=5"
+      },
+      {
+        "title": "天象預報-2026/11/18 獅子座流星雨極大期（ZHR~15）",
+        "source": "臺北市立天文科學教育館",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbXdQRmkxT19RdTI0OUV5QkxTSkJxYVpRbHQ1VkRpdjg0YmVfUk5UMHZRN21xdjFsSlVKZGhRSjFscEtOOXV2QW56bC1XcGc0VFFHWWlQMmJxSU1nOWNmUWRMc1Z3OC1zRFFKSnVlZi00eDQwbm5oUG5qTmh4Mlh6MGl4MkRCTGtlLVFJc2FnYUJrbU9JUU9zMVV3WF9fTlEw?oc=5"
       }
     ],
-    "id": "2305d522",
-    "first_seen": "2026-10-19",
-    "last_seen": "2026-10-19",
-    "region": "離島",
+    "id": "f6188855",
+    "first_seen": "2026-10-29",
+    "last_seen": "2026-11-03",
+    "region": "南部",
     "score_parts": {
-      "appeal": 2,
-      "timing": 5,
-      "buzz": 1
+      "appeal": 3,
+      "timing": 3,
+      "buzz": 4
     },
     "score_value": 3.1,
     "score": 3
@@ -2952,11 +3063,11 @@
     "date_end": "2026-11-22",
     "est_end": "",
     "est_basis": "",
-    "summary": "桃園花彩節11/14–11/22在大溪登場，花海免費參觀。",
-    "lens": "16–35mm（花海全景）、70–200mm（花田壓縮）",
-    "tips": "傍晚斜光拍花海層次感最好；週末下午有演唱會，人潮多。",
+    "summary": "桃園花彩節11/14–11/22在大溪登場，花海免費參觀並有音樂演出。",
+    "lens": "16–35mm（花海全景）、70–200mm（花朵散景）",
+    "tips": "清晨順光花色最飽和，人少；傍晚可拍夕陽逆光花海。",
     "appeal": 3,
-    "appeal_reason": "大面積花海，但屬於常見景色",
+    "appeal_reason": "大型花海但人工佈置",
     "articles": [
       {
         "title": "2026桃園花彩節",
@@ -2976,163 +3087,12 @@
     ],
     "id": "cb5a66e6",
     "first_seen": "2026-10-15",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "北部",
     "score_parts": {
       "appeal": 3,
       "timing": 3,
       "buzz": 3
-    },
-    "score_value": 3.0,
-    "score": 3
-  },
-  {
-    "subject": "國慶煙火、無人機秀",
-    "category": "event",
-    "location_name": "台北101",
-    "county": "臺北市",
-    "lat": 25.034,
-    "lng": 121.5645,
-    "status": "ended",
-    "date_start": "2026-10-10",
-    "date_end": "2026-10-10",
-    "est_end": "",
-    "est_basis": "",
-    "summary": "台北101國慶煙火與無人機秀已於10/10施放，本次活動結束。",
-    "lens": "24–70mm、70–200mm（101 與煙火）· 腳架 · 快門線",
-    "tips": "選能平視101的高點提前數小時卡位；煙火與無人機秀交錯，用B快門分段曝光。",
-    "appeal": 5,
-    "appeal_reason": "地標大型煙火與無人機秀",
-    "articles": [
-      {
-        "title": "台北101國慶煙火、無人機璀璨綻放夜空 台新新光金獨家贊助",
-        "source": "鉅亨網",
-        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE52clVZUDNaclRxaXh4UDFLcnYtbEpvMHJIRVRpT0Q0YXlSSHUtZDZyemNaM0l5cERGTVVEUTE3cGU2OF9oTW82N2k1elhxNGc?oc=5"
-      },
-      {
-        "title": "台北101國慶煙火22點登場！氣象署：東側上風處視野佳",
-        "source": "Yahoo新聞",
-        "link": "https://news.google.com/rss/articles/CBMizAJBVV95cUxQOW5JVHZmWWI4SEJacExBT3pkcUo2d2thMmRYUUdlcXUxLTEwRzRValpzbDZDbnl4RUc4T1hVSXhLRHpmZlRFLUJnZjZQamxDNkNVc0JfU3ZtbGJ0Y0ktZ1FUbjRWRGdkczFHLTNGVExVYUw3UFA3RDRPN2NwTFh0ZWxpY3Z0TXUyVWRLaWp3eE5oWXF1Z1VEbzFaNlh6SFdlQkZLcjRCNTRkUjhtR3NUanFXMXRYZXN0Z0FpS2FNUEl0LTg4dW50U1NYQ1ItQlVBbkhBYWRZNFRDQXNiQXNiWUszN0I0SktEMFVBS25mandZUkE4MkxWWFRzV2dGcDNYLVdyaWNwOWpmRDNmR2lja1VqdVlxb0RET3J0bzNvVW5lZDdaZGZ4aFh3SzBJSmswNVhSdXhHdUN0R1ZaenNjYXp4R3JCb3FsN094eg?oc=5"
-      },
-      {
-        "title": "台北101國慶煙火秀！ 14分鐘展演.600台無人機共舞- 綜合",
-        "source": "華視新聞網",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0xbm55X1R3RlFFd2FDNTIwZDdsbXJvU3ZFRVJ1bG81ZnhMc21sdmhwbjFhN0plVmdBdU5WZW1OTjM2YnU5ZzNYOVQ1T05NQ0tIWVF2LUpneHcwRW9wNmNxWTRka0o1QlZWbjM2MjRmWEU?oc=5"
-      },
-      {
-        "title": "影／101國慶展演登場 600台無人機搭配煙火燈光",
-        "source": "UDN",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBzdHFpU1lCMVZvU0JQMmdvZWdjZ044VUZoTE44OGcxaXRTNk45Zl94T3RGdWlHMldWU2RYcVBheDA0SmQzWi1weTBGT19HOGJEUFNn0gFYQVVfeXFMTnAzZFE4YzBNem1Nd0tILWFWdXpLd1dZYlY4UVV2RmU3d2NuZTlmZWQyY0VNZU9feUx2TnY4LUw5YUNucHdKN3owVndPOVlsTzNVOVVGU08xXw?oc=5"
-      },
-      {
-        "title": "今晚別跑錯地方！台東煙火、台北101「最佳觀賞點」一次看",
-        "source": "Yahoo新聞",
-        "link": "https://news.google.com/rss/articles/CBMizAJBVV95cUxPWG9kdTBaX0x2SDM5WWVVYUVsbS1ha2lCTXNDSE85NGJhdkJoM3BncHgxcV9HMTJIVWNNcVY5eUpHUWZ3ZzBzN2dic1NVOEE0NVZNZktTREE4YUg5MUFtNGJNWXlDT0JVWWxhRUpIMWVEMHkzTVVmWXBtZ2VkanZFNmFjZTA4ZVhUQ1NiVFpOUFJLc00zZEhzaGktREphSlZDaFJaSFAxTTR2SmVWN0hZT3V4cUQzNzZnTFdtOHlVVFJxVXljcmQwRmRVNzZNWHY0cWFPYy1VSElwSEU1eW1PS29HQUVORDJSczVMT1IxNG1PS3hvRUxqalV0V1BqcUVJSjVoblFvNHJJd0ZrZDVUbWZVMWZ6ZVRqWUxtcUFCZHpLbnhTSWo1b0h5Z1REN2lmazhqM3ZzSG9FQXVxeGZKZkpISWVrOURIT09YSQ?oc=5"
-      },
-      {
-        "title": "2026台北101國慶煙火線上看直播！600台無人機、14分鐘展演，兩大免費觀賞點完整攻略",
-        "source": "Marie Claire 美麗佳人",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBwWndreHZJTDg5cUYyOC11VFg4S196MW9rS3ZCbzBrWGtvdWNvVXpLUnNFUUQ1a0hYYnpudXdVdWMxX3AxUnJEVEtEeXN4WktxM0phQmFPV2N5aU04SGM1Nw?oc=5"
-      },
-      {
-        "title": "2026台北101國慶煙火攻略！施放時間、無人機展演、觀賞地點、直播資訊一次看",
-        "source": "Harper's BAZAAR",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVXFNU1JNMEh2aXZWNGRHZTUtY080SkZkeW4xbmZrV1pOY09IRkpyeG00Rlo2SE5hYlM1d1BvWWI3XzFuYmJ3bHFJdnlwWVlDN08xZExudW9vYzZBQnBGWG9RVGRYOHlPSU9DU0NaM2JWZjFMbkpkbndORjBseGxmSkxGT1R2cGpmLXVQMUNOUWhuWHNBZXBmZWJDZzZ6YzFmakE?oc=5"
-      },
-      {
-        "title": "2026台北101國慶煙火秀 600台無人機共演14分鐘｜直播",
-        "source": "Yahoo新聞",
-        "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPVDNOY2NwejdsLTBJOEljUmJKZS02d3lsV25mRDJNWVZJdUROTjFKQjEwZnQ0TkUwMUs2X0s2VFByTzNmdGllVmQwM0NlSGd6ZmV3VjhiYzlhS1hrTzkwZ2o3WEVvTWY1UVNuOGdPVkZrTDBNUnRHeU1IWUdydnIxRFkzZFZEQXZHNUFuS0FLSTROOEwxUldJbmdnS2NzeHRKNUVXejVYQnRfVmhXZkl3cklMZmcyUG1tVGUyS1pWdEpUZWdXdlo0ZVRfaHZKMXNRR21teEg4NEVNVTNrdHM1LWh6RW9wTFM4MkNobmFFNU9rOC1NaFhvR0U5YkdRNHo1WEg0SWVrTTVtZGZSWXVYclgwb1poTXRJSGhqTTZvMmNXQWwzWjA3Q1lJQVdNLUhzbjZqRFJhYVB3ZUpF?oc=5"
-      },
-      {
-        "title": "直播/美到窒息！台北101國慶煙火華麗壓軸 14分鐘視覺饗宴點亮夜空",
-        "source": "Yahoo新聞",
-        "link": "https://news.google.com/rss/articles/CBMilgNBVV95cUxNZGE0YkxmYzBKT1JYemV0d0pDN2Z6RWRiV040cUJObUJaelZvQmFvN1JLd05JUkh1R2NjNVVYWDQ1OUxPdFdDNm1tR3g3Umg2SjV6R1p4SWhIZlJjWldqNkljYm0xbVZQQU5GcWlEc1JiLTFJLWVKNG0tNl9jVHZhZnQyZjFXV3k0WExHX09UdHM0SWpZM3ZWUWF1eDZSQklaWjMySTN5YWFybG0yMmE5OWpKQlJhNlpvZ1Z5NWU5UVNkNlAwMFB2TFdlazRKSUgxT2JnRVBrUVZPNHlCXzdBejBnU2hBYVltLUR1bm92bmdOWmk2OFNITDUxdVNRNjc1YU94QzlzaVQwZi1LWE00OUVPQWJJWDdubXdvaHlZbGVqY0tvdGJqWFhaYy1fdk04RVZxZU9BWlk0TWVLU3YwOVJIeGhfUGlYU2FrMnltcmJxdzZydF9CbXpJSllQNkl4VHZsQU4wbWMtRUhmRkNkMGlUQVBIU1JKVHIzVW43TzBoc3htR3BFSVpHTWJvTzNZTFdUdnpn?oc=5"
-      },
-      {
-        "title": "國慶日信義區嗨比跨年！升旗、寶可夢、101煙火攻略一次看",
-        "source": "Yahoo新聞",
-        "link": "https://news.google.com/rss/articles/CBMi2AJBVV95cUxOTFhlaEJscTBDeGUwLW45eXZHWFlWMkstSFY2QmlHenl6dno2S2NaR3BYb01FbWNlQnIybnNXX3NHUUdyVDhBWkJWbHNaRlVBUXBtbzBSSjFmWHRJOGV6ZW9NXzloRGNjdFlMellMb2Y2MDlTRUFhc2dlNkxFTS1aSFBTMnZvTDdCRWVDQ1diZ2F3eF9nRG1GZGpqN0NTN3ppa051SWo1ZUZkMGU5TV91ek1RU3NqQUF2UlFuYXN5ODYxVlFUNzJFWU1RVjVpLUZXYy1SZUl2Z0dNMlJmdHp4WkJqTGVsMHk3M1ExM0xfTGJKTjgwUXZmRm42LTBUSG50UXpYZF83Yks1ZUo0b01odkdLUXhaaEhYMWlQRFpPdzlJcEpVQnlJUks0OThMTmpQa1JoeV9GeGFuODhSNnczQk9qSXU5cVNFRXh5anlwM0V6bUpydEtSaA?oc=5"
-      },
-      {
-        "title": "衝台北101看雙十煙火！ 10/10「14分鐘國慶展演」+600台無人機2大推薦觀賞點＆交通管制懶人包",
-        "source": "UDN",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE81MFk5MUdmZ1lmR2RmYkEtdWU0MFQ1RTRvaDM0S3MxODZhRlRPemRvd25KbzItVW84SmpMNmc0Z0lhbVlNVkZheUh2bWp6cy1BekxsV1lHVlEzamFv?oc=5"
-      },
-      {
-        "title": "台東國慶煙火觀賞攻略 台北101煙火+無人機看14分鐘「絕佳位置」",
-        "source": "台視新聞網",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5qNndmWUxMdmhIUjNPVUtjYVZlVUlTYnFmcUs3UjhDU3daOGJ0LUxtQl9oRjdDQmdteTI4U1JBcFVNaGZabnV6Vm5pV3hwVFhjMVhuUVZENA?oc=5"
-      },
-      {
-        "title": "2026台北101國慶煙火交通管制！封路時間、捷運管制、禁止車輛通行等",
-        "source": "Harper's BAZAAR",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeGxZRkVScWNBVXI3M19MamphZFBac29CYW1jX3BjSWNLdDJnRmRpeG93QmRCeDBQRkJzMk1mcXU4eHlteGNleFNVbl9xdG9fWTI3dmdvbDJKWGJ3OHkxQV9YX05SaGJpT2owS1lNdW93R2VlQTI3NnJxcnVGSWZEWEFYTll3N3VRWTRpd1VrM0RtMG5SWkthcXZTOUgyM19OQ0RQU0JyYw?oc=5"
-      },
-      {
-        "title": "115 年台東國慶煙火、台北101 煙火懶人包：網路直播、施放時間、接駁交通與南島派對",
-        "source": "硬是要學",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBhQ1lJbW1pV2Q0MUJwUThVZUdUbUVaaVQ5ZGFZMk04TmlqNXU5T0hTVWpmZFVHNzVjRF9Ub0V2bThocHNsVUk5dEtPQVphcDkzYmFVYXhPNUs5NEpya0EtUzFFX1JBN25W?oc=5"
-      },
-      {
-        "title": "2026 台北101國慶煙火、無人機表演，這些地方不推薦！",
-        "source": "硬是要學",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9qSnBPT2dvQUpJeVE1bkxCN25ZNmZtc3hDcjBxN0FjMDR3UDk1UEVqc2FwUGlSSm9HdEVRU3R5WlFwZDBwc2dDdzFyemlWdnV0UDVwdVl6ZGFYd3YwbHd2Rlp1cjhoRjNXa0p5aTlRMFYwTzF5VmxqeTRB?oc=5"
-      },
-      {
-        "title": "國慶煙火今晚登場！台東、台北「4大最佳觀賞位置」曝 想拍美照快看",
-        "source": "TVBS新聞網",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9BUjBIUk8wWEdLbzE3Z1NLN3l0S3Qyd0Nyc3pLT1JNZFZxT3NUSnhwUDBka2dNSEs2N1hXU0hrNkotZGtXc3VUcDU2aW1hQQ?oc=5"
-      },
-      {
-        "title": "台北101國慶主題「點亮台灣」 煙火無人機演出14分鐘【圖輯】",
-        "source": "中央社 CNA",
-        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE43MmI5dklZSS1STnVUUFBKTTFBdFhxNHNPN3AwZ2NhRWk3dnFmQzZ4TGpHS2VDQkE0YXZzY1pYcHNJTDVXVWlUQnRCWEtQV1MzSHBIRVRkS280TkwwSkE?oc=5"
-      },
-      {
-        "title": "BIGBANG、101國慶煙火同天登場 信義區要塞爆了！交管措施一次看",
-        "source": "Yahoo新聞",
-        "link": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxPWks4UGg2TFZkRU5BMm1hd3Z5VUFOeDBmY2F5VURPZWlmWjU2VHV2d0JrdHZUTmt0X0tHZGM1MS1BVXkwS1pSVHlDYkZlY3J2RnhvcEcxOUVHM24xeHNJaG84NExHdFdVblFWa1pQRU1rVVRpSVR4ZmpPZGp4UTI2Z3pUQWFtNVBzUnVPODZtbGFaRF9tczZKbkNnX3lUdWRXM1l0VHVTSC1nNjBEVDVLUlV5SFV3OGlTZ2pPd29adm5lOFBYdzBIMGVYVzdlbTlrNXR3alN6RmlMQU1laTVvb0hSM1VzTWlvRVI4bUF3M2FOcmpxWC01SnFYb3lVbjBvN3l5MndSalltLWlvWWc1T2xCTS1WdkItS2JhTG9WcFJaRVBYdGpYUy1tUklSZU5lNklxdWhnU0EzaWo1M0MyVlVUWjhsWUF0T3lnUFdxSEhTNG9Db3lXXzVyTFE0SS00anc?oc=5"
-      },
-      {
-        "title": "信義區「人潮海」來了！101國慶煙火、BIGBANG同日登場 交管路段一次看",
-        "source": "Yahoo新聞",
-        "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxOM0hiRU4xcHNkZzM0WkptSGFVSG1tNjhyTzdCUFE5SDREX1YzNlRwa1hrdjVPSVczQkNpMzBTUl9mV1hEV1gwTGpLSWVlejVkbDh5Yy1FSV9FWGpGWGdsd0hEdlNJb0p1ajNYc1pZNUxXUmotUkNRd1Q3MnFtTlJXVzVjYU9iSmJVZnI0LURPMzJFSVRlWlpFZTdWMWp0NXdJN1hpS3EyV21UMFN6WEFfVngteDFsdXlDX3dKT0NFd3RDUXI2Q3huY2VfRUd6dzRYZ2dvbWRtOTRQMm9SOTZsTXlGS284Y05rcU1GaDV5RGt1YVNIcEhIQXZENU9FazV3cXQxalJvOU9MUjF3MHRodE55bjhZQ1NaYW81cmJGdFd1cXRid2c?oc=5"
-      },
-      {
-        "title": "台北101國慶煙火攻略》2026展演時間 、最佳觀賞點、交通管制及直播資訊！",
-        "source": "卡優新聞網",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB0YTRUaW9ialgtQmpiM05GXzBsWXBEMU1FN3RWZW1TY1FoSU0wdEpTMk5xOGxTZ0lxY21waXEzZXpyRlJncjVCVTM3Z01OUW12VEdNN2NoVmlkRkZK?oc=5"
-      },
-      {
-        "title": "台北101國慶煙火！ 14分鐘展演.600無人機共舞- 生活",
-        "source": "華視新聞網",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAwVUVHVGt2aTdHZ1IxQnlBRGRxQ3VheVItTzMzQ2RyXzNISHN3UmlUM1Y0ZzBCd1VoLXdnVUFnbHUyTk5CQ3V6MUZHTjFfY2ZOc1BDVnVfUThCVUFvaGtYYVk5R0k3UzN5MWd5bA?oc=5"
-      },
-      {
-        "title": "ETtoday新聞雲. . 【LIVE】2026台北101國慶煙火 600台無人機璀璨登場",
-        "source": "Facebook",
-        "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxNTGhJT01nZV9RNS1Ga0dZQ1k1NGhMSWpzSHlXSE5RX25kM1lDNWEybXZrV3Z6LWp6aXZSQXBiQlVsN1p5Uzhid1lHV0RJNXJOdVc0emE3OXdoZjBSM0dzRkVXU05JNnVzQVJmNmFHRW12VkJfNEdvWmJJMlRkSy1QbWVZWU9tWDlmNU96dnZkcVFPZWd6U3otV2EzWE05MnFlVFFmdGFwckR2V1hZQU1WUGZUOWx1ek1fRjdObzBkbkNoUTVxRkQ4VTZnWUJzNXBWX29XZThVTWVHRmhCOElCV0JzeHNsZTU1MC1xbnY4SzJzVHVIM1MwWi1UOEN2TVVjTFNBeGw0TzFEOEVSSE81YW1hUWFqVVRBemNvWWhMLVNvQlduaXc?oc=5"
-      },
-      {
-        "title": "2026國慶煙火、台北101展演攻略！專家曝「最佳觀賞點」不怕煙霧干擾",
-        "source": "三立新聞",
-        "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBaVGRna2VyU3BVQm1xSlBqQ25Qd1lQY21Uck9qdXQwNW1UdEFpVEFWYjJPSFlmNkIyMDVqdVhYaThFcXMyMi1aUtIBTEFVX3lxTFBtTDhSNERYQjFSQjVUSndwLUZ4QXNXbFhmdUVGc2Z6UFVWbDVyODk2TllIN2V3c0RnemVhUzEwNGJyVFpoQkFKUWNqTEU?oc=5"
-      },
-      {
-        "title": "台北101國慶煙火、無人機共譜夜空盛景 台新新光金獨家贊助 - 墨新聞-MORE News",
-        "source": "墨新聞-MORE News",
-        "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9Wc2UxREtEWHBxQ09tX0hFdndsaEdUeFJwaktGd2ktUWFkVWttWkI5NlJDMnNHZnk3OU1zcEZXNzdPdw?oc=5"
-      }
-    ],
-    "id": "8697ecae",
-    "first_seen": "2026-10-13",
-    "last_seen": "2026-10-19",
-    "region": "北部",
-    "score_parts": {
-      "appeal": 5,
-      "timing": 0,
-      "buzz": 5
     },
     "score_value": 3.0,
     "score": 3
@@ -3149,11 +3109,11 @@
     "date_end": "2026-12-27",
     "est_end": "",
     "est_basis": "",
-    "summary": "新北歡樂耶誕城11/13開城，今年以卡娜赫拉的小動物和熱氣球為主題，展期到12/27。",
-    "lens": "16–35mm（主燈全景）、50mm大光圈（燈飾散景）",
-    "tips": "藍調時刻天空和燈光的亮度最平衡；週末人潮多，平日比較好拍。",
+    "summary": "新北歡樂耶誕城11/13開城至12/27，以卡娜赫拉主題與奇幻熱氣球為主軸。",
+    "lens": "16–35mm（主燈全景）、50mm f/1.8（燈光散景）· 腳架",
+    "tips": "平日藍調時刻人較少；高處俯拍主燈與市府大樓。",
     "appeal": 3,
-    "appeal_reason": "大型年度燈飾",
+    "appeal_reason": "大型城市耶誕燈飾",
     "articles": [
       {
         "title": "2026新北歡樂耶誕城",
@@ -3168,7 +3128,7 @@
     ],
     "id": "26639d02",
     "first_seen": "2026-10-14",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "北部",
     "score_parts": {
       "appeal": 3,
@@ -3183,18 +3143,18 @@
     "category": "event",
     "location_name": "瑞穗溫泉區（花蓮太平洋溫泉季）",
     "county": "花蓮縣",
-    "lat": 23.5,
-    "lng": 121.36,
+    "lat": 23.497,
+    "lng": 121.375,
     "status": "ongoing",
     "date_start": "2026-10-17",
     "date_end": "2026-11-15",
     "est_end": "",
     "est_basis": "",
-    "summary": "瑞穗溫泉季舉辦提燈夜遊並施放煙火，活動到11/15。",
-    "lens": "24–70mm（燈飾與煙火）、35mm大光圈（提燈人潮）· 腳架",
-    "tips": "提燈隊伍可用慢快門拍出光軌；煙火時間請以主辦公告為準。",
+    "summary": "花蓮太平洋溫泉季至11/15，瑞穗溫泉鄉提燈夜遊並施放煙火。",
+    "lens": "24–70mm（燈飾、提燈人潮）、16–35mm · 腳架（煙火）",
+    "tips": "提燈隊伍用慢快門拍光軌；煙火場次請查官方。",
     "appeal": 2,
-    "appeal_reason": "小型地方燈飾與煙火",
+    "appeal_reason": "地方小型燈飾煙火",
     "articles": [
       {
         "title": "2026「花蓮太平洋溫泉季」來了！櫻桃小丸子主題燈飾、開幕光雕煙火秀、23間溫泉旅宿一次看",
@@ -3214,7 +3174,7 @@
     ],
     "id": "2f87e067",
     "first_seen": "2026-10-21",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "東部",
     "score_parts": {
       "appeal": 2,
@@ -3297,42 +3257,6 @@
     "score": 3
   },
   {
-    "subject": "高樁舞獅、藝陣",
-    "category": "event",
-    "location_name": "高雄戲獅甲",
-    "county": "高雄市",
-    "lat": 22.6288,
-    "lng": 120.335,
-    "status": "upcoming",
-    "date_start": "2026-11-15",
-    "date_end": "2026-11-16",
-    "est_end": "",
-    "est_basis": "",
-    "summary": "高雄戲獅甲11/15–11/16舉行，有國際高樁舞獅競賽與藝陣表演。",
-    "lens": "70–200mm（高樁動作）· 高速快門",
-    "tips": "用連拍抓住獅子跳躍的瞬間；搶前排可以讓背景比較乾淨。",
-    "appeal": 3,
-    "appeal_reason": "高樁舞獅動作精彩",
-    "articles": [
-      {
-        "title": "2026高雄戲獅甲",
-        "source": "觀光署活動資料",
-        "link": "https://www.facebook.com/KaohsiungLionDance/?locale=zh_TW"
-      }
-    ],
-    "id": "b61c2cfb",
-    "first_seen": "2026-10-16",
-    "last_seen": "2026-11-02",
-    "region": "南部",
-    "score_parts": {
-      "appeal": 3,
-      "timing": 3,
-      "buzz": 1
-    },
-    "score_value": 2.8,
-    "score": 3
-  },
-  {
     "subject": "玄天上帝遶境",
     "category": "event",
     "location_name": "五股（新北市玄天上帝文化祭）",
@@ -3344,11 +3268,11 @@
     "date_end": "2026-11-15",
     "est_end": "",
     "est_basis": "",
-    "summary": "新北市玄天上帝文化祭11/12–11/15舉行，百家宮廟聯合遶境。",
-    "lens": "24–70mm、70–200mm（神將陣頭）",
-    "tips": "先查好遶境路線，在路口等候；鞭炮煙霧中逆光拍攝很有氛圍。",
+    "summary": "新北市玄天上帝文化祭11/12–11/15，百家宮廟聯合遶境。",
+    "lens": "24–70mm（陣頭）、70–200mm（神轎人像）· 閃燈",
+    "tips": "注意鞭炮與隊伍動線，保持安全距離；煙霧中逆光拍陣頭有氛圍。",
     "appeal": 3,
-    "appeal_reason": "大型宗教遶境",
+    "appeal_reason": "傳統宗教遶境",
     "articles": [
       {
         "title": "2026新北市玄天上帝文化祭",
@@ -3358,7 +3282,7 @@
     ],
     "id": "7d68ea5b",
     "first_seen": "2026-10-16",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "北部",
     "score_parts": {
       "appeal": 3,
@@ -3380,11 +3304,11 @@
     "date_end": "2026-12-13",
     "est_end": "",
     "est_basis": "",
-    "summary": "林家花園夜間光影展「幻旅林園」11/13–12/13舉行。",
-    "lens": "16–35mm（古蹟建築）、35mm大光圈",
-    "tips": "古蹟內可能禁止使用腳架，請準備高ISO與大光圈鏡頭；拍水池倒影效果很好。",
+    "summary": "幻旅林園11/13–12/13，百年林家花園夜間化身光影秘境。",
+    "lens": "16–35mm（古蹟庭園）、24–70mm · 小腳架（若允許）",
+    "tips": "利用水池倒影拍古蹟光影；古蹟內腳架規定請事先確認。",
     "appeal": 3,
-    "appeal_reason": "古蹟與光影結合",
+    "appeal_reason": "古蹟結合光影",
     "articles": [
       {
         "title": "2026幻旅林園",
@@ -3394,7 +3318,7 @@
     ],
     "id": "427987c4",
     "first_seen": "2026-10-30",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "北部",
     "score_parts": {
       "appeal": 3,
@@ -3406,21 +3330,21 @@
   },
   {
     "subject": "武陵農場賞鳥活動",
-    "category": "bird",
+    "category": "event",
     "location_name": "武陵農場",
     "county": "臺中市",
-    "lat": 24.36,
+    "lat": 24.355,
     "lng": 121.31,
     "status": "upcoming",
     "date_start": "2026-11-21",
     "date_end": "2026-11-21",
     "est_end": "",
     "est_basis": "",
-    "summary": "雪霸「鳥語雪霸・森遊武陵」賞鳥活動因颱風延期到11/21舉行。",
-    "lens": "100–400mm、150–600mm（山鳥）",
-    "tips": "清晨鳥況最好；高山早晚很冷，要注意保暖。",
+    "summary": "雪霸「鳥語雪霸・森遊武陵」賞鳥活動因颱風延期至11/21。",
+    "lens": "100–400mm或150–600mm（林鳥）· 單腳架",
+    "tips": "清晨鳥況最佳，高山溫差大需保暖。",
     "appeal": 3,
-    "appeal_reason": "高山鳥類",
+    "appeal_reason": "高山林鳥，配合秋色",
     "articles": [
       {
         "title": "【公告】「鳥語雪霸・森遊武陵」戶外活動延期舉行通知",
@@ -3430,7 +3354,7 @@
     ],
     "id": "7d08f8ee",
     "first_seen": "2026-11-01",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "中部",
     "score_parts": {
       "appeal": 3,
@@ -3507,42 +3431,6 @@
     "score": 3
   },
   {
-    "subject": "客家秋收祭儀",
-    "category": "event",
-    "location_name": "內埔（六堆秋收祭）",
-    "county": "屏東縣",
-    "lat": 22.6584,
-    "lng": 120.5588,
-    "status": "upcoming",
-    "date_start": "2026-11-07",
-    "date_end": "2026-12-05",
-    "est_end": "",
-    "est_basis": "",
-    "summary": "六堆秋收祭系列活動11/7–12/5舉行，包含伯公祈福等祭儀。",
-    "lens": "24–70mm、35mm",
-    "tips": "拍攝祭儀時保持距離與尊重，不要擋住儀式動線。",
-    "appeal": 2,
-    "appeal_reason": "地方文化祭儀",
-    "articles": [
-      {
-        "title": "2026六堆秋收祭系列活動",
-        "source": "觀光署活動資料",
-        "link": "https://www.facebook.com/liuduihakka/?locale=zh_TW"
-      }
-    ],
-    "id": "4973c9ba",
-    "first_seen": "2026-10-27",
-    "last_seen": "2026-11-02",
-    "region": "南部",
-    "score_parts": {
-      "appeal": 2,
-      "timing": 4,
-      "buzz": 1
-    },
-    "score_value": 2.7,
-    "score": 3
-  },
-  {
     "subject": "濕地藝術裝置",
     "category": "event",
     "location_name": "板橋新海濕地（新北濕地藝術季）",
@@ -3554,11 +3442,11 @@
     "date_end": "2026-11-08",
     "est_end": "",
     "est_basis": "",
-    "summary": "新北濕地藝術季《萌芽之境》展期到11/8。",
+    "summary": "新北濕地藝術季《萌芽之境》展至11/8。",
     "lens": "16–35mm、24–70mm",
-    "tips": "傍晚夕照下拍裝置與濕地水面的倒影。",
+    "tips": "傍晚逆光拍裝置剪影與濕地水面倒影。",
     "appeal": 2,
-    "appeal_reason": "地方藝術裝置",
+    "appeal_reason": "小型地景藝術",
     "articles": [
       {
         "title": "2026新北濕地藝術季｜萌芽之境",
@@ -3568,7 +3456,7 @@
     ],
     "id": "47cafd0b",
     "first_seen": "2026-10-27",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "北部",
     "score_parts": {
       "appeal": 2,
@@ -3579,43 +3467,79 @@
     "score": 3
   },
   {
-    "subject": "花海、炮仗花長廊",
-    "category": "flower",
-    "location_name": "北投三層崎公園花海",
-    "county": "臺北市",
-    "lat": 25.137,
-    "lng": 121.505,
-    "status": "upcoming",
+    "subject": "石雕藝術展",
+    "category": "event",
+    "location_name": "花蓮國際石雕藝術季",
+    "county": "花蓮縣",
+    "lat": 23.9887,
+    "lng": 121.6296,
+    "status": "ongoing",
+    "date_start": "2026-10-31",
+    "date_end": "2026-11-29",
+    "est_end": "",
+    "est_basis": "",
+    "summary": "花蓮國際石雕藝術季《膚土之下》10/31–11/29展出。",
+    "lens": "24–70mm、100mm微距（石材紋理）",
+    "tips": "側光最能表現石雕質感與刻痕。",
+    "appeal": 2,
+    "appeal_reason": "藝術展覽，景觀性一般",
+    "articles": [
+      {
+        "title": "2026 花蓮國際石雕藝術季",
+        "source": "觀光署活動資料",
+        "link": ""
+      }
+    ],
+    "id": "13815318",
+    "first_seen": "2026-11-03",
+    "last_seen": "2026-11-03",
+    "region": "東部",
+    "score_parts": {
+      "appeal": 2,
+      "timing": 4,
+      "buzz": 1
+    },
+    "score_value": 2.7,
+    "score": 3
+  },
+  {
+    "subject": "落羽松",
+    "category": "foliage",
+    "location_name": "花蓮理想大地",
+    "county": "花蓮縣",
+    "lat": 23.893,
+    "lng": 121.56,
+    "status": "unknown",
     "date_start": "",
     "date_end": "",
     "est_end": "",
     "est_basis": "",
-    "summary": "三層崎花海新增炮仗花長廊，期待開花迎客。",
-    "lens": "16–35mm（花海坡地）、70–200mm",
-    "tips": "傍晚可在坡地拍花海與夕陽；炮仗花通常冬末春初才開。",
+    "summary": "理想大地推出搭船賞水岸落羽松與毛孩活動，報導未提轉色進度。",
+    "lens": "24–70mm（水岸倒影）、70–200mm",
+    "tips": "無風清晨拍運河落羽松倒影；轉紅程度出發前先確認。",
     "appeal": 3,
-    "appeal_reason": "市區坡地花海",
+    "appeal_reason": "水岸落羽松",
     "articles": [
       {
-        "title": "台版富良野增「炮仗花長廊」　北投三層崎花海明年1/27開幕",
-        "source": "ETtoday旅遊雲",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5xVlR6TlVCQTlLQ0NRTFFqNHpjdEo1VFlSR3p4SUtmQmVRbUlDMGM5VzRHbU93Yk0xQzlTSUtqMGxPMF9uLUtSTVQya19rVjNaeFNDVGFtVTB4d9IBT0FVX3lxTE12VWZ2aWxsMWVBV3VVbk80ZktzRExVRjFkRzdTUjljR3UycEdBeTVZMmRJc3lrNUpJVDhpcG1YdThKVjZPZi1mNVNkNVFsRm8?oc=5"
+        "title": "帶毛孩搭船賞落羽松！花蓮理想大地「2026有你相伴動玩節」登場 跑酷競賽萌翻水岸",
+        "source": "蕃新聞",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBpTk9nSkZDVGFhNjhqcGEwaURKckFuRzRrLUpxaHRURlA5V3U3anBrVG9pWGRBcWswWXpOaVhyVFJvRXhpT2IzdW5ILVNqb19jYVE?oc=5"
       },
       {
-        "title": "三層崎花海再添生力軍 期待炮仗花長廊迎賓",
-        "source": "花IN台北 (臺北市公園處)",
-        "link": "https://flowersfestival.taipei/news/585.html"
+        "title": "帶毛孩遊花蓮有新玩法！理想大地推出「毛孩跑酷」 搭船賞落羽松成亮點- 娛樂新聞",
+        "source": "PChome Online 新聞",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPcXFNOTV0NVFCdlJacDlLMXVadVA1LTNXNDRjcXBmS0FEaUowZnNZYVgxYXE4dWNJSk40WGJQbHpaVGJiM3czRWtNSGx4SUFKQlczaHZYdHJaSHZLTFBHMmxpb1JjY29zYXE0TjRMU1VVMm9Hc2JOck5uLUxVbkR4dkRKeERPdlNYUlAzTHdtaWE?oc=5"
       },
       {
-        "title": "三層崎花海新種炮仗花 呼應漸層花海更有層次美",
-        "source": "Yahoo新聞",
-        "link": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxPMW4zT2xtemt0RW44a2JGRzIyQmU5UXI5OThmME5uSTF0bkw2NGk2Ti15QTRfTW9qQS1tS01FT1ZUSTU5bFk5V21zWkRLNkgyLV9qeVhHTl9tTE80a2NuYXNmM2EzTVBVVFZzYUo4WG1vVlQ1NWFXUm81UEVEeWtmVjAxc2NDYTJKdHZSNzRaNVpkeDU1dWVzN3BveG5naUdKV1pob0E2VlZ4d3ktd2huWlQ2R0hseFpTQVEzdTRNLWpGb2JYdXdvcko0ODdXc1BsQkw5SzJVeWVMSGxsTWFLQW1wVDJwUkw3MDRkM1hiV1VDdlBmaUJrWFFGRmlSRG1Bcm8xbkNQQkc2OWc1WjJudV9TNWxOYlVvRkVGR1AwVEdjdGtremdrblJuT2o4MnVKUUFsbUFtQzdacGROM0NPb2xETEFiQ0hUam1LQlNsU3g?oc=5"
+        "title": "帶狗狗遊花蓮有新玩法！理想大地毛孩跑酷登場 搭船賞落羽松成亮點",
+        "source": "蕃新聞",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE05RUE3YXY1ZFNaSlRYQUktSmgybTcwVDh5aFZpaWJ1bkRxSjJsSWlteERIak1sMWlQOWJpdllWemc1UjU2N1NVSWxoYWNuY0JjZUE?oc=5"
       }
     ],
-    "id": "bfe7b527",
-    "first_seen": "2026-10-22",
-    "last_seen": "2026-11-02",
-    "region": "北部",
+    "id": "383986ce",
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
+    "region": "東部",
     "score_parts": {
       "appeal": 3,
       "timing": 2,
@@ -3662,52 +3586,6 @@
     "first_seen": "2026-10-13",
     "last_seen": "2026-11-02",
     "region": "北部",
-    "score_parts": {
-      "appeal": 3,
-      "timing": 2,
-      "buzz": 3
-    },
-    "score_value": 2.6,
-    "score": 3
-  },
-  {
-    "subject": "落羽松",
-    "category": "foliage",
-    "location_name": "花蓮理想大地",
-    "county": "花蓮縣",
-    "lat": 23.9,
-    "lng": 121.55,
-    "status": "unknown",
-    "date_start": "",
-    "date_end": "",
-    "est_end": "",
-    "est_basis": "",
-    "summary": "花蓮理想大地推出搭船遊水道欣賞落羽松的行程。",
-    "lens": "24–70mm（水岸倒影）、70–200mm（樹列壓縮）· CPL",
-    "tips": "無風的清晨最容易拍到水面倒影；落羽松通常要到12月以後才轉為紅褐色。",
-    "appeal": 3,
-    "appeal_reason": "水岸落羽松倒影",
-    "articles": [
-      {
-        "title": "帶毛孩搭船賞落羽松！花蓮理想大地「2026有你相伴動玩節」登場 跑酷競賽萌翻水岸",
-        "source": "蕃新聞",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBpTk9nSkZDVGFhNjhqcGEwaURKckFuRzRrLUpxaHRURlA5V3U3anBrVG9pWGRBcWswWXpOaVhyVFJvRXhpT2IzdW5ILVNqb19jYVE?oc=5"
-      },
-      {
-        "title": "帶毛孩遊花蓮有新玩法！理想大地推出「毛孩跑酷」 搭船賞落羽松成亮點- 娛樂新聞",
-        "source": "PChome Online 新聞",
-        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPcXFNOTV0NVFCdlJacDlLMXVadVA1LTNXNDRjcXBmS0FEaUowZnNZYVgxYXE4dWNJSk40WGJQbHpaVGJiM3czRWtNSGx4SUFKQlczaHZYdHJaSHZLTFBHMmxpb1JjY29zYXE0TjRMU1VVMm9Hc2JOck5uLUxVbkR4dkRKeERPdlNYUlAzTHdtaWE?oc=5"
-      },
-      {
-        "title": "帶狗狗遊花蓮有新玩法！理想大地毛孩跑酷登場 搭船賞落羽松成亮點",
-        "source": "蕃新聞",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE05RUE3YXY1ZFNaSlRYQUktSmgybTcwVDh5aFZpaWJ1bkRxSjJsSWlteERIak1sMWlQOWJpdllWemc1UjU2N1NVSWxoYWNuY0JjZUE?oc=5"
-      }
-    ],
-    "id": "383986ce",
-    "first_seen": "2026-11-02",
-    "last_seen": "2026-11-02",
-    "region": "東部",
     "score_parts": {
       "appeal": 3,
       "timing": 2,
@@ -3774,11 +3652,11 @@
     "date_end": "2026-10-31",
     "est_end": "",
     "est_basis": "",
-    "summary": "第24屆臺灣同志遊行10/31舉行，約17萬人上街，已結束。",
-    "lens": "24–70mm、35mm",
-    "tips": "活動已結束。",
+    "summary": "第24屆臺灣同志遊行10/31舉行，約17萬人參與，已結束。",
+    "lens": "24–70mm（人像街拍）、35mm",
+    "tips": "已結束。",
     "appeal": 4,
-    "appeal_reason": "人數多、色彩繽紛的街頭遊行",
+    "appeal_reason": "亞洲最大同志遊行，色彩豐富",
     "articles": [
       {
         "title": "10/31辯論強碰！蔣萬安擬出席同志遊行 盼改晚間舌戰沈伯洋",
@@ -4039,11 +3917,26 @@
         "title": "圖輯／同志酒吧不當搜索掀怒火！17萬人大遊行 怒喊：同志不必溫良恭儉讓",
         "source": "Yahoo新聞",
         "link": "https://news.google.com/rss/articles/CBMitgNBVV95cUxNQkgzUWZ6MUk2SXNydjFjQWlyUDBWa2Q4ZFJqbVY3OVV5amZQcGg1ckhTRnVuTk1TWVFNTnNsOFRmb212Ym4yX0VfZ0JFSHQ0azRBMW92UjdzYXRDMWp0cGRhUnhOaGpVMVNoYUZsWC00ZkRTVENpXzFNdWpBSkhmWUEtN3BiWlVXeF85dVdXd0hRT2Q4Ql8xTXlGTkRYS3JMSGJ5MmsxQUZfVi1JbkVMdV9PS0R2ejVXekRRRWxZd21MNzFwaWhLeEpyYnVxWk5mbWtyclQwMkdMTEdaS3U3NnJWbDY2ZjlDeU03Tm43UXRxMUwxUU8zbGF2VlFaNUhOMkNJbEtXVG9JdUJCbFFEVFZPaHRKeHhQMmhpRVFoT2NxMkthb1o0RVRMS2dEbHNMekMwN3NRWFRzbm5HQ3BJZmhjUzI4bXhaYU03ekFMcnNxNFVnV3RET2NhT3NqLTVNTk9TWjZ1d3VoaEl3OG11ZjQ5YW5Ma29lNVlUNUJGdlBaR1hVZ3NNM1ZGc0htOWloVjRDV2hpb2FmMVpzR0YzcXJEZ0JQS0N1cHlycmRIZ1JnbnNYdmc?oc=5"
+      },
+      {
+        "title": "同志遊行北市府前估破15萬人！同志酒吧執法爭議延燒 訴求平權多元傾聽",
+        "source": "Yahoo新聞",
+        "link": "https://news.google.com/rss/articles/CBMiywNBVV95cUxPTkYxS2tVbVB2RlYxY0RiSDB2QVBvYTJneUtwam5rOWo1ekVtZWxqY2hFcWJWRmdXdFNPVVBXZGM0TENvdWF2VVAwaUE3T3NfTGJ6bHRRRDhWaVRYczdBc3o3M3c1MFZDOGV2cTd6MnJHMU42QlEwSXZaaDR4aVA1bk1wYkJ0dTN3UDVzZ3gySWtuWjZlQzdUNTNXbzd1dy13cGptRDRucnhfaG5fNWRsVlhMdTk5ZW5lc0s2OEZqdDhFdU1LRUJqVDJZSGVLOWk4NHhZRkNkRjExdHhxbDBiOUJPN2RVTnJXRXBIRWY1VzhlMGFzalZjVVBKRkxPTUwyeDRNdV9remZsblF0elh5MjJZVXY3bGlqdUtSa0FacW1aUU8wVExod0xwZHpSenpUYjZxRXFJem44SUszMlV2VnJKTXIweV9KUmFjVzhZLVg2OEUxV3NxUUV1Z1ZtQ0JRT2hNZGc0UVFZVmxPRktGZWZyY0RvYkdwN0s4RUM1cE9NSm01X0ExS1h4VmRDWGhEbXFvdVhNYWVLbXEyUVBPMUZLekRyRHVfWU5Kb3JmaThKZ2VmNGdQUHQ1RWU2Rk9zN3VzWlVnaV9hSGs?oc=5"
+      },
+      {
+        "title": "現身台灣同志遊行！沈伯洋發「彩虹洋流」飄帶 民眾開心喊「我的市長」",
+        "source": "Yahoo新聞",
+        "link": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxQNnZ5MC1tY3RDLWo2YzBhLURhbVYwVGU1b3pvZFpmS3doZ0NVWlhfdjVJSkYwekN0dEhLYWlWdXZNbjI0bzdydk1CMzd3c1d5MFFqTlgwS0pGR0ltWDdDNTBfcVBVZXZrdzlRbUt4VllCMkRFRE9ZbHYzbGY2eUkxWVVVVWs4MEJuX2VVd1Znam8wZTNXaFpmMjNwWnIxcEdlbU9ETVFoN0lLUFBSMDNoS0RYTVpJaUhtM3RoaFFjNmcwUGVlZVhVeHVGTWJMY1FkaUFSd0lIelRCSF8zMTZfZHE5R2FNTE9EenFYUEJqWFRJM0RZTFRTVzJNSTNhYzlCVW1BZVhoU3pYYlhMSmQxYjJsdjdUV2RRNURKNktFWVg2UVNOYm5BbXJnY0xfTWRrakxReUNQN21Fcno0RHlvelJhM2NYdHdxb1BQUnRsNFZDSl9KMFhneGZyaDZlVF9NNHB1UEJWWTV0TnhH?oc=5"
+      },
+      {
+        "title": "酒吧風波後，台北同志遊行在爭取什麼？",
+        "source": "BBC",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1KS2pGVG94TDJMY1pOZFVGYzMzSUt1N2JsYWF5S01GT3NxSlppTUpBNDg4Q3NCbExUSkREXzU3VVVkRUFXVmVTX2MxUzdVYld6NlRqRzFuaUxfNzFKLXM2bUY5NA?oc=5"
       }
     ],
     "id": "2ffc67d8",
     "first_seen": "2026-10-15",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "北部",
     "score_parts": {
       "appeal": 4,
@@ -4059,17 +3952,17 @@
     "location_name": "士林官邸",
     "county": "臺北市",
     "lat": 25.093,
-    "lng": 121.531,
+    "lng": 121.53,
     "status": "upcoming",
     "date_start": "",
     "date_end": "",
     "est_end": "",
     "est_basis": "",
-    "summary": "2026士林官邸菊展體驗課程已開放報名，菊展即將登場。",
-    "lens": "90–105mm微距（菊花特寫）、24–70mm（造型菊）",
-    "tips": "陰天的柔光最適合拍菊花細節；平日上午人比較少。",
+    "summary": "2026士林官邸菊展系列體驗課程開放報名，菊展即將登場。",
+    "lens": "24–70mm（造型菊）、100mm微距（花瓣）",
+    "tips": "陰天柔光拍菊花細節最佳；開園早到避開人潮。",
     "appeal": 3,
-    "appeal_reason": "年度菊展，造型多樣",
+    "appeal_reason": "年度菊展，造型菊精緻",
     "articles": [
       {
         "title": "菊展火熱籌備中 綠雕大師作品向亨利.馬諦斯致敬",
@@ -4084,7 +3977,7 @@
     ],
     "id": "10fdf1f8",
     "first_seen": "2026-10-13",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "北部",
     "score_parts": {
       "appeal": 3,
@@ -4444,18 +4337,18 @@
     "category": "event",
     "location_name": "青草湖",
     "county": "新竹市",
-    "lat": 24.778,
-    "lng": 120.958,
+    "lat": 24.782,
+    "lng": 120.97,
     "status": "ended",
     "date_start": "",
-    "date_end": "2026-10-27",
+    "date_end": "",
     "est_end": "",
     "est_basis": "",
-    "summary": "青草湖秋焰祭18天吸引逾50萬人次，已用雙倍煙火壓軸落幕。",
+    "summary": "青草湖秋焰祭18天已落幕，以雙倍煙火壓軸。",
     "lens": "24–70mm · 腳架 · 快門線",
-    "tips": "活動已結束。",
+    "tips": "已結束。",
     "appeal": 3,
-    "appeal_reason": "湖面倒映煙火",
+    "appeal_reason": "地方煙火",
     "articles": [
       {
         "title": "新竹青草湖秋焰祭登場 蠟筆小新現身璀璨煙火照亮夜空",
@@ -4500,7 +4393,7 @@
     ],
     "id": "47ae9ccc",
     "first_seen": "2026-10-13",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "北部",
     "score_parts": {
       "appeal": 3,
@@ -4516,17 +4409,17 @@
     "location_name": "永和川端人行景觀橋（新店溪）",
     "county": "新北市",
     "lat": 25.017,
-    "lng": 121.524,
+    "lng": 121.525,
     "status": "ended",
     "date_start": "2026-10-30",
     "date_end": "2026-10-30",
     "est_end": "",
     "est_basis": "",
-    "summary": "永和樂動川端新店溪水上煙火已在10/30施放完畢。",
-    "lens": "24–70mm（煙火與橋景）· 腳架 · 快門線",
-    "tips": "活動已結束。",
+    "summary": "永和「樂動川端」新店溪水上煙火已於10/30施放。",
+    "lens": "24–70mm · 腳架 · 快門線",
+    "tips": "已結束。",
     "appeal": 3,
-    "appeal_reason": "小型河岸煙火",
+    "appeal_reason": "小型水上煙火",
     "articles": [
       {
         "title": "2026 樂動川端．點亮藝文廊道",
@@ -4576,7 +4469,7 @@
     ],
     "id": "dbc61497",
     "first_seen": "2026-10-16",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "北部",
     "score_parts": {
       "appeal": 3,
@@ -4686,6 +4579,47 @@
       "buzz": 3
     },
     "score_value": 1.8,
+    "score": 2
+  },
+  {
+    "subject": "洛神花田",
+    "category": "flower",
+    "location_name": "金峰鄉（洛神花音樂節）",
+    "county": "臺東縣",
+    "lat": 22.594,
+    "lng": 120.968,
+    "status": "ended",
+    "date_start": "2026-10-31",
+    "date_end": "2026-10-31",
+    "est_end": "",
+    "est_basis": "",
+    "summary": "金峰洛神花音樂節已於10/31舉行，千人參與花季盛會。",
+    "lens": "24–70mm（花田與部落）、100mm微距（洛神花萼）",
+    "tips": "洛神花萼紅色在陰天或柔光下更飽和。",
+    "appeal": 3,
+    "appeal_reason": "紅色洛神田具地方特色",
+    "articles": [
+      {
+        "title": "2026金峰鄉洛神花音樂節 感受秋日花季魅力 | 青年日報",
+        "source": "LINE TODAY",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1pSlVKcVVZbzZLVkgtR194Zjd4a05GT0hGMnhCY0FaM1VmekFublUyaEZkNXVZb3VEdlpjUjJreXRDY19NWFc0VF9QUHZXbEZmbkN0anhB?oc=5"
+      },
+      {
+        "title": "金峰洛神花音樂節開唱 千人湧入花季盛會",
+        "source": "原住民族文化事業基金會",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1nUkNVX3dkWGhiNmVzLVF1RUk2SlBnR2dzNG9vVVV4aThrQkRpOEJtd3A1N0JuRk56VXE4N1h5LUJJdXRZQ3c?oc=5"
+      }
+    ],
+    "id": "deb49a0d",
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-11-03",
+    "region": "東部",
+    "score_parts": {
+      "appeal": 3,
+      "timing": 0,
+      "buzz": 2
+    },
+    "score_value": 1.7,
     "score": 2
   },
   {
@@ -5172,15 +5106,15 @@
     "location_name": "新竹市",
     "county": "新竹市",
     "lat": 24.804,
-    "lng": 120.968,
+    "lng": 120.971,
     "status": "ended",
     "date_start": "2026-10-31",
     "date_end": "2026-10-31",
     "est_end": "",
     "est_basis": "",
     "summary": "新竹市萬聖大遊行10/31吸引6萬人，已結束。",
-    "lens": "24–70mm",
-    "tips": "活動已結束。",
+    "lens": "24–70mm、35mm",
+    "tips": "已結束。",
     "appeal": 2,
     "appeal_reason": "地方變裝遊行",
     "articles": [
@@ -5222,7 +5156,7 @@
     ],
     "id": "63712a9a",
     "first_seen": "2026-10-20",
-    "last_seen": "2026-11-02",
+    "last_seen": "2026-11-03",
     "region": "北部",
     "score_parts": {
       "appeal": 2,
