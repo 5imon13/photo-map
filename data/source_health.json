@@ -2,42 +2,42 @@
   "Google News": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-11-20 16:18",
+    "last_ok": "2026-11-23 09:30",
     "last_problem": "",
-    "last_status": "176 items"
+    "last_status": "179 items"
   },
   "觀光署活動": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-11-20 16:18",
+    "last_ok": "2026-11-23 09:30",
     "last_problem": "FAILED: URLError: <urlopen error _ssl.c:1011: The handshake operation timed out>",
-    "last_status": "47 items"
+    "last_status": "32 items"
   },
   "花IN台北": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-11-20 16:18",
+    "last_ok": "2026-11-23 09:30",
     "last_problem": "FAILED: HTTPError: HTTP Error 500: Internal Server Error",
-    "last_status": "3 items"
+    "last_status": "1 items"
   },
   "國家公園": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-11-20 16:18",
+    "last_ok": "2026-11-23 09:30",
     "last_problem": "",
-    "last_status": "33 items"
+    "last_status": "31 items"
   },
   "森林遊樂區": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-11-20 16:18",
+    "last_ok": "2026-11-23 09:30",
     "last_problem": "FAILED: URLError: <urlopen error [WinError 10054] 遠端主機已強制關閉一個現存的連線。>",
-    "last_status": "16 items"
+    "last_status": "13 items"
   },
   "PTT": {
     "bad_runs": 0,
     "bad_since": "",
-    "last_ok": "2026-11-20 16:18",
+    "last_ok": "2026-11-23 09:30",
     "last_problem": "FAILED: HTTPError: HTTP Error 500: Internal Server Error",
     "last_status": "5 items"
   }
